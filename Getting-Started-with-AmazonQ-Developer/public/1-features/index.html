@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.131.0">
+    <meta name="description" content="">
+<meta name="author" content="journeyoftheaverageguy@gmail.com">
+
+    <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
+
+    <title>Amazon Q Developer features :: AWS Serverless</title>
+
+    
+    <link href="//localhost:1313/css/nucleus.css?1746695708" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1746695708" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1746695708" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1746695708" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1746695708" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1746695708" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1746695708" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1746695708" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1746695708" rel="stylesheet">
+    
+    <link href="//localhost:1313/css/theme-workshop.css?1746695708" rel="stylesheet">
+    
+    
+
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1746695708"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="//localhost:1313/1-features/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="//localhost:1313/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1746695708"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1746695708"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1746695708"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-features/" title="Amazon Q Developer features" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="//localhost:1313/1-features/">
+          <b>1. </b>Amazon Q Developer features
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-tiers-of-service/" title="Tiers of service for Amazon Q Developer" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/2-tiers-of-service/">
+          <b>2. </b>Tiers of service for Amazon Q Developer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-tiers-of-service/2-free-tier/" title="Amazon Q Developer Free tier" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/2-tiers-of-service/2-free-tier/">
+          <b>2.2 </b>Amazon Q Developer Free tier
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-tiers-of-service/1-pro-tier/" title="Amazon Q Developer Pro tier" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/2-tiers-of-service/1-pro-tier/">
+          <b>2.1 </b>Amazon Q Developer Pro tier
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-getting-started/" title="Getting started with Amazon Q Developer" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/3-getting-started/">
+          <b>3. </b>Getting started with Amazon Q Developer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-getting-started/1-in-visual-studio-code/" title="Amazon Q Developer in Visual Studio Code" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/3-getting-started/1-in-visual-studio-code/">
+          <b>3.1 </b>Amazon Q Developer in Visual Studio Code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-getting-started/2-operational-investigations/" title="Amazon Q Developer operational investigations" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/3-getting-started/2-operational-investigations/">
+          <b>3.2 </b>Amazon Q Developer operational investigations
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-conclusion/" title="Conclution" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/4-conclusion/">
+          <b>4. </b>Conclution
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="//localhost:1313/1-features/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="//localhost:1313/vi/1-features/">Tiếng Việt</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    
+     <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830891&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
+</left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>23/04/2025</font></i>
+    </left>
+    <left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+                <a href="https://www.linkedin.com/in/minhnghia2k3/"  style="color:orange">Le Minh Nghia</a> <br>
+
+                <a href="https://www.linkedin.com/in/trandoancongly/"  style="color:orange">Tran Doan Cong Ly</a>
+        </i>
+        </left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='//localhost:1313/'>Getting started with Amazon Q Developer</a> > Amazon Q Developer features
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#migration--transfer">Migration &amp; Transfer</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="#management-and-governance">Management and governance</a></li>
+        <li><a href="#compute">Compute</a></li>
+        <li><a href="#databases">Databases</a></li>
+        <li><a href="#networking-and-content-delivery">Networking and content delivery</a></li>
+        <li><a href="#developer-tools">Developer tools</a></li>
+        <li><a href="#application-integration">Application integration</a></li>
+        <li><a href="#third-party-tools">Third-party tools</a></li>
+        <li><a href="#cloud-financial-management">Cloud Financial Management</a></li>
+        <li><a href="#customer-support">Customer support</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Amazon Q Developer features
+            </h1>
+          
+
+        
+
+
+
+	<p>Amazon Q Developer is available across AWS environments and services, and also as a coding assistant in third party IDEs.</p>
+<p>Many of Amazon Q Developer’s capabilities exist in a chat interface, where you can use natural language to ask questions about AWS, get help with code, explore resources, or troubleshoot. When you chat with Amazon Q, Amazon Q uses the context of your current conversation to inform its responses. You can ask follow-up questions or refer to its response when you ask a new question.</p>
+<p>Other Amazon Q Developer features are available as a part of your workflows in AWS service consoles and supported IDEs. The following sections explain the different features of Amazon Q Developer that you might encounter across your AWS experience.</p>
+<h3 id="migration--transfer">Migration &amp; Transfer</h3>
+<h4 id="amazon-q-developer-transformation-web-experience">Amazon Q Developer transformation web experience</h4>
+<p>Amazon Q Developer’s transformation capabilities can help your enterprise discover, plan, and execute migration and modernization jobs for your legacy applications running on-premises or in the cloud.</p>
+<h3 id="analytics">Analytics</h3>
+<h4 id="summarizing-your-data">Summarizing your data</h4>
+<p>With Amazon Q Amazon QuickSight, you can utilize the Generative BI authoring experience, create executive summaries of your data, ask and answer questions of data, and generate data stories.</p>
+<h3 id="management-and-governance">Management and governance</h3>
+<h4 id="exploring-nodes-using-text-prompts">Exploring nodes using text prompts</h4>
+<p>Using AWS Systems Manager and Amazon Q, you can ask natural language questions about your managed nodes or instances. Amazon Q then uses the Systems Manager ListNodes action and creates filters based on your textual input to retrieve results.</p>
+<h4 id="investigating-operational-issues-preview">Investigating operational issues (preview)</h4>
+<p>Amazon Q Developer operational investigations enhance your ability to investigate and analyze resources, events, and activities across your AWS environment. By leveraging natural language processing, Amazon Q simplifies the process of understanding complex scenarios and relationships within your AWS account.</p>
+<p>Amazon Q Developer now helps you accelerate operational investigations across your AWS environment. Q looks for anomalies in your telemetry, surfaces related signals for you to explore, identifies potential root-cause hypothesis, and suggests next steps to help you remediate issues faster.</p>
+<p>By integrating Amazon Q into your investigative workflows, you can accelerate problem solving, enhance your understanding of your AWS environment, and make more informed decisions about your infrastructure and applications.</p>
+
+<div class="notices note" ><p>The Amazon Q operational investigations feature is in preview release and is subject to change.</p>
+</div>
+
+<h4 id="taking-inventory-of-your-aws-resources">Taking inventory of your AWS resources</h4>
+<p>You can ask Amazon Q about your specific AWS account resources from anywhere in the AWS Management Console. You might not know where to locate relevant information about your resources, or you might be in one service console and want to access information about another service’s resources without disrupting your workflow.</p>
+<p>Amazon Q Developer answers your natural language questions about resources and provides deep links to those resources so you can quickly find them. You can ask Amazon Q to list a type of resource in your account, for details about a specific resource, or to list resources based on a criteria such as region or state.</p>
+<p>For example, you may want to know how many Amazon EC2 instances you currently have running. In that case, you can ask Amazon Q your question in natural language, and it will provide an answer based on your specific resources.</p>
+<h4 id="use-amazon-q-in-the-aws-console-mobile-application">Use Amazon Q in the AWS Console Mobile Application</h4>
+<p>Amazon Q is integrated with the AWS Console Mobile Application to answer questions about AWS. You configure access the same way that you get access to Amazon Q in the AWS Management Console.</p>
+<h4 id="diagnosing-console-errors">Diagnosing console errors</h4>
+<p>In the AWS Management Console, Amazon Q Developer can diagnose common errors you receive while working with AWS services, such as insufficient permissions, incorrect configuration, and exceeding service limits.</p>
+<h3 id="compute">Compute</h3>
+<h4 id="choosing-amazon-elastic-compute-cloud-instances">Choosing Amazon Elastic Compute Cloud instances</h4>
+<p>With so many Amazon EC2 instance types available, finding the right instance types for your workload can be time-consuming and complex. The Amazon Q instance type selector considers your use case, workload type, CPU manufacturer preference, and how you prioritize price and performance, as well as additional parameters that you can specify. It then uses this data to provide suggestions and guidance for Amazon EC2 instance types that are best suited to your new workloads.</p>
+<p><img alt="ec2-instance-type-finder" src="//localhost:1313/images/1/ec2-instance-type-finder.gif?width=90pc"></p>
+<h3 id="databases">Databases</h3>
+<h4 id="writing-database-queries-with-natural-language">Writing database queries with natural language</h4>
+<p>Amazon Q generative SQL uses generative AI to analyze user intent, query patterns, and schema metadata to identify common SQL query patterns directly within Amazon Redshift, accelerating the query authoring process for users and reducing the time required to derive actionable data insights.</p>
+<h3 id="networking-and-content-delivery">Networking and content delivery</h3>
+<h4 id="analyzing-network-troubleshooting">Analyzing network troubleshooting</h4>
+<p>You can use Amazon Q to help you diagnose network connectivity issues for applications that run in your Amazon VPCs. Amazon Q network troubleshooting can understand natural language queries, and works with Reachability Analyzer to provide relevant responses. With Amazon Q, you can ask network reachability questions in a conversational format.</p>
+<h3 id="developer-tools">Developer tools</h3>
+<p>Ask Amazon Q Developer questions about building at AWS and for assistance with software development. Amazon Q can explain coding concepts and code snippets, generate code and unit tests, and improve code, including debugging or refactoring.</p>
+<h4 id="developing-code-features">Developing code features</h4>
+<p>After you explain, in natural language, the feature that you want to develop, Amazon Q can use the context of your current project to generate an implementation plan and the accompanying code. Amazon Q can help you build AWS projects or your own applications.</p>
+<h4 id="getting-inline-code-suggestions">Getting inline code suggestions</h4>
+<p>Amazon Q provides you with code recommendations in real time. As you write code, Amazon Q automatically generates suggestions based on your existing code and comments.</p>
+<h4 id="chatting-about-code-in-ides">Chatting about code in IDEs</h4>
+<p>Within integrated development environments (IDEs), Amazon Q can answer questions related to the software development process, including conceptual questions about programming and how specific code works. You can also ask Amazon Q to update and improve code snippets from the chat panel. With multi-language support, you can chat with Amazon Q in any of the supported natural languages, including English, Mandarin, French, German, Italian, Japanese, Spanish, Korean, Hindi and Portuguese, with more languages available.</p>
+<h4 id="reviewing-your-code-for-security-vulnerabilities-and-quality-issues">Reviewing your code for security vulnerabilities and quality issues</h4>
+<p>Within IDEs, Amazon Q reviews your code for security vulnerabilities and code quality issues. Amazon Q can review as you code or review entire projects to monitor the security and quality of your applications throughout development.</p>
+<h4 id="transforming-code">Transforming code</h4>
+<p>Amazon Q can perform automated language and operating system (OS)-level upgrades for your applications.</p>
+<h4 id="generating-unit-tests">Generating unit tests</h4>
+<p>Amazon Q Developer provides an AI-powered unit test generation feature to help development teams improve code coverage throughout their software development lifecycle. The Amazon Q Developer agent for unit test generation is available in the following environments:</p>
+<ul>
+<li>
+<p>Amazon Q Developer IDE extension.</p>
+</li>
+<li>
+<p>GitLab, as part of GitLab Duo.</p>
+</li>
+</ul>
+<h4 id="developing-software-in-amazon-codecatalyst">Developing software in Amazon CodeCatalyst</h4>
+<p>Amazon Q Developer in CodeCatalyst includes generative AI features that can help users in projects in your space develop software faster. You can assign issues to Amazon Q or recommend tasks for Amazon Q. You can also ask Amazon Q to write a description or to summarize content.</p>
+<h4 id="chatting-about-code-in-amazon-sagemaker-ai-studio">Chatting about code in Amazon SageMaker AI Studio</h4>
+<p>Amazon SageMaker AI Studio is a web-based experience for running ML workflows. You can chat with Amazon Q Developer inside Studio to get guidance on SageMaker AI features, troubleshoot JupyterLab errors, and get sample code.</p>
+<p><img alt="q-dev-smstudio" src="//localhost:1313/images/1/q-dev-smstudio.png?width=90pc"></p>
+<h4 id="interacting-with-the-command-line-and-aws-cloudshell">Interacting with the command line and AWS CloudShell</h4>
+<h5 id="command-line-interface-cli">Command Line Interface (CLI)</h5>
+<p>After installing Amazon Q for the command line, you can use it to complete CLI commands as it populates contextually relevant subcommands, options and arguments. It provides AI-generated completions as you type in the command line. Additionally, you can use Amazon Q to write natural language instructions that are instantly translated to an executable shell code snippet. You can also ask Amazon Q complex questions, and it provides feedback and instructions based on the conversation, as well as context and information outside of the conversation. You can then provide permission to Amazon Q so it performs actions on your behalf. With multi-language support, you can chat with Amazon Q in any of the supported natural languages, including English, Mandarin, French, German, Italian, Japanese, Spanish, Korean, Hindi and Portuguese, with more languages available.</p>
+<h4 id="aws-cloudshell">AWS CloudShell</h4>
+<p>You can also use Amazon Q CLI in AWS CloudShell to interact in natural language conversations, ask questions, and receive responses from Amazon Q in your terminal. You can get the related shell command that reduces the need to search for or remember syntax. With Amazon Q, you can receive command suggestions as you type in the terminal</p>
+<h3 id="application-integration">Application integration</h3>
+<h4 id="writing-scripts-to-automate-aws-services">Writing scripts to automate AWS services</h4>
+<p>You may know exactly what to do with your AWS resources, and you may find yourself taking the same actions repeatedly. In that case, you can ask Amazon Q to write code that will automate the repetitive tasks.</p>
+<p>For example, you may be working on a project that uses Amazon VPCs, Amazon EC2 instances, and Amazon RDS databases. In the course of your testing, you find that every time you create a Amazon VPC, spin up a server, and deploy a database, the configuration is the same. You always choose the same instance and database type, with the same options selected, using the same security groups, in subnets with the same NACL configuration. You don’t want to have to go through the same manual process every time you want to re-create your test conditions.</p>
+<p>You can use Amazon Q’s Console-to-Code feature to automate a workflow instead of performing it manually every time. First, you activate Console-to-Code in the Amazon EC2 console. Then, Amazon Q records your actions as you go through the process of configuring and launching your instance. Finally, Amazon Q provides you with code, in a language of your choice, that automates the process you just performed.</p>
+<h4 id="writing-etl-scripts-and-integrating-data">Writing ETL scripts and integrating data</h4>
+<p>AWS Glue is a serverless data integration service that makes it easy for analytics users to discover, prepare, move, and integrate data from multiple sources.</p>
+<p>Amazon Q data integration in AWS Glue includes the following capabilities:</p>
+<ul>
+<li>
+<p><strong>Chat</strong> – Amazon Q data integration in AWS Glue can answer natural language questions in English about AWS Glue and data integration domains like AWS Glue source and destination connectors, AWS Glue ETL jobs, Data Catalog, crawlers and AWS Lake Formation, and other feature documentation, and best practices. Amazon Q data integration in AWS Glue responds with step-by-step instructions, and includes references to its information sources.</p>
+</li>
+<li>
+<p><strong>Data integration code generation</strong> – Amazon Q data integration in AWS Glue can answer questions about AWS Glue ETL scripts, and generate new code given a natural language question in English.</p>
+</li>
+<li>
+<p><strong>Troubleshoot</strong> – Amazon Q data integration in AWS Glue is purpose built to help you understand errors in AWS Glue jobs and provides step-by-step instructions, to root cause and resolve your issues.</p>
+</li>
+</ul>
+<h3 id="third-party-tools">Third-party tools</h3>
+<h4 id="using-gitlab-duo-with-amazon-q">Using GitLab Duo with Amazon Q</h4>
+<p>You can <a href="https://docs.gitlab.com/ee/user/duo_amazon_q/">GitLab Duo with Amazon Q</a> for your software development operations and source code management workflows. After setting up Amazon Q in GitLab Duo, you can invoke <a href="https://docs.gitlab.com/ee/user/project/quick_actions.html">quick actions</a> to automate tasks.</p>
+<h3 id="cloud-financial-management">Cloud Financial Management</h3>
+<h4 id="understanding-your-costs">Understanding your costs</h4>
+<p>You can ask Amazon Q about your AWS bill and account costs in the AWS Management Console. Amazon Q can retrieve your cost data, explain costs, and analyze cost trends.</p>
+<h3 id="customer-support">Customer support</h3>
+<h4 id="getting-customer-support-directly-from-amazon-q">Getting customer support directly from Amazon Q</h4>
+<p>Amazon Q can answer your questions about account activation, cost spikes, bill adjustment, fraud events, health events, and issues with your AWS resources.</p>
+<h4 id="creating-a-support-ticket">Creating a support ticket</h4>
+<p>Amazon Q can help you create a support case and then connect you to a human support agent at AWS.</p>
+<h4 id="amazon-q-in-chat-applications">Amazon Q in chat applications</h4>
+<p>You can activate Amazon Q in your Slack and Microsoft Teams applications to ask questions about building at AWS.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="//localhost:1313/" title="Getting started with Amazon Q Developer"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="//localhost:1313/2-tiers-of-service/" title="Tiers of service for Amazon Q Developer" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="//localhost:1313/js/clipboard.min.js?1746695708"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1746695708"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1746695708"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1746695708"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1746695708"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1746695708"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1746695708"></script>
+    <script src="//localhost:1313/js/learn.js?1746695708"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1746695708"></script>
+
+    <link href="//localhost:1313/mermaid/mermaid.css?1746695708" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1746695708"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
