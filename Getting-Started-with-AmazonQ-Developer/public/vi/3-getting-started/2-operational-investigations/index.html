@@ -9,24 +9,24 @@
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Installing Amazon Q for command line :: AWS Serverless</title>
+    <title>Amazon Q Developer operational investigations :: AWS Serverless</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1746699097" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1746699097" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1746699097" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1746699097" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1746699097" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1746699097" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1746699097" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1746699097" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1746699097" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1746719565" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1746719565" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1746719565" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1746719565" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1746719565" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1746719565" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1746719565" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1746719565" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1746719565" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1746699097" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1746719565" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1746699097"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1746719565"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1746699097"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1746699097"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1746719565"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1746719565"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1746699097"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1746719565"></script>
 
     
   </div>
@@ -233,13 +233,13 @@
  
   
     
-    <li data-nav-id="/vi/3-getting-started/2-operational-investigations/" title="Installing Amazon Q for command line" class="dd-item 
+    <li data-nav-id="/vi/3-getting-started/2-operational-investigations/" title="Amazon Q Developer operational investigations" class="dd-item 
         
         active
         
         ">
       <a href="//localhost:1313/vi/3-getting-started/2-operational-investigations/">
-          <b>3.2 </b>Installing Amazon Q for command line
+          <b>3.2 </b>Amazon Q Developer operational investigations
           
             <i class="fas fa-check read-icon"></i>
           
@@ -455,7 +455,7 @@
             
           
           
-            <a href='//localhost:1313/vi/'>Khả năng quan sát với Amazon ECS</a> > <a href='//localhost:1313/vi/3-getting-started/'>Using Amazon Q Developer on the command line</a> > Installing Amazon Q for command line
+            <a href='//localhost:1313/vi/'>Khả năng quan sát với Amazon ECS</a> > <a href='//localhost:1313/vi/3-getting-started/'>Using Amazon Q Developer on the command line</a> > Amazon Q Developer operational investigations
           
         
           
@@ -468,7 +468,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-is-amazon-q-developer-operational-investigations">What is Amazon Q Developer Operational Investigations?</a></li>
+        <li><a href="#getting-started">Getting Started</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -484,7 +493,7 @@
           
             <h1>
               
-              Installing Amazon Q for command line
+              Amazon Q Developer operational investigations
             </h1>
           
 
@@ -492,7 +501,57 @@
 
 
 
-	
+	<h3 id="what-is-amazon-q-developer-operational-investigations">What is Amazon Q Developer Operational Investigations?</h3>
+<p>Amazon Q’s operational investigations feature helps you quickly investigate and resolve incidents by surfacing relevant information, leveraging the power of generative AI technology. Amazon Q will scan metrics, logs, traces, deployment events, and other data to generate root cause hypotheses and actionable insights.</p>
+<h3 id="getting-started">Getting Started</h3>
+<ol>
+<li>Open the <a href="https://console.aws.amazon.com/cloudwatch/">CloudWatch console</a></li>
+<li>In the left navigation pane</li>
+</ol>
+<ul>
+<li>choose <strong>AI Operations</strong></li>
+<li>choose <strong>Investigations</strong></li>
+<li>Choose Configure for this account. (Please note: To create an investigation group and set up Amazon Q Developer operational investigations, you must be signed in to an IAM principal that has the either the <strong>AIOpsConsoleAdminPolicy</strong> or the <strong>AdministratorAccess</strong> IAM policy attached, or to an account that has similar permissions. Settings in the investigation group help you centrally manage the common properties of your investigations)</li>
+</ul>
+<p><img alt="Investigations-1" src="//localhost:1313/images/4/investigations-1.png?width=90pc"></p>
+<ol start="4">
+<li>Select the retention period for investigations. The default is 90 days.</li>
+<li>You can optionally customize the encryption settings. For example: if you would like to use a customer managed key instead of the default one provided by AWS. For more information, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-Security.html#Investigations-KMS">Encryption of investigation data</a>.</li>
+</ol>
+<p><img alt="Investigations-2" src="//localhost:1313/images/4/investigations-2.png?width=90pc"></p>
+<ol start="6">
+<li>(Optional) The user access section of the getting started wizard helps you understand how to set up appropriate permissions for different user roles interacting with Amazon Q Developer operational investigations. (The link will take you the documentation with more information) AWS provides three managed IAM policies: <strong>AIOpsConsoleAdminPolicy</strong> for administrators, <strong>AIOpsOperatorAccess</strong> for users who need to start and manage investigations, and <strong>AIOpsReadOnlyAccess</strong> for users who only need to view information.</li>
+</ol>
+<p><img alt="Investigations-3" src="//localhost:1313/images/4/investigations-3.png?width=90pc"></p>
+<ol start="7">
+<li>You can optionally connect Amazon Q Developer operational investigations to IAM Identity Center. By integrating with IAM Identity Center, you can attribute the suggestions added to the investigation feed, back to individual users. For more information, please see this <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-Integrations.html#Investigations-Integrations-IDC">link</a>.</li>
+</ol>
+<p><img alt="Investigations-4" src="//localhost:1313/images/4/investigations-4.png?width=90pc"></p>
+<ol start="8">
+<li>Choose <strong>Next</strong> to continue</li>
+<li>In the “Investigation configuration” section, you can setup the IAM role that Q Developer will use to access telemetry data for its investigations. Select “Auto-create”. This will create a configure the new role with the required permissions.</li>
+</ol>
+<p><img alt="Investigations-5" src="//localhost:1313/images/4/investigations-5.png?width=90pc"></p>
+<ol start="10">
+<li>Under the <strong>Enhanced integration</strong> section, you can configure additional options that will further assist Q developer in performing the investigation. The next steps will briefly explain what these options do.</li>
+<li><strong>Tags for application boundary detection</strong>: This section allows you to specify existing custom tag keys used for your applications. These tags help Amazon Q Developer refine its search when discovering resource relationships. More information can be found <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-GetStarted.html">here</a>.</li>
+</ol>
+<p><img alt="Investigations-6" src="//localhost:1313/images/4/investigations-6.png?width=90pc"></p>
+<ol start="12">
+<li>The <strong>CloudTrail section for change event detection</strong> lets Amazon Q Developer access CloudTrail data, improving its analysis of system changes and root cause hypotheses.</li>
+</ol>
+<p><img alt="Investigations-7" src="//localhost:1313/images/4/investigations-7.png?width=90pc"></p>
+<ol start="13">
+<li>The <strong>X-Ray for topology mapping</strong> and <strong>Application Signals for health assessment</strong> sections highlight additional AWS services that can enhance Amazon Q Developer’s capabilities.</li>
+</ol>
+<p><img alt="Investigations-8" src="//localhost:1313/images/4/investigations-9.png?width=90pc"></p>
+<ol start="14">
+<li>Choose “<strong>Next</strong>” to continue</li>
+<li>The last section of the wizard allows to configure third party integrations. Those include ticketing systems, chat integration, and SNS. We won’t cover those in-depth here. But if you like more information, please visit this <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-GetStarted.html">link</a>.</li>
+<li>Choose “<strong>Complete setup</strong>” to start the configuration. After a few seconds, you will see a message confirming “<strong>Initial Setup success</strong>”</li>
+</ol>
+<p><img alt="Investigations-9" src="//localhost:1313/images/4/investigations-10.png?width=90pc"></p>
+
 
 
 
@@ -689,19 +748,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1746699097"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1746699097"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1746699097"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1746699097"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1746699097"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1746699097"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1746719565"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1746719565"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1746719565"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1746719565"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1746719565"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1746719565"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1746699097"></script>
-    <script src="//localhost:1313/js/learn.js?1746699097"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1746699097"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1746719565"></script>
+    <script src="//localhost:1313/js/learn.js?1746719565"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1746719565"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1746699097" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1746699097"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1746719565" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1746719565"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
