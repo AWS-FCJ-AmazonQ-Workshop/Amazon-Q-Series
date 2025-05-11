@@ -21,7 +21,7 @@ Visual Studio Code is a lightweight but powerful source code editor which runs o
 
 ### Authenticate
 
-You have 2 options to sign-in and this blog explores both the authentication methods:
+You have 2 options to sign-in and this workshop explores both the authentication methods:
 
 1. with [Builder ID](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/builder-id.html) for Individual users with Free Tier
 2. with [AWS IAM Identity Center](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/sso-credentials.html) for Professional users with Pro Tier
@@ -198,8 +198,8 @@ In Visual Studio Code, perform following steps to authenticate:
 
 ### Ask Amazon Q a question in the IDE
 
-1. Amazon Q can be found in the activity bar in Visual Studio Code.
-   ![AmazonQAsk-1](/images/3/AmazonQask-01.png?width=90pc)
+Amazon Q can be found in the activity bar in Visual Studio Code.
+![AmazonQAsk-1](/images/3/AmazonQask-01.png?width=90pc)
 
 - Open your source code or a GitHub repository.
 - Select code, right click send to Amazon Q to explain code OR open the file and ask Q to explain the code.

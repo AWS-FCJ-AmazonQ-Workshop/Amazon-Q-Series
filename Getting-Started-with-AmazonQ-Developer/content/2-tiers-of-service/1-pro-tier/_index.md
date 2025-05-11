@@ -32,8 +32,6 @@ For general information about AWS Organizations, see [What is AWS Organizations?
 
 This section helps you understand and manage Amazon Q Developer subscriptions, including configuring Amazon Q Developer features, unsubscribing users, and troubleshooting common subscription issues to ensure your users have access to Amazon Q Developer features.
 
-#### Topics
-
 - [Amazon Q Developer Pro Region support](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-regions.html)
 
 - [Amazon Q Developer Pro subscription billing](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/tracking-across-org-cost-usage.html)

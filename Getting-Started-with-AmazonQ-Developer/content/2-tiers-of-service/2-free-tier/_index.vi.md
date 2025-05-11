@@ -6,17 +6,17 @@ chapter = false
 pre = "<b>2.2 </b>"
 +++
 
-Amazon Q Developer is available at the Free tier on AWS apps and websites, in the IDE, and on the command line. When you use the Free tier, access to Amazon Q Developer features is limited.
+Amazon Q Developer có sẵn ở gói Miễn phí trên các ứng dụng và trang web AWS, trong IDE và trên dòng lệnh. Khi bạn sử dụng gói Miễn phí, quyền truy cập vào các tính năng của Amazon Q Developer sẽ bị giới hạn.
 
-If you want to get started quickly with some Amazon Q Developer features, you can create an [AWS Builder ID](https://docs.aws.amazon.com/signin/latest/userguide/differences-aws_builder_id.html) to use Amazon Q Developer in the IDE or on the command line. Builder ID is the authentication that we recommend for exploring the Free tier of Amazon Q Developer.
+Nếu bạn muốn nhanh chóng bắt đầu với một số tính năng của Amazon Q Developer, bạn có thể tạo [AWS Builder ID](https://docs.aws.amazon.com/signin/latest/userguide/differences-aws_builder_id.html) để sử dụng Amazon Q Developer trong IDE hoặc trên dòng lệnh. Builder ID là phương thức xác thực mà chúng tôi khuyên dùng để khám phá gói Miễn phí của Amazon Q Developer.
 
-To use Amazon Q Developer at the Free tier on AWS websites, sign in to your AWS account to try chat and other features in the AWS Management Console. Not all Amazon Q console features are available at the Free tier.
+Để sử dụng Amazon Q Developer ở gói Miễn phí trên các trang web AWS, hãy đăng nhập vào tài khoản AWS của bạn để thử trò chuyện và các tính năng khác trong AWS Management Console. Không phải tất cả các tính năng của Amazon Q trong bảng điều khiển đều có sẵn ở gói Miễn phí.
 
-At the Free tier, your content may be used to improve Amazon Q Developer.
+Ở gói Miễn phí, nội dung của bạn có thể được sử dụng để cải thiện Amazon Q Developer.
 
-To upgrade from the Free tier to the Pro tier, you must subscribe to Amazon Q Developer.
+Để nâng cấp từ gói Miễn phí lên gói Pro, bạn phải đăng ký Amazon Q Developer.
 
-The following table describes what features of Amazon Q Developer at the Free tier are available to you, depending on your sign in or authentication method:
+Bảng sau đây mô tả những tính năng nào của Amazon Q Developer ở gói Miễn phí có sẵn cho bạn, tùy thuộc vào phương thức đăng nhập hoặc xác thực của bạn:
 
 |                                        | Free tier access type |
 | -------------------------------------- | --------------------- | ----------------------- | ----------------------------- |
@@ -25,4 +25,4 @@ The following table describes what features of Amazon Q Developer at the Free ti
 | Amazon Q Developer in the IDE          | ✅Yes                 | ❌No                    | ❌No                          |
 | Amazon Q Developer on the command line | ✅Yes                 | ❌No                    | ❌No                          |
 
-For details about the features available at the Free tier, see the [Amazon Q Developer pricing page](https://aws.amazon.com/q/developer/pricing).
+Để biết chi tiết về các tính năng có sẵn ở gói Miễn phí, hãy xem [Amazon Q Developer pricing page](https://aws.amazon.com/q/developer/pricing).

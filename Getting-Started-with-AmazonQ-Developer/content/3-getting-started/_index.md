@@ -24,7 +24,7 @@ pre = "<b>3. </b>"
 
 #### What About Amazon CodeWhisperer?
 
-Amazon CodeWhisperer is now fully integrated into Amazon Q Developer. All its capabilities—inline suggestions, security scans, and more—are now part of Q Developer. It remains free for individual developers, no AWS account required.
+Amazon CodeWhisperer is now fully integrated into Amazon Q Developer. All its capabilities—inline suggestions, security scans,... are now part of Q Developer. It remains free for individual developers, no AWS account required.
 
 #### Broad Integration:
 

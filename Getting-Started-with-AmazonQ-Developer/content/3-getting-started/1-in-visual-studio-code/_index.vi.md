@@ -6,201 +6,201 @@ chapter = false
 pre = "<b>3.1 </b>"
 +++
 
-### Install the Amazon Q extension in Visual Studio Code
+### Cài đặt tiện ích mở rộng Amazon Q trong Visual Studio Code
 
-Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. Ensure you have installed [Visual Studio Code](https://code.visualstudio.com/download) for your operating system. You can find the [setup](https://code.visualstudio.com/docs/setup/setup-overview) steps in their official documentation.
+Visual Studio Code là một trình soạn thảo mã nguồn nhẹ nhưng mạnh mẽ, chạy trên máy tính để bàn của bạn và có sẵn cho Windows, macOS và Linux. Đảm bảo bạn đã cài đặt [Visual Studio Code](https://code.visualstudio.com/download) cho hệ điều hành của mình. Bạn có thể tìm thấy các bước [setup](https://code.visualstudio.com/docs/setup/setup-overview) trong tài liệu chính thức của họ.
 
-### Install the Amazon Q extension
+### Cài đặt tiện ích mở rộng Amazon Q
 
-1. Open **Visual Studio Code**
-2. Click on **Extensions** on the left activity bar.
-3. In the extensions, search for "**Amazon Q**".
-4. Select **Install** the extension, restart/reload VSCode if required.
+1. Mở **Visual Studio Code**
+2. Nhấp vào **Extensions** trên thanh hoạt động bên trái.
+3. Trong phần extensions, tìm kiếm "**Amazon Q**".
+4. Chọn **Install** extension, restart/reload VSCode nếu cần.
 
 ![AmazonQ-1](/images/3/AmazonQ-1.png?width=90pc)
 
-### Authenticate
+### Xác thực
 
-You have 2 options to sign-in and this blog explores both the authentication methods:
+Bạn có 2 tùy chọn để đăng nhập và workshop này khám phá cả hai phương thức xác thực:
 
-1. with [Builder ID](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/builder-id.html) for Individual users with Free Tier
-2. with [AWS IAM Identity Center](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/sso-credentials.html) for Professional users with Pro Tier
+1. với [Builder ID](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/builder-id.html) cho người dùng cá nhân với Gói Miễn phí
+2. với [AWS IAM Identity Center](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/sso-credentials.html) cho người dùng chuyên nghiệp với Gói Pro
 
-You might use a workforce identity in IAM Identity Center to represent your work-self and an AWS Builder ID to represent your private-self. These identities operate independently. [Amazon Q Developer Pricing](https://aws.amazon.com/q/developer/pricing/) for more details.
+Bạn có thể sử dụng định danh nhân viên trong IAM Identity Center để đại diện cho công việc của mình và AWS Builder ID để đại diện cho thông tin cá nhân của bạn. Các định danh này hoạt động độc lập. Xem [Amazon Q Developer Pricing](https://aws.amazon.com/q/developer/pricing/) để biết thêm chi tiết.
 
 ![AmazonQ-2](/images/3/AmazonQ-2.png?width=90pc)
 _Source: **Amazon Q Developer Pricing**_
 
-In the Visual Studio Code, Open Amazon Q from the left Activity Bar. You will be presented with following screen:
+Trong Visual Studio Code, mở Amazon Q từ thanh hoạt động bên trái. Bạn sẽ thấy màn hình sau:
 
 ![AmazonQ-3](/images/3/AmazonQ-3.png?width=90pc)
 
-#### With AWS Builder ID (no AWS account required)
+#### Với AWS Builder ID (không yêu cầu tài khoản AWS)
 
-Choose this option to use Amazon Q for free. You do not need an AWS Account, however, you do need to sign up for an AWS Builder ID. [AWS Builder ID](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-aws_builder_id.html) is a personal profile that provides access to [select tools and services](https://docs.aws.amazon.com/signin/latest/userguide/aws_builder_id-apps.html). AWS Builder ID is free. You only pay for the AWS resources you consume in your AWS accounts, which is separate from Builder ID. You can use the same email for your AWS Builder ID and for the root user email of an AWS account.
+Chọn tùy chọn này để sử dụng Amazon Q miễn phí. Bạn không cần Tài khoản AWS, tuy nhiên, bạn cần đăng ký AWS Builder ID. [AWS Builder ID](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-aws_builder_id.html) là một hồ sơ cá nhân cung cấp quyền truy cập vào [select tools and services](https://docs.aws.amazon.com/signin/latest/userguide/aws_builder_id-apps.html). AWS Builder ID miễn phí. Bạn chỉ trả tiền cho các tài nguyên AWS bạn sử dụng trong tài khoản AWS của mình, điều này tách biệt với Builder ID. Bạn có thể sử dụng cùng một email cho AWS Builder ID và cho email người dùng root của tài khoản AWS.
 
-1. Select on the first option "**Use for Free**" and click "**Continue**".
+1. Chọn tùy chọn đầu tiên "**Use for Free**" và nhấp vào "**Continue**".
    ![AmazonQ-4](/images/3/AmazonQ-4.png?width=90pc)
 
-2. Enter your email address, click **Next**
+2. Nhập địa chỉ email của bạn, nhấp vào **Next**
    ![AmazonQ-5](/images/3/AmazonQ-8.png?width=90pc)
 
-3. Enter your name, click **Next**
+3. Nhập tên của bạn, nhấp vào **Next**
    ![AmazonQ-6](/images/3/AmazonQ-9.png?width=90pc)
 
-4. Enter verification code sent to your email, click **Verify**
+4. Nhập mã xác minh được gửi đến email của bạn, nhấp vào **Verify**
    ![AmazonQ-8](/images/3/AmazonQ-10.png?width=90pc)
 
-5. Enter your **password** and type the **CAPTCHA**
+5. Nhập **password** của bạn và nhập **CAPTCHA**
    ![AmazonQ-9](/images/3/AmazonQ-11.png?width=90pc)
 
-6. Enter the **email address** you used to register for your Builder ID, click **Next**
+6. Nhập **email address** bạn đã sử dụng để đăng ký Builder ID của mình, nhấp vào **Next**
    ![AmazonQ-7](/images/3/AmazonQ-18.png?width=90pc)
 
-7. Enter the **password** you used to register for your Builder ID, click **Sign in**
+7. Nhập **password** bạn đã sử dụng để đăng ký Builder ID của mình, nhấp vào **Sign in**
    ![AmazonQ-10](/images/3/AmazonQ-12.png?width=90pc)
 
-8. Enter verification code sent to your email, click **Verify**
+8. Nhập mã xác minh được gửi đến email của bạn, nhấp vào **Verify**
    ![AmazonQ-11](/images/3/AmazonQ-13.png?width=90pc)
 
-9. You have successfully created a Builder ID account
+9. Bạn đã tạo tài khoản Builder ID thành công
    ![AmazonQ-12](/images/3/AmazonQ-14.png?width=90pc)
 
-10. In the Visual Studio Code panel, select **Cancel**
+10. Trong bảng Visual Studio Code, chọn **Cancel**
     ![AmazonQ-13](/images/3/AmazonQ-15.png?width=90pc)
 
-11. Select the option "**Use for Free**" and click "**Continue**".
+11. Chọn tùy chọn "**Use for Free**" và nhấp vào "**Continue**".
     ![AmazonQ-14](/images/3/AmazonQ-16.png?width=90pc)
 
-12. Click **Open**
+12. Nhấp vào **Open**
     ![AmazonQ-15](/images/3/AmazonQ-17.png?width=90pc)
 
-13. Click **Allow access**
+13. Nhấp vào **Allow access**
     ![AmazonQ-16](/images/3/AmazonQ-5.png?width=90pc)
 
-14. You have successfully approved the request for AWS IDE Extensions for VS Code
+14. Bạn đã phê duyệt thành công yêu cầu cho AWS IDE Extensions for VS Code
     ![AmazonQ-17](/images/3/AmazonQ-6.png?width=90pc)
 
-15. Once done, you can switch back to your IDE. You have successfully logged into Amazon Q with Builder ID. A Q Chat window should automatically open for you.
+15. Sau khi hoàn tất, bạn có thể chuyển lại IDE của mình. Bạn đã đăng nhập thành công vào Amazon Q bằng Builder ID. Cửa sổ Q Chat sẽ tự động mở cho bạn.
     ![AmazonQ-18](/images/3/AmazonQ-7.png?width=90pc)
 
-You can now skip to [**_Ask Amazon Q a question in the IDE_**](Ask Amazon Q a question in the IDE).
+Bây giờ bạn có thể đến phần [**_Ask Amazon Q a question in the IDE_**](Ask Amazon Q a question in the IDE).
 
-#### Pro license with AWS IAM Identity Center
+#### Pro license với AWS IAM Identity Center
 
 {{% notice warning %}}
-**Important!**: _If you are following this step, you will incur AWS charges. If you are just testing this out, make sure to remove the users at the end to reduce the cost._
+**Important!**: _Nếu bạn đang thực hiện bước này, bạn sẽ phải chịu phí AWS. Nếu bạn chỉ đang thử nghiệm, hãy đảm bảo xóa người dùng sau khi hoàn tất để giảm chi phí._
 {{% /notice %}}
 
-To authenticate via this method, it is important to have an AWS Account with activated IAM Identity Centre. Amazon Q requires IAM Identity Center. If your AWS Organization does not have IAM Identity Center activated. The Account Administrator must first activate IAM Identity Center in this account in order to set up Amazon Q.
+Để xác thực bằng phương pháp này, điều quan trọng là phải có Tài khoản AWS đã kích hoạt IAM Identity Center. Amazon Q yêu cầu IAM Identity Center. Nếu Tổ chức AWS của bạn chưa kích hoạt IAM Identity Center, Quản trị viên Tài khoản phải kích hoạt IAM Identity Center trong tài khoản này trước để thiết lập Amazon Q.
 
-Request your account administrator to create an identity for you in the IAM Identity Center and [subscribe this identity to Developer Pro](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-pro-tier-setting-up-access.html).
+Yêu cầu quản trị viên tài khoản của bạn tạo một định danh cho bạn trong IAM Identity Center và [đăng ký định danh này vào Developer Pro](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-pro-tier-setting-up-access.html).
 
-Ensure the Account Administrator shares two key items for you to login via Visual Studio Code:
+Đảm bảo Quản trị viên Tài khoản chia sẻ hai mục chính để bạn đăng nhập qua Visual Studio Code:
 
 - Start URL
 - AWS Region
 
-These are available in the AWS Console for IAM Identity Center, in the "Settings" section you will the AWS access portal URL under Identity Source tab.
+Chúng có sẵn trong AWS Console cho IAM Identity Center, trong phần "Settings" sbạn sẽ thấy URL cổng truy cập AWS trong tab Identity Source.
 
-In Visual Studio Code, perform following steps to authenticate:
+Trong Visual Studio Code, thực hiện các bước sau để xác thực:
 
-- Click on "**Amazon Q**" in the Status Bar below for more options like Pause auto-suggestions, open settings or Sign out.
+- Nhấp vào "**Amazon Q**" trong Thanh Trạng thái bên dưới để xem thêm các tùy chọn như Pause auto-suggestions, open settings hoặc Sign out.
   ![AmazonQ-19](/images/3/AmazonQ-19.png?width=90pc)
 
-1. Access the [Amazon Q](https://us-east-1.console.aws.amazon.com/amazonq?region=us-east-1#)
+1. Truy cập [Amazon Q](https://us-east-1.console.aws.amazon.com/amazonq?region=us-east-1#)
 
-- Select **Amazon Q Developer**
+- Chọn **Amazon Q Developer**
   ![AmazonQ-1](/images/3/AmazonQpro-1.png?width=90pc)
 
-2. Select **Get started**
+2. Chọn **Get started**
    ![AmazonQ-1](/images/3/AmazonQpro-2.png?width=90pc)
 
-- Enter **Email address**, **First name** & **Last name**
-- Select **Continue**
+- Nhập **Email address**, **First name** & **Last name**
+- Nhập **Continue**
   ![AmazonQ-1](/images/3/AmazonQpro-3.png?width=90pc)
-- Type **Profile name**
-- Select **Create**
+- Nhập **Profile name**
+- Chọn **Create**
   ![AmazonQ-1](/images/3/AmazonQpro-4.png?width=90pc)
 
-3. You have successfully created a profile for Amazon Q Developer.
+3. Bạn đã tạo thành công profile cho Amazon Q Developer.
 
-- Copy Start URL
+- Sao chép Start URL
   ![AmazonQ-1](/images/3/AmazonQpro-5.png?width=90pc)
 
-4. Access your email address
+4. Truy cập địa chỉ email của bạn
 
-- Select **Accept invitation**
+- Chọn **Accept invitation**
   ![AmazonQ-1](/images/3/AmazonQpro-6.png?width=90pc)
 
-5. At the New User Registration section
+5. Tại phần New User Registration
 
-- Type the **New password**
-- Type the **Confirm password**
-- Click **Set new password**
+- Nhập **New password**
+- Nhập **Confirm password**
+- Nhấp vào **Set new password**
   ![AmazonQ-1](/images/3/AmazonQpro-7.png?width=90pc)
 
-6. Enter **User name** (your email)
+6. Nhập **User name** (your email)
 
-- Click **Next**
+- Nhấp vào **Next**
   ![AmazonQ-1](/images/3/AmazonQpro-8.png?width=90pc)
 
-7. Enter your **Password**
+7. Nhập **Password**
 
-- Click **Log in**
+- Nhấp vào **Log in**
   ![AmazonQ-1](/images/3/AmazonQpro-9.png?width=90pc)
 
-8. At the MFA Device Enrollment section
+8. Tại phần MFA Device Enrollment
 
-- Select **Authenticator Application**
-- Click **Next**
+- Chọn **Authenticator Application**
+- Nhấp vào **Next**
   ![AmazonQ-1](/images/3/AmazonQpro-10.png?width=90pc)
 
-9. At the **Set up authenticator app**
+9. Tại phần **Set up authenticator app**
    {{% notice info %}}
-   If you haven’t installed a virtual MFA app, please install it using the link:
+   Nếu bạn chưa cài đặt ứng dụng MFA ảo, vui lòng cài đặt bằng liên kết:
    [Authenticator Extension](https://chromewebstore.google.com/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai)
    {{% /notice %}}
 
-- Click **Show QR code**
+- Nhấp vào **Show QR code**
   ![AmazonQ-1](/images/3/AmazonQpro-11.png?width=90pc)
-- Use the virtual MFA app or your device's camera to scan the QR code.
-- Enter **Code from authenticator**
-- Click **MFA Designation**
+- Sử dụng ứng dụng MFA ảo hoặc camera trên thiết bị của bạn để quét mã QR.
+- Nhập **Code from authenticator**
+- Nhấp vào **MFA Designation**
   ![AmazonQ-1](/images/3/AmazonQpro-12.png?width=90pc)
 
-10. Click **Complete**
+10. Nhấp vào **Complete**
     ![AmazonQ-1](/images/3/AmazonQpro-13.png?width=90pc)
 
-11. Check the email **Active Your Amazon Q Developer Pro Subscription**
+11. Kiểm tra email **Active Your Amazon Q Developer Pro Subscription**
     ![AmazonQ-1](/images/3/AmazonQpro-14.png?width=90pc)
 
-12. On the Sign-in window in Amazon Q, select on the first option "**Use with Pro license**" and click "**Continue**"
+12. Trên cửa sổ Đăng nhập trong Amazon Q, chọn tùy chọn đầu tiên "**Use with Pro license**" và nhấp vào "**Continue**"
     ![AmazonQ-1](/images/3/AmazonQpro-15.png?width=90pc)
-13. You will be asked to enter **Start URL** and **AWS Region** we noted earlier.
+13. Bạn sẽ được yêu cầu nhập **Start URL** và **AWS Region** mà chúng ta đã ghi lại trước đó.
 
-- Click **Continue**
+- Nhấp vào **Continue**
   ![AmazonQ-1](/images/3/AmazonQpro-16.png?width=90pc)
 
-- You will get a pop-up with a confirmation code, click on "Proceed to browser".
+- Bạn sẽ nhận được một cửa sổ bật lên với mã xác nhận, nhấp vào "Proceed to browser".
 
-14. You will be redirected to a web browser. Confirm the code is same and click on "**Confirm and continue**".
+14. Bạn sẽ được chuyển hướng đến một trình duyệt web. Xác nhận mã giống nhau và nhấp vào "**Confirm and continue**".
 
-- This redirects you to sign in to your Identity Center profile. Once done, simply "**Allow access**".
+- Thao tác này sẽ chuyển hướng bạn đến trang đăng nhập vào hồ sơ Identity Center của bạn. Sau khi hoàn tất, chỉ cần nhấp vào "**Allow access**".
   ![AmazonQ-1](/images/3/AmazonQpro-17.png?width=90pc)
 
-15. You have successfully approved the request for AWS IDE Extensions for VS Code
+15. Bạn đã phê duyệt thành công yêu cầu cho AWS IDE Extensions for VS Code
     ![AmazonQ-1](/images/3/AmazonQpro-18.png?width=90pc)
-16. You can now switch back to your Visual Studio Code IDE. You have successfully logged into Amazon Q with Pro license.
+16. Bây giờ bạn có thể chuyển lại IDE Visual Studio Code của mình. Bạn đã đăng nhập thành công vào Amazon Q với Pro license.
 
-- A Amazon Q Chat window should automatically open for you.
+- Cửa sổ Amazon Q Chat sẽ tự động mở cho bạn.
   ![AmazonQ-1](/images/3/AmazonQpro-19.png?width=90pc)
 
-### Ask Amazon Q a question in the IDE
+### Đặt câu hỏi cho Amazon Q trong IDE
 
-1. Amazon Q can be found in the activity bar in Visual Studio Code.
-   ![AmazonQAsk-1](/images/3/AmazonQask-01.png?width=90pc)
+Amazon Q có thể được tìm thấy trong thanh hoạt động trong Visual Studio Code.
+![AmazonQAsk-1](/images/3/AmazonQask-01.png?width=90pc)
 
-- Open your source code or a GitHub repository.
-- Select code, right click send to Amazon Q to explain code OR open the file and ask Q to explain the code.
+- Mở source code hoặc kho lưu trữ GitHub của bạn.
+- Chọn code, nhấp chuột phải gửi đến Amazon Q để giải thích code HOẶC mở tệp và yêu cầu Q giải thích code.
   ![AmazonQAsk-2](/images/3/AmazonQask-02.png?width=90pc)

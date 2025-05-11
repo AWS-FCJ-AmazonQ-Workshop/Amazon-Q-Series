@@ -6,54 +6,56 @@ chapter = false
 pre = "<b>3.2 </b>"
 +++
 
-### What is Amazon Q Developer Operational Investigations?
+### Amazon Q Developer Operational Investigations là gì?
 
-Amazon Q’s operational investigations feature helps you quickly investigate and resolve incidents by surfacing relevant information, leveraging the power of generative AI technology. Amazon Q will scan metrics, logs, traces, deployment events, and other data to generate root cause hypotheses and actionable insights.
+Tính năng điều tra vận hành của Amazon Q giúp bạn nhanh chóng điều tra và giải quyết các sự cố bằng cách hiển thị thông tin liên quan, tận dụng sức mạnh của công nghệ AI tạo sinh. Amazon Q sẽ quét các metric, log, trace, sự kiện triển khai và các dữ liệu khác để đưa ra các giả thuyết về nguyên nhân gốc rễ và các thông tin chi tiết hữu ích.
 
 ### Getting Started
 
-1. Open the [CloudWatch console](https://console.aws.amazon.com/cloudwatch/)
-2. In the left navigation pane
+1. Mở [CloudWatch console](https://console.aws.amazon.com/cloudwatch/)
+2. Trong ngăn điều hướng bên trái
 
-- choose **AI Operations**
-- choose **Investigations**
-- Choose Configure for this account. (Please note: To create an investigation group and set up Amazon Q Developer operational investigations, you must be signed in to an IAM principal that has the either the **AIOpsConsoleAdminPolicy** or the **AdministratorAccess** IAM policy attached, or to an account that has similar permissions. Settings in the investigation group help you centrally manage the common properties of your investigations)
+- Chọn **AI Operations**
+- Chọn **Investigations**
+- Chọn Configure for this account. (Xin lưu ý: Để tạo nhóm điều tra và thiết lập các điều tra vận hành của Amazon Q Developer, bạn phải đăng nhập bằng một IAM principal có chính sách IAM **AIOpsConsoleAdminPolicy** hoặc **AdministratorAccess** được đính kèm, hoặc vào một tài khoản có các quyền tương tự. Các cài đặt trong nhóm điều tra giúp bạn quản lý tập trung các thuộc tính chung của các cuộc điều tra của mình)
 
 ![Investigations-1](/images/4/investigations-1.png?width=90pc)
 
-4. Select the retention period for investigations. The default is 90 days.
-5. You can optionally customize the encryption settings. For example: if you would like to use a customer managed key instead of the default one provided by AWS. For more information, see [Encryption of investigation data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-Security.html#Investigations-KMS).
+4. Chọn khoảng thời gian lưu giữ cho các cuộc điều tra. Mặc định là 90 ngày.
+5. Bạn có thể tùy chọn tùy chỉnh cài đặt mã hóa. Ví dụ: nếu bạn muốn sử dụng khóa do khách hàng quản lý thay vì khóa mặc định do AWS cung cấp. Để biết thêm thông tin, hãy xem [Encryption of investigation data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-Security.html#Investigations-KMS).
 
 ![Investigations-2](/images/4/investigations-2.png?width=90pc)
 
-6. (Optional) The user access section of the getting started wizard helps you understand how to set up appropriate permissions for different user roles interacting with Amazon Q Developer operational investigations. (The link will take you the documentation with more information) AWS provides three managed IAM policies: **AIOpsConsoleAdminPolicy** for administrators, **AIOpsOperatorAccess** for users who need to start and manage investigations, and **AIOpsReadOnlyAccess** for users who only need to view information.
+6. (Tùy chọn) Phần quyền truy cập người dùng của trình hướng dẫn bắt đầu giúp bạn hiểu cách thiết lập các quyền phù hợp cho các vai trò người dùng khác nhau tương tác với các điều tra vận hành của Amazon Q Developer. (Liên kết sẽ đưa bạn đến tài liệu có thêm thông tin) AWS cung cấp ba chính sách IAM được quản lý: **AIOpsConsoleAdminPolicy** cho quản trị viên, **AIOpsOperatorAccess** cho người dùng cần bắt đầu và quản lý các cuộc điều tra, và **AIOpsReadOnlyAccess** cho người dùng chỉ cần xem thông tin.
 
 ![Investigations-3](/images/4/investigations-3.png?width=90pc)
 
-7. You can optionally connect Amazon Q Developer operational investigations to IAM Identity Center. By integrating with IAM Identity Center, you can attribute the suggestions added to the investigation feed, back to individual users. For more information, please see this [link](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-Integrations.html#Investigations-Integrations-IDC).
+7. Bạn có thể tùy chọn kết nối các điều tra vận hành của Amazon Q Developer với IAM Identity Center. Bằng cách tích hợp với IAM Identity Center, bạn có thể quy các đề xuất được thêm vào nguồn cấp dữ liệu điều tra cho từng người dùng. Để biết thêm thông tin, vui lòng xem [liên kết](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-Integrations.html#Investigations-Integrations-IDC) này.
 
 ![Investigations-4](/images/4/investigations-4.png?width=90pc)
 
-8. Choose **Next** to continue
-9. In the “Investigation configuration” section, you can setup the IAM role that Q Developer will use to access telemetry data for its investigations. Select “Auto-create”. This will create a configure the new role with the required permissions.
+8. Chọn **Next** để tiếp tục
+9. Trong phần “**Investigation configuration**” bạn có thể thiết lập vai trò IAM mà Q Developer sẽ sử dụng để truy cập dữ liệu đo từ xa cho các cuộc điều tra của nó. Chọn “**Auto-create**”. Thao tác này sẽ tạo và cấu hình vai trò mới với các quyền cần thiết.
 
 ![Investigations-5](/images/4/investigations-5.png?width=90pc)
 
-10. Under the **Enhanced integration** section, you can configure additional options that will further assist Q developer in performing the investigation. The next steps will briefly explain what these options do.
-11. **Tags for application boundary detection**: This section allows you to specify existing custom tag keys used for your applications. These tags help Amazon Q Developer refine its search when discovering resource relationships. More information can be found [here](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-GetStarted.html).
+10. Trong phần **Enhanced integration** bạn có thể cấu hình các tùy chọn bổ sung sẽ hỗ trợ thêm cho Q Developer trong việc thực hiện điều tra. Các bước tiếp theo sẽ giải thích ngắn gọn các tùy chọn này làm gì.
+
+11. **Tags for application boundary detection**: Phần này cho phép bạn chỉ định các khóa thẻ tùy chỉnh hiện có được sử dụng cho các ứng dụng của bạn. Các thẻ này giúp Amazon Q Developer tinh chỉnh tìm kiếm khi khám phá các mối quan hệ tài nguyên. Bạn có thể tìm thêm thông tin [tại đây](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-GetStarted.html).
 
 ![Investigations-6](/images/4/investigations-6.png?width=90pc)
 
-12. The **CloudTrail section for change event detection** lets Amazon Q Developer access CloudTrail data, improving its analysis of system changes and root cause hypotheses.
+12. Phần **CloudTrail section for change event detection** cho phép Amazon Q Developer truy cập dữ liệu CloudTrail, cải thiện khả năng phân tích các thay đổi hệ thống và các giả thuyết về nguyên nhân gốc rễ.
 
 ![Investigations-7](/images/4/investigations-7.png?width=90pc)
 
-13. The **X-Ray for topology mapping** and **Application Signals for health assessment** sections highlight additional AWS services that can enhance Amazon Q Developer’s capabilities.
+13. Các phần **X-Ray for topology mapping** và **Application Signals for health assessment** làm nổi bật các dịch vụ AWS bổ sung có thể nâng cao khả năng của Amazon Q Developer.
 
 ![Investigations-8](/images/4/investigations-9.png?width=90pc)
 
-14. Choose “**Next**” to continue
-15. The last section of the wizard allows to configure third party integrations. Those include ticketing systems, chat integration, and SNS. We won’t cover those in-depth here. But if you like more information, please visit this [link](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-GetStarted.html).
-16. Choose “**Complete setup**” to start the configuration. After a few seconds, you will see a message confirming “**Initial Setup success**”
+14. Chọn “**Next**” để tiếp tục
+
+15. Phần cuối cùng của trình hướng dẫn cho phép cấu hình các tích hợp của bên thứ ba. Chúng bao gồm các hệ thống quản lý sự cố, tích hợp trò chuyện và SNS. Chúng tôi sẽ không đề cập chi tiết đến chúng ở đây. Nhưng nếu bạn muốn biết thêm thông tin, vui lòng truy cập [link](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-GetStarted.html).
+16. Chọn “**Complete setup**” để bắt đầu cấu hình. Sau vài giây, bạn sẽ thấy thông báo xác nhận “**Initial Setup success**”
 
 ![Investigations-9](/images/4/investigations-10.png?width=90pc)

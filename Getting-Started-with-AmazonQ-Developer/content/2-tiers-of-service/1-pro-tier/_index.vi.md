@@ -6,33 +6,31 @@ chapter = false
 pre = "<b>2.1 </b>"
 +++
 
-With a paid subscription to the Amazon Q Developer Pro tier, your workforce users can access all features of Amazon Q Developer, including ML-assisted software development in your IDE and chatting with Amazon Q in the AWS Management Console without hard monthly limits.
+Với gói đăng ký trả phí cho Amazon Q Developer Pro, người dùng trong lực lượng lao động của bạn có thể truy cập tất cả các tính năng của Amazon Q Developer, bao gồm phát triển phần mềm được hỗ trợ bởi ML trong IDE của bạn và trò chuyện với Amazon Q trong AWS Management Console mà không có giới hạn cứng hàng tháng.
 
-This section describes how to set up and manage Amazon Q Developer Pro tier subscriptions.
+Phần này mô tả cách thiết lập và quản lý đăng ký gói Amazon Q Developer Pro.
 
-For more information on what you can access with the Pro tier, see the [Amazon Q Developer pricing page](https://aws.amazon.com/q/developer/pricing).
+Để biết thêm thông tin về những gì bạn có thể truy cập với gói Pro, hãy xem [Amazon Q Developer pricing page](https://aws.amazon.com/q/developer/pricing).
 
-### Subscribing users to Amazon Q Developer Pro
+### Đăng ký người dùng vào Amazon Q Developer Pro
 
-To subscribe users to Amazon Q Developer Pro, you have three options depending on the type of AWS account you have:
+Để đăng ký người dùng vào Amazon Q Developer Pro, bạn có ba tùy chọn tùy thuộc vào loại tài khoản AWS bạn có:
 
-If you have a **standalone** account, see [Subscribe users in a standalone account](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-standalone.html). Use these instructions if you want to quickly evaluate the features of Amazon Q.
+Nếu bạn có tài khoản **độc lập**, hãy xem [Đăng ký người dùng trong tài khoản độc lập](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-standalone.html). Sử dụng các hướng dẫn này nếu bạn muốn nhanh chóng đánh giá các tính năng của Amazon Q.
 
-If you have a **management** in AWS Organizations, see [Subscribe users to Amazon Q Developer Pro in a management account](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-management.html).
+Nếu bạn có tài khoản **quản lý** trong AWS Organizations, hãy xem [Đăng ký người dùng vào Amazon Q Developer Pro trong tài khoản quản lý](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-management.html).
 
-If you have a **member** account in AWS Organizations, see [Subscribe users to Amazon Q Developer Pro in a member account](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-member.html).
+Nếu bạn có tài khoản **thành viên** trong AWS Organizations, hãy xem [Đăng ký người dùng vào Amazon Q Developer Pro trong tài khoản thành viên.](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-member.html).
 
-Regardless of the type of account you have, you might need to work across multiple AWS Regions and AWS accounts to subscribe users. For more information, see [Subscribe users to Amazon Q Developer Pro across AWS Regions](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-multi-region.html) and [Subscribe users to Amazon Q Developer Pro across your organization](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/tracking-across-org.html).
+Bất kể loại tài khoản bạn có, bạn có thể cần làm việc trên nhiều Vùng AWS và tài khoản AWS để đăng ký người dùng. Để biết thêm thông tin, hãy xem [Đăng ký người dùng vào Amazon Q Developer Pro trên nhiều Vùng AWS](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-multi-region.html) and [Đăng ký người dùng vào Amazon Q Developer Pro trên toàn bộ tổ chức của bạn](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/tracking-across-org.html).
 
-Not sure what member and management accounts are? See [Terminology and concepts for AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html) in the AWS Organizations User Guide for explanations.
+Bạn không chắc chắn tài khoản thành viên và quản lý là gì? Hãy xem [Thuật ngữ và khái niệm cho AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html) trong Hướng dẫn Sử dụng AWS Organizations để biết giải thích.
 
-For general information about AWS Organizations, see [What is AWS Organizations?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) in the AWS Organizations User Guide.
+Để biết thông tin chung về AWS Organizations, hãy xem [AWS Organizations là gì?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) trong Hướng dẫn Sử dụng AWS Organizations.
 
-### Managing Amazon Q Developer Pro subscriptions
+### Quản lý đăng ký Amazon Q Developer Pro
 
-This section helps you understand and manage Amazon Q Developer subscriptions, including configuring Amazon Q Developer features, unsubscribing users, and troubleshooting common subscription issues to ensure your users have access to Amazon Q Developer features.
-
-#### Topics
+Phần này giúp bạn hiểu và quản lý đăng ký Amazon Q Developer, bao gồm cấu hình các tính năng của Amazon Q Developer, hủy đăng ký người dùng và khắc phục các sự cố đăng ký phổ biến để đảm bảo người dùng của bạn có quyền truy cập vào các tính năng của Amazon Q Developer.
 
 - [Amazon Q Developer Pro Region support](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-regions.html)
 

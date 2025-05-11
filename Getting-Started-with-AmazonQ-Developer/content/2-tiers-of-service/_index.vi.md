@@ -6,10 +6,10 @@ chapter = false
 pre = "<b>2. </b>"
 +++
 
-When you use Amazon Q Developer, you either use Amazon Q Developer Pro, which is a paid subscription service, or you use Amazon Q Developer at the Free tier. Review the following information to understand what's offered at each tier.
+Khi bạn sử dụng Amazon Q Developer, bạn sẽ sử dụng gói Amazon Q Developer Pro, là một dịch vụ đăng ký trả phí, hoặc bạn sẽ sử dụng Amazon Q Developer ở gói Miễn phí. Hãy xem xét thông tin sau để hiểu những gì được cung cấp ở mỗi gói.
 
-- **Amazon Q Developer Pro tier** – The Pro tier is a paid version of the Amazon Q Developer service. This gives you access to advanced features, such as customization, as well as higher usage limits. To use Amazon Q Developer Pro, you must be a user in IAM Identity Center, and your administrator must subscribe you to Amazon Q Developer Pro.
+- **Amazon Q Developer Pro tier** – Gói Pro là phiên bản trả phí của dịch vụ Amazon Q Developer. Gói này cung cấp cho bạn quyền truy cập vào các tính năng nâng cao, chẳng hạn như tùy chỉnh, cũng như giới hạn sử dụng cao hơn. Để sử dụng Amazon Q Developer Pro, bạn phải là người dùng trong IAM Identity Center và quản trị viên của bạn phải đăng ký bạn vào Amazon Q Developer Pro.
 
-- **Amazon Q Developer Free tier** – Amazon Q Developer offers a perpetual Free tier with monthly limits, including for users authenticating with AWS Builder ID. The features available to you depends on your interface and on how you authenticate.
+- **Amazon Q Developer Free tier** – Amazon Q Developer cung cấp một gói Miễn phí vĩnh viễn với giới hạn hàng tháng, bao gồm cả người dùng xác thực bằng AWS Builder ID. Các tính năng có sẵn cho bạn tùy thuộc vào giao diện bạn sử dụng và cách bạn xác thực.
 
-For more information about pricing tiers and feature availability, see the [Amazon Q Developer pricing page](https://aws.amazon.com/q/developer/pricing).
+Để biết thêm thông tin về các gói giá và tính năng có sẵn, hãy xem [Amazon Q Developer pricing page](https://aws.amazon.com/q/developer/pricing).
