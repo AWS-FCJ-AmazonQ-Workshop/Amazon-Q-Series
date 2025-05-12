@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/1-features/</loc>
+    <loc>//localhost:1313/1-open-redirect-vulnerability/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/1-features/"
+                href="//localhost:1313/vi/1-open-redirect-vulnerability/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/1-features/"
+                href="//localhost:1313/1-open-redirect-vulnerability/"
                 />
   </url><url>
     <loc>//localhost:1313/</loc>
@@ -28,43 +28,17 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-tiers-of-service/2-free-tier/</loc>
+    <loc>//localhost:1313/2-sql-injection/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-tiers-of-service/2-free-tier/"
+                href="//localhost:1313/vi/2-sql-injection/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-tiers-of-service/2-free-tier/"
-                />
-  </url><url>
-    <loc>//localhost:1313/2-tiers-of-service/1-pro-tier/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-tiers-of-service/1-pro-tier/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-tiers-of-service/1-pro-tier/"
-                />
-  </url><url>
-    <loc>//localhost:1313/2-tiers-of-service/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-tiers-of-service/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-tiers-of-service/"
+                href="//localhost:1313/2-sql-injection/"
                 />
   </url><url>
     <loc>//localhost:1313/3-getting-started/1-in-visual-studio-code/</loc>
