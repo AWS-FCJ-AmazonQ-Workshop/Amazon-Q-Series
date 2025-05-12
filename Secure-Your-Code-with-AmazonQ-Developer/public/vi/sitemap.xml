@@ -41,56 +41,69 @@
                 href="//localhost:1313/vi/2-sql-injection/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/3-getting-started/2-operational-investigations/</loc>
+    <loc>//localhost:1313/vi/3-improper-privilege-management/</loc>
     <lastmod>2024-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-getting-started/2-operational-investigations/"
+                href="//localhost:1313/3-improper-privilege-management/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-getting-started/2-operational-investigations/"
+                href="//localhost:1313/vi/3-improper-privilege-management/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/3-getting-started/1-in-visual-studio-code/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-getting-started/1-in-visual-studio-code/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-getting-started/1-in-visual-studio-code/"
-                />
-  </url><url>
-    <loc>//localhost:1313/vi/3-getting-started/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-getting-started/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-getting-started/"
-                />
-  </url><url>
-    <loc>//localhost:1313/vi/4-conclusion/</loc>
+    <loc>//localhost:1313/vi/7-conclusion/</loc>
     <lastmod>2024-08-19T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/4-conclusion/"
+                href="//localhost:1313/7-conclusion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/4-conclusion/"
+                href="//localhost:1313/vi/7-conclusion/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/4-path-traversal/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4-path-traversal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4-path-traversal/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/5-os-command-injection/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-os-command-injection/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-os-command-injection/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/6-aws-credentials-logged/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6-aws-credentials-logged/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6-aws-credentials-logged/"
                 />
   </url><url>
     <loc>//localhost:1313/vi/categories/</loc>
