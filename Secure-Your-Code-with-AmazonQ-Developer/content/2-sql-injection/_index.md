@@ -33,7 +33,7 @@ SQL injection vulnerability is present within code when user-provided inputs are
    ```
 
 2. Click on Amazon Q in the status bar and run Project Scan to see how the SQL Injection Vulnerability is detected.
-   ![Secure-code](/images/1/secure-code-1.png?width=90pc)
+   ![autoscans](/images/1/autoscans.png?width=90pc)
 
 3. Select **Review workspace** or **Review active file**
    ![SQL-Injection](/images/2/sql-injection-1.png?width=90pc)

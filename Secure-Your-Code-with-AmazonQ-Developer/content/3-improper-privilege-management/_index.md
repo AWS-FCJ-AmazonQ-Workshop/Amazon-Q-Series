@@ -23,7 +23,7 @@ Privilege escalation occurs when a malicious user exploits a bug, design flaw, o
    ```
 
 2. Click on Amazon Q in the status bar and run Project Scan to see how the Improper Privilege Management Vulnerability is detected.
-   ![Secure-code](/images/1/secure-code-1.png?width=90pc)
+   ![autoscans](/images/1/autoscans.png?width=90pc)
 
 3. Select **Review workspace** or **Review active file**
    ![Privilege-1](/images/3/Privilege-1.png?width=90pc)

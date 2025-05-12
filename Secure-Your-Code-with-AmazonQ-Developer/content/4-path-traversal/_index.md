@@ -25,7 +25,7 @@ Constructing path names with unsanitized user input can lead to path traversal a
    ```
 
 2. Click on Amazon Q in the status bar and run Project Scan to see how the Path Traversal Vulnerability is detected.
-   ![Secure-code](/images/1/secure-code-1.png?width=90pc)
+   ![autoscans](/images/1/autoscans.png?width=90pc)
 
 3. The following finding will be visible in the status bar
    ![Path-Traversal-1](/images/4/Path-Traversal-1.png?width=90pc)
