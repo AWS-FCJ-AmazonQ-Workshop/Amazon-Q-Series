@@ -6,9 +6,9 @@ chapter = false
 pre = "<b>3. </b>"
 +++
 
-Privilege escalation occurs when a malicious user exploits a bug, design flaw, or configuration error in an application or operating system to gain elevated access to the system. Elevated privileges can be used to delete files, view private information, or install unwanted programs or backdoors.
+Leo thang đặc quyền xảy ra khi một người dùng độc hại khai thác một lỗi (bug), lỗ hổng thiết kế hoặc lỗi cấu hình trong một ứng dụng hoặc hệ điều hành để giành được quyền truy cập cao hơn vào hệ thống. Các đặc quyền nâng cao có thể được sử dụng để xóa tệp, xem thông tin riêng tư hoặc cài đặt các chương trình hoặc backdoor không mong muốn.
 
-1. Copy the following code within your IDE.
+1. Sao chép đoạn mã sau vào IDE của bạn.
 
    ```
    def set_user_noncompliant():
@@ -22,24 +22,24 @@ Privilege escalation occurs when a malicious user exploits a bug, design flaw, o
        os.setuid(root)
    ```
 
-2. Click on Amazon Q in the status bar and run Project Scan to see how the Improper Privilege Management Vulnerability is detected.
-   ![Secure-code](/images/1/secure-code-1.png?width=90pc)
+2. Nhấp vào **Amazon Q** trên thanh trạng thái và chạy **Project Scan** để xem cách phát hiện Lỗ hổng Quản lý Đặc quyền Không Đúng cách.
+   ![autoscans](/images/1/autoscans.png?width=90pc)
 
-3. Select **Review workspace** or **Review active file**
+3. Chọn **Review workspace** or **Review active file**
    ![Privilege-1](/images/3/Privilege-1.png?width=90pc)
 
-4. The following finding will be visible in the status bar
+4. Phát hiện sau sẽ hiển thị trên thanh trạng thái
    ![Privilege-2](/images/3/Privilege-2.png?width=90pc)
 
-5. To views details of the findings, hold your cursor over the insecure code and click on "View Details" to learn more:
+5. Để xem chi tiết các phát hiện, giữ con trỏ chuột trên đoạn mã không an toàn và nhấp vào "View Details" để tìm hiểu thêm:
    ![Privilege-3](/images/3/Privilege-3.png?width=90pc)
    ![Privilege-4](/images/3/Privilege-4.png?width=90pc)
 
-6. Running processes as root should be avoided whenever possible because it can lead to severe security vulnerabilities, including unauthorized access, privilege escalation, and potential system compromise.
+6. Nên tránh chạy các tiến trình với quyền root bất cứ khi nào có thể vì nó có thể dẫn đến các lỗ hổng bảo mật nghiêm trọng, bao gồm truy cập trái phép, leo thang đặc quyền và khả năng hệ thống bị xâm nhập.
 
-   Always follow the principle of least privilege, meaning that processes should run with the minimum permissions necessary to perform their required tasks. This reduces the risk and potential impact of a security breach.
+   Luôn tuân theo nguyên tắc đặc quyền tối thiểu, nghĩa là các tiến trình chỉ nên chạy với các quyền tối thiểu cần thiết để thực hiện các tác vụ được yêu cầu của chúng. Điều này làm giảm rủi ro và tác động tiềm ẩn của một cuộc tấn công bảo mật.
 
-   Below is an example of how this code can be fixed. Make sure to save the file prior to re-running the scan.
+   Dưới đây là một ví dụ về cách khắc phục đoạn mã này. Đảm bảo lưu tệp trước khi chạy lại quá trình quét.
 
    ```
    def set_user_compliant():
@@ -53,4 +53,4 @@ Privilege escalation occurs when a malicious user exploits a bug, design flaw, o
        os.setuid(root)
    ```
 
-7. Try fixing the issue and running the scan again.
+7. Thử khắc phục vấn đề và chạy lại quá trình quét.

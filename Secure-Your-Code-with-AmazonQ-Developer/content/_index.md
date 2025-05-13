@@ -1,11 +1,11 @@
 +++
-title = "Securing Your Code With Amazon Q Developer"
+title = "Secure Your Code With Amazon Q Developer"
 date = 2024
 weight = 1
 chapter = false
 +++
 
-# Securing Your Code With Amazon Q Developer
+# Secure Your Code With Amazon Q Developer
 
 Amazon Q can scan your codebase for security vulnerabilities and code quality issues to improve the posture of your applications throughout the development cycle. You can initiate a scan of an entire codebase, analyzing all files in your local project or workspace, or enable auto scans that assess your code as you write it.
 
@@ -28,4 +28,4 @@ Amazon Q can scan your entire codebase, or auto-scan your code as you write it. 
 1. Choose the text, Amazon Q, from the rectangular area at the bottom of the IDE window.
 2. A drop-down window will appear at the top from which the user may choose Run Project Scan.
 
-![Secure-code](/images/1/secure-code-1.png?width=90pc)
+![autoscans](/images/1/autoscans.png?width=90pc)

@@ -1,29 +1,31 @@
 +++
-title = "Khả năng quan sát với Amazon ECS"
+title = "Bảo Mật Code Của Bạn Với Amazon Q Developer"
 date = 2024
 weight = 1
 chapter = false
 +++
 
-# Observability with Amazon ECS
+# Bảo Mật Code Của Bạn Với Amazon Q Developer
 
-Khả năng quan sát là khả năng liên tục tạo và khám phá những thông tin chi tiết hữu ích dựa trên các tín hiệu từ hệ thống đang được theo dõi. Nói cách khác, khả năng quan sát cho phép người dùng hiểu được trạng thái của hệ thống từ các đầu ra bên ngoài của nó và thực hiện các hành động phù hợp. Ba trụ cột của khả năng quan sát là số liệu (metrics), nhật ký (logs) và dấu vết (traces):
+Amazon Q có thể quét codebase của bạn để tìm các lỗ hổng bảo mật và các vấn đề về chất lượng mã nhằm cải thiện trạng thái bảo mật của các ứng dụng của bạn trong suốt chu kỳ phát triển. Bạn có thể bắt đầu quét toàn bộ codebase, phân tích tất cả các tệp trong dự án hoặc không gian làm việc cục bộ của bạn, hoặc bật tính năng tự động quét để đánh giá mã của bạn khi bạn viết.
 
-#### Số liệu (Metrics)
+Điều này giúp các ứng dụng của bạn an toàn và có khả năng phục hồi tốt hơn bằng cách làm nổi bật các vấn đề bảo mật như các lỗ hổng cross-site scripting, log injection, quyền truy cập tệp lỏng lẻo, thông tin đăng nhập được mã hóa cứng và hơn thế nữa. Các vấn đề bảo mật được phát hiện càng sớm thì càng ít công việc và nỗ lực cần thiết để khắc phục chúng.
 
-- Số liệu biểu diễn dữ liệu số được đo lường theo các khoảng thời gian. Chúng tận dụng mô hình hóa và dự đoán toán học để hiểu hành vi của hệ thống ở cả hiện tại và tương lai.
-- Chúng hữu ích để xác định xu hướng và cho phép mô hình hóa và dự đoán toán học.
+Quá trình quét được hỗ trợ bởi [Bộ phát hiện Bảo mật](https://docs.aws.amazon.com/codeguru/detector-library/) từ Thư viện Bộ phát hiện Amazon CodeGuru. Khi các chính sách bảo mật được cập nhật và các bộ phát hiện được thêm vào, quá trình quét sẽ tự động tích hợp các bộ phát hiện mới để đảm bảo mã của bạn tuân thủ các chính sách cập nhật nhất.
 
-#### Nhật ký (Logs)
+Amazon Q Developer phát hiện các vi phạm chính sách bảo mật và các lỗ hổng trong mã của bạn bằng cách kiểm thử bảo mật ứng dụng tĩnh (SAST), phát hiện bí mật và quét cơ sở hạ tầng dưới dạng mã (IaC). Các vấn đề bảo mật được tìm thấy trong quá trình quét sẽ được làm nổi bật trong bảng Problems (Vấn đề) trong VS Code.
 
-- Nhật ký bao gồm các bản ghi được đánh dấu thời gian, bất biến, ghi lại các sự kiện rời rạc khi chúng xảy ra theo thời gian. Chúng có giá trị trong việc phát hiện các hành vi mới nổi và khó lường.
-- Chúng đặc biệt hữu ích để khám phá các mô hình hành vi mới nổi và khó lường.
+Trong phần này, chúng ta sẽ sử dụng các tính năng Quét Bảo mật của Q Developer để phát hiện mã không an toàn.
 
-#### Dấu vết (Traces)
+{{% notice note %}}
+Module này cố ý bao gồm các đoạn mã sẽ kích hoạt các phát hiện quét bảo mật. Các đoạn mã trong module này chỉ nên được sử dụng cho mục đích trình diễn.
+{{% /notice %}}
 
-- Dấu vết mô tả một chuỗi các sự kiện phân tán, liên kết với nhau, vạch ra hành trình đầu cuối của một yêu cầu thông qua một hệ thống phân tán. Chúng cung cấp thông tin chi tiết, chẳng hạn như độ trễ, về đường đi của một yêu cầu và cấu trúc của nó.
-- Chúng cung cấp khả năng hiển thị cả đường đi mà một yêu cầu đã đi qua cũng như cấu trúc của một yêu cầu.
+Amazon Q có thể quét toàn bộ codebase của bạn hoặc tự động quét mã của bạn khi bạn viết. Cho mục đích của workshop này, chúng ta sẽ sử dụng quét dựa trên dự án. Có thể quét tối đa 100 MB mã cùng một lúc.
 
-![Observability](/images/1/Observability.png?width=90pc)
+#### Scan dự án của bạn
 
-Tóm lại, chúng ta có thể chia khả năng quan sát thành ba thành phần chính: CloudWatch Metrics, CloudWatch Logs và AWS X-Ray. Cùng nhau, chúng tạo thành một giải pháp khả năng quan sát toàn diện trên AWS, bao gồm giám sát số liệu, quản lý nhật ký và theo dõi phân tán. Các trụ cột này phối hợp với nhau để cung cấp cho người dùng những hiểu biết sâu sắc về hành vi, hiệu suất và độ tin cậy của môi trường và ứng dụng AWS của họ.
+1. Chọn chữ Amazon Q từ vùng hình chữ nhật ở dưới cùng cửa sổ IDE.
+2. Một cửa sổ thả xuống sẽ xuất hiện ở trên cùng, từ đó người dùng có thể chọn **Run Project Scan**.
+
+![autoscans](/images/1/autoscans.png?width=90pc)

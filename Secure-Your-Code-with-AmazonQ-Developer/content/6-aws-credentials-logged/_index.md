@@ -1,5 +1,5 @@
 +++
-title = "Getting started with Amazon Q Developer"
+title = "AWS credentials logged"
 date = 2024-05-14T00:38:32+07:00
 weight = 6
 chapter = false

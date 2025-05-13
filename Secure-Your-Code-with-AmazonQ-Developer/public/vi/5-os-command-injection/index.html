@@ -9,24 +9,24 @@
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Getting started with Amazon Q Developer :: AWS Serverless</title>
+    <title>OS Command Injection :: AWS Serverless</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1747065572" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1747110292" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1747065572" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1747110292" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1747065572"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1747110292"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1747065572"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1747065572"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1747110292"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1747110292"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1747065572"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1747110292"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-open-redirect-vulnerability/" title="Open Redirect Vulnerability" class="dd-item 
+    <li data-nav-id="/vi/1-open-redirect-vulnerability/" title="Lỗ hổng Open Redirect" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/vi/1-open-redirect-vulnerability/">
-          <b>1. </b>Open Redirect Vulnerability
+          <b>1. </b>Lỗ hổng Open Redirect
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,13 +186,13 @@
  
   
     
-    <li data-nav-id="/vi/5-os-command-injection/" title="Getting started with Amazon Q Developer" class="dd-item 
+    <li data-nav-id="/vi/5-os-command-injection/" title="OS Command Injection" class="dd-item 
         
         active
         
         ">
       <a href="//localhost:1313/vi/5-os-command-injection/">
-          <b>5. </b>Getting started with Amazon Q Developer
+          <b>5. </b>OS Command Injection
           
             <i class="fas fa-check read-icon"></i>
           
@@ -212,13 +212,13 @@
  
   
     
-    <li data-nav-id="/vi/6-aws-credentials-logged/" title="Getting started with Amazon Q Developer" class="dd-item 
+    <li data-nav-id="/vi/6-aws-credentials-logged/" title="AWS credentials logged" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/vi/6-aws-credentials-logged/">
-          <b>6. </b>Getting started with Amazon Q Developer
+          <b>6. </b>AWS credentials logged
           
             <i class="fas fa-check read-icon"></i>
           
@@ -393,7 +393,7 @@
             
           
           
-            <a href='//localhost:1313/vi/'>Khả năng quan sát với Amazon ECS</a> > Getting started with Amazon Q Developer
+            <a href='//localhost:1313/vi/'>Bảo Mật Code Của Bạn Với Amazon Q Developer</a> > OS Command Injection
           
         
           
@@ -420,7 +420,7 @@
           
             <h1>
               
-              Getting started with Amazon Q Developer
+              OS Command Injection
             </h1>
           
 
@@ -428,10 +428,10 @@
 
 
 
-	<p>Constructing operating system or shell commands with unsanitized user input can lead to inadvertently running malicious code. This kind of vulnerability allows an attacker to execute arbitrary commands on the host operating system under the privileges of the vulnerable application. Command injection attacks can lead to a wide range of malicious outcomes, including unauthorized data access, data corruption, denial of service, and complete system compromise.</p>
+	<p>Việc xây dựng các lệnh hệ điều hành hoặc shell với đầu vào không được làm sạch của người dùng có thể dẫn đến vô tình chạy mã độc hại. Loại lỗ hổng này cho phép kẻ tấn công thực thi các lệnh tùy ý trên hệ điều hành máy chủ với các đặc quyền của ứng dụng dễ bị tấn công. Các cuộc tấn công command injection có thể dẫn đến nhiều kết quả độc hại, bao gồm truy cập dữ liệu trái phép, hỏng dữ liệu, từ chối dịch vụ và xâm nhập hệ thống hoàn toàn.</p>
 <ol>
 <li>
-<p>Copy the following code within your IDE.</p>
+<p>Sao chép đoạn mã sau vào IDE của bạn.</p>
 <pre tabindex="0"><code>def exec_command_noncompliant():
 
     from paramiko import client
@@ -451,17 +451,17 @@
     client.exec_command(cmd)
 </code></pre></li>
 <li>
-<p>Run Amazon Q Project Scan to see how the OS command injection vulnerability is detected.
+<p>Chạy <strong>Amazon Q Project Sca</strong>n để xem cách phát hiện lỗ hổng OS command injection.
 <img alt="OS-1" src="//localhost:1313/images/5/OS-1.png?width=90pc"></p>
 </li>
 <li>
-<p>To views details of the findings, hold your cursor over the insecure code and click on &ldquo;View Details&rdquo; to learn more:
+<p>Để xem chi tiết các phát hiện, giữ con trỏ chuột trên đoạn mã không an toàn và nhấp vào &ldquo;View Details&rdquo; để tìm hiểu thêm:
 <img alt="OS-2" src="//localhost:1313/images/5/OS-2.png?width=90pc"></p>
 </li>
 <li>
-<p>Whenever possible, avoid constructing shell commands with user inputs. Use language-specific APIs or libraries designed to perform the required actions without invoking the shell.</p>
-<p>Input Validation and Sanitization: If you must include user input in a shell command, rigorously validate the input to ensure it conforms to expected formats (e.g., alphanumeric only). Sanitize the input by escaping or removing potentially dangerous characters.</p>
-<p>Below is an example of how this code can be fixed. Make sure to save the file prior to re-running the scan.</p>
+<p>Bất cứ khi nào có thể, hãy tránh xây dựng các lệnh shell với đầu vào của người dùng. Sử dụng các API hoặc thư viện dành riêng cho ngôn ngữ được thiết kế để thực hiện các hành động cần thiết mà không cần gọi shell.</p>
+<p><strong>Xác thực và Làm sạch Đầu vào</strong>: Nếu bạn phải bao gồm đầu vào của người dùng trong một lệnh shell, hãy xác thực nghiêm ngặt đầu vào để đảm bảo nó tuân thủ các định dạng dự kiến (ví dụ: chỉ chữ và số). Làm sạch đầu vào bằng cách thoát hoặc loại bỏ các ký tự có khả năng gây nguy hiểm.</p>
+<p>Dưới đây là một ví dụ về cách khắc phục đoạn mã này. Đảm bảo lưu tệp trước khi chạy lại quá trình quét.</p>
 <pre tabindex="0"><code>from paramiko import SSHClient, AutoAddPolicy
 import os
 import shlex
@@ -666,7 +666,7 @@ def exec_command_compliant():
 			<a class="nav nav-prev" href="//localhost:1313/vi/4-path-traversal/" title="Path Traversal"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="//localhost:1313/vi/6-aws-credentials-logged/" title="Getting started with Amazon Q Developer" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="//localhost:1313/vi/6-aws-credentials-logged/" title="AWS credentials logged" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -676,19 +676,19 @@ def exec_command_compliant():
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1747065572"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1747065572"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1747065572"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1747065572"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1747065572"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1747065572"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1747110292"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1747110292"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1747110292"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1747110292"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1747110292"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1747110292"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1747065572"></script>
-    <script src="//localhost:1313/js/learn.js?1747065572"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1747065572"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1747110292"></script>
+    <script src="//localhost:1313/js/learn.js?1747110292"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1747110292"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1747065572" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1747065572"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1747110292" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1747110292"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

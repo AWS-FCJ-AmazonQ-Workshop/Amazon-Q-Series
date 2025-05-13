@@ -84,7 +84,7 @@ Choose this option to use Amazon Q for free. You do not need an AWS Account, how
 15. Once done, you can switch back to your IDE. You have successfully logged into Amazon Q with Builder ID. A Q Chat window should automatically open for you.
     ![AmazonQ-18](/images/3/AmazonQ-7.png?width=90pc)
 
-You can now skip to [**_Ask Amazon Q a question in the IDE_**](Ask Amazon Q a question in the IDE).
+You can now skip to [**_Ask Amazon Q a question in the IDE_**](https://aws-fcj-amazonq-workshop.github.io/Amazon-Q-Series/Getting-Started-with-AmazonQ-Developer/3-getting-started/1-in-visual-studio-code/#ask-amazon-q-a-question-in-the-ide).
 
 #### Pro license with AWS IAM Identity Center
 

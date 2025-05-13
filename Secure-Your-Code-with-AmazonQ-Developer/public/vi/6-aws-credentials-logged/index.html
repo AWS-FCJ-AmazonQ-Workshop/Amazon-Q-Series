@@ -9,24 +9,24 @@
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Getting started with Amazon Q Developer :: AWS Serverless</title>
+    <title>AWS credentials logged :: AWS Serverless</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1747065572" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1747065572" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1747110292" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1747110292" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1747065572" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1747110292" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1747065572"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1747110292"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1747065572"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1747065572"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1747110292"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1747110292"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1747065572"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1747110292"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-open-redirect-vulnerability/" title="Open Redirect Vulnerability" class="dd-item 
+    <li data-nav-id="/vi/1-open-redirect-vulnerability/" title="Lỗ hổng Open Redirect" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/vi/1-open-redirect-vulnerability/">
-          <b>1. </b>Open Redirect Vulnerability
+          <b>1. </b>Lỗ hổng Open Redirect
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,13 +186,13 @@
  
   
     
-    <li data-nav-id="/vi/5-os-command-injection/" title="Getting started with Amazon Q Developer" class="dd-item 
+    <li data-nav-id="/vi/5-os-command-injection/" title="OS Command Injection" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/vi/5-os-command-injection/">
-          <b>5. </b>Getting started with Amazon Q Developer
+          <b>5. </b>OS Command Injection
           
             <i class="fas fa-check read-icon"></i>
           
@@ -212,13 +212,13 @@
  
   
     
-    <li data-nav-id="/vi/6-aws-credentials-logged/" title="Getting started with Amazon Q Developer" class="dd-item 
+    <li data-nav-id="/vi/6-aws-credentials-logged/" title="AWS credentials logged" class="dd-item 
         
         active
         
         ">
       <a href="//localhost:1313/vi/6-aws-credentials-logged/">
-          <b>6. </b>Getting started with Amazon Q Developer
+          <b>6. </b>AWS credentials logged
           
             <i class="fas fa-check read-icon"></i>
           
@@ -393,7 +393,7 @@
             
           
           
-            <a href='//localhost:1313/vi/'>Khả năng quan sát với Amazon ECS</a> > Getting started with Amazon Q Developer
+            <a href='//localhost:1313/vi/'>Bảo Mật Code Của Bạn Với Amazon Q Developer</a> > AWS credentials logged
           
         
           
@@ -420,7 +420,7 @@
           
             <h1>
               
-              Getting started with Amazon Q Developer
+              AWS credentials logged
             </h1>
           
 
@@ -428,10 +428,10 @@
 
 
 
-	<p>In this vulnerability, unencrypted AWS credentials can be logged which can expose those credentials to an attacker. Encrypt sensitive data, such as credentials, before they are logged to make the code more secure.</p>
+	<p>Trong lỗ hổng này, các thông tin đăng nhập AWS chưa được mã hóa có thể bị ghi nhật ký, điều này có thể làm lộ các thông tin đăng nhập đó cho kẻ tấn công. Mã hóa dữ liệu nhạy cảm, chẳng hạn như thông tin đăng nhập, trước khi chúng được ghi nhật ký để làm cho mã an toàn hơn.</p>
 <ol>
 <li>
-<p>Copy the following code within your IDE.</p>
+<p>Sao chép đoạn mã sau vào IDE của bạn.</p>
 <pre tabindex="0"><code>def log_credentials_noncompliant():
 
     import boto3
@@ -455,16 +455,16 @@
     logging.info(&#39;secret access key: &#39;, secret_key)
 </code></pre></li>
 <li>
-<p>Run Amazon Q Project Scan to see how the this vulnerability is detected.
+<p>Chạy <strong>Amazon Q Project Scan</strong> để xem cách phát hiện lỗ hổng này.
 <img alt="credentials-logged-1" src="//localhost:1313/images/6/credentials-logged-1.png?width=90pc"></p>
 </li>
 <li>
-<p>To views details of the findings, hold your cursor over the insecure code and click on &ldquo;View Details&rdquo; to learn more:
+<p>Để xem chi tiết các phát hiện, giữ con trỏ chuột trên đoạn mã không an toàn và nhấp vào &ldquo;View Details&rdquo; để tìm hiểu thêm:
 <img alt="credentials-logged-2" src="//localhost:1313/images/6/credentials-logged-2.png?width=90pc"></p>
 </li>
 <li>
-<p>Avoid logging sensitive information such as access keys or secret keys. For AWS resource access management, prefer IAM roles over static access and secret keys, especially for applications running on AWS services like EC2, Lambda, etc. IAM roles provide temporary credentials automatically managed by AWS.</p>
-<p>Below is an example of how this code can be fixed. Make sure to save the file prior to re-running the scan.</p>
+<p>Tránh ghi nhật ký thông tin nhạy cảm như khóa truy cập hoặc khóa bí mật. Để quản lý quyền truy cập tài nguyên AWS, hãy ưu tiên sử dụng vai trò IAM hơn là khóa truy cập và khóa bí mật tĩnh, đặc biệt đối với các ứng dụng chạy trên các dịch vụ AWS như EC2, Lambda, v.v. Vai trò IAM cung cấp thông tin đăng nhập tạm thời được AWS tự động quản lý.</p>
+<p>Dưới đây là một ví dụ về cách khắc phục đoạn mã này. Đảm bảo lưu tệp trước khi chạy lại quá trình quét.</p>
 <pre tabindex="0"><code>def log_credentials_compliant():
 
     import boto3
@@ -653,7 +653,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="//localhost:1313/vi/5-os-command-injection/" title="Getting started with Amazon Q Developer"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="//localhost:1313/vi/5-os-command-injection/" title="OS Command Injection"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="//localhost:1313/vi/7-conclusion/" title="Conclution" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -666,19 +666,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1747065572"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1747065572"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1747065572"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1747065572"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1747065572"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1747065572"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1747110292"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1747110292"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1747110292"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1747110292"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1747110292"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1747110292"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1747065572"></script>
-    <script src="//localhost:1313/js/learn.js?1747065572"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1747065572"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1747110292"></script>
+    <script src="//localhost:1313/js/learn.js?1747110292"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1747110292"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1747065572" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1747065572"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1747110292" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1747110292"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,14 +1,14 @@
 +++
-title = "Getting started with Amazon Q Developer"
+title = "OS Command Injection"
 date = 2024-05-14T00:38:32+07:00
 weight = 5
 chapter = false
 pre = "<b>5. </b>"
 +++
 
-Constructing operating system or shell commands with unsanitized user input can lead to inadvertently running malicious code. This kind of vulnerability allows an attacker to execute arbitrary commands on the host operating system under the privileges of the vulnerable application. Command injection attacks can lead to a wide range of malicious outcomes, including unauthorized data access, data corruption, denial of service, and complete system compromise.
+Việc xây dựng các lệnh hệ điều hành hoặc shell với đầu vào không được làm sạch của người dùng có thể dẫn đến vô tình chạy mã độc hại. Loại lỗ hổng này cho phép kẻ tấn công thực thi các lệnh tùy ý trên hệ điều hành máy chủ với các đặc quyền của ứng dụng dễ bị tấn công. Các cuộc tấn công command injection có thể dẫn đến nhiều kết quả độc hại, bao gồm truy cập dữ liệu trái phép, hỏng dữ liệu, từ chối dịch vụ và xâm nhập hệ thống hoàn toàn.
 
-1. Copy the following code within your IDE.
+1. Sao chép đoạn mã sau vào IDE của bạn.
 
    ```
    def exec_command_noncompliant():
@@ -30,16 +30,16 @@ Constructing operating system or shell commands with unsanitized user input can 
        client.exec_command(cmd)
    ```
 
-2. Run Amazon Q Project Scan to see how the OS command injection vulnerability is detected.
+2. Chạy **Amazon Q Project Sca**n để xem cách phát hiện lỗ hổng OS command injection.
    ![OS-1](/images/5/OS-1.png?width=90pc)
 
-3. To views details of the findings, hold your cursor over the insecure code and click on "View Details" to learn more:
+3. Để xem chi tiết các phát hiện, giữ con trỏ chuột trên đoạn mã không an toàn và nhấp vào "View Details" để tìm hiểu thêm:
    ![OS-2](/images/5/OS-2.png?width=90pc)
-4. Whenever possible, avoid constructing shell commands with user inputs. Use language-specific APIs or libraries designed to perform the required actions without invoking the shell.
+4. Bất cứ khi nào có thể, hãy tránh xây dựng các lệnh shell với đầu vào của người dùng. Sử dụng các API hoặc thư viện dành riêng cho ngôn ngữ được thiết kế để thực hiện các hành động cần thiết mà không cần gọi shell.
 
-   Input Validation and Sanitization: If you must include user input in a shell command, rigorously validate the input to ensure it conforms to expected formats (e.g., alphanumeric only). Sanitize the input by escaping or removing potentially dangerous characters.
+   **Xác thực và Làm sạch Đầu vào**: Nếu bạn phải bao gồm đầu vào của người dùng trong một lệnh shell, hãy xác thực nghiêm ngặt đầu vào để đảm bảo nó tuân thủ các định dạng dự kiến (ví dụ: chỉ chữ và số). Làm sạch đầu vào bằng cách thoát hoặc loại bỏ các ký tự có khả năng gây nguy hiểm.
 
-   Below is an example of how this code can be fixed. Make sure to save the file prior to re-running the scan.
+   Dưới đây là một ví dụ về cách khắc phục đoạn mã này. Đảm bảo lưu tệp trước khi chạy lại quá trình quét.
 
    ```
    from paramiko import SSHClient, AutoAddPolicy

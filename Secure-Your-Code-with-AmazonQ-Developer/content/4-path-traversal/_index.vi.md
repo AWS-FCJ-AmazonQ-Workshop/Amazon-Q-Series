@@ -6,9 +6,9 @@ chapter = false
 pre = "<b>4. </b>"
 +++
 
-Constructing path names with unsanitized user input can lead to path traversal attacks (for example, ../../..). This type of attack exploits insufficient security validation/sanitization of user-supplied input file names, allowing attackers to access files or directories that are not intended to be accessible. This can lead to unauthorized access, information disclosure, and even system compromise.
+Việc xây dựng tên đường dẫn với đầu vào không được làm sạch của người dùng có thể dẫn đến các cuộc tấn công path traversal (duyệt đường dẫn) (ví dụ: ../../../). Loại tấn công này khai thác việc xác thực/làm sạch không đầy đủ các tên tệp do người dùng cung cấp, cho phép kẻ tấn công truy cập các tệp hoặc thư mục không được phép truy cập. Điều này có thể dẫn đến truy cập trái phép, tiết lộ thông tin và thậm chí xâm nhập hệ thống.
 
-1. Copy the following code within your IDE.
+1. Sao chép đoạn mã sau vào IDE của bạn.
 
    ```
    def verify_file_path_noncompliant():
@@ -24,16 +24,16 @@ Constructing path names with unsanitized user input can lead to path traversal a
        file.close()
    ```
 
-2. Click on Amazon Q in the status bar and run Project Scan to see how the Path Traversal Vulnerability is detected.
-   ![Secure-code](/images/1/secure-code-1.png?width=90pc)
+2. Nhấp vào **Amazon Q** trên thanh trạng thái và chạy **Project Scan** để xem cách phát hiện Lỗ hổng Path Traversal.
+   ![autoscans](/images/1/autoscans.png?width=90pc)
 
-3. The following finding will be visible in the status bar
+3. Phát hiện sau sẽ hiển thị trên thanh trạng thái
    ![Path-Traversal-1](/images/4/Path-Traversal-1.png?width=90pc)
-4. To views details of the findings, hold your cursor over the insecure code and click on "View Details" to learn more:
+4. Để xem chi tiết các phát hiện, giữ con trỏ chuột trên đoạn mã không an toàn và nhấp vào "View Details" để tìm hiểu thêm:
    ![Path-Traversal-2](/images/4/Path-Traversal-2.png?width=90pc)
-5. Path traversal vulnerabilities can be mitigated by sanitizing user input before using it to construct a file path. This approach involves checking if the user-supplied file path is within a predefined list of allowed paths
+5. Các lỗ hổng path traversal có thể được giảm thiểu bằng cách làm sạch đầu vào của người dùng trước khi sử dụng nó để xây dựng đường dẫn tệp. Cách tiếp cận này bao gồm việc kiểm tra xem đường dẫn tệp do người dùng cung cấp có nằm trong danh sách các đường dẫn được phép xác định trước hay không.
 
-   Below is an example of how this code can be fixed. Make sure to save the file prior to re-running the scan.
+   Dưới đây là một ví dụ về cách khắc phục đoạn mã này. Đảm bảo lưu tệp trước khi chạy lại quá trình quét.
 
    ```
    def verify_file_path_compliant():
@@ -55,4 +55,4 @@ Constructing path names with unsanitized user input can lead to path traversal a
            file.close()
    ```
 
-6. Try fixing the issue and running the scan again.
+6. Thử khắc phục vấn đề và chạy lại quá trình quét.

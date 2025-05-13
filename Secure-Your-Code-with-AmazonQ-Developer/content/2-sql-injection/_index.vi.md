@@ -6,9 +6,9 @@ chapter = false
 pre = "<b>2. </b>"
 +++
 
-SQL injection vulnerability is present within code when user-provided inputs are not sanitized before being used to generate a SQL database query. An attacker can misuse un-trusted input to run query statements that read, modify, or delete database content.
+Lỗ hổng SQL injection xuất hiện trong mã khi các đầu vào do người dùng cung cấp không được làm sạch trước khi được sử dụng để tạo truy vấn cơ sở dữ liệu SQL. Kẻ tấn công có thể lạm dụng đầu vào không đáng tin cậy để chạy các câu lệnh truy vấn đọc, sửa đổi hoặc xóa nội dung cơ sở dữ liệu.
 
-1. Copy the following code within your IDE. This code is vulnerable to SQL injection attack as it constructs the SQL query by directly concatenating user input (name) into the query string. An attacker could manipulate the name parameter to alter the SQL command, potentially gaining unauthorized access to other data in the database, corrupting the data, or even dropping tables.
+1. Sao chép đoạn mã sau vào IDE của bạn. Đoạn mã này dễ bị tấn công SQL injection vì nó xây dựng truy vấn SQL bằng cách nối trực tiếp đầu vào của người dùng (name) vào chuỗi truy vấn. Kẻ tấn công có thể thao túng tham số name để thay đổi lệnh SQL, có khả năng giành quyền truy cập trái phép vào dữ liệu khác trong cơ sở dữ liệu, làm hỏng dữ liệu hoặc thậm chí xóa các bảng.
 
    ```
    def execute_query_noncompliant(request):
@@ -32,22 +32,22 @@ SQL injection vulnerability is present within code when user-provided inputs are
            connection.close()
    ```
 
-2. Click on Amazon Q in the status bar and run Project Scan to see how the SQL Injection Vulnerability is detected.
-   ![Secure-code](/images/1/secure-code-1.png?width=90pc)
+2. Nhấp vào **Amazon Q** trên thanh trạng thái và chạy **Project Scan** để xem cách phát hiện Lỗ hổng SQL Injection.
+   ![autoscans](/images/1/autoscans.png?width=90pc)
 
-3. Select **Review workspace** or **Review active file**
+3. Chọn **Review workspace** or **Review active file**
    ![SQL-Injection](/images/2/sql-injection-1.png?width=90pc)
 
-4. The following finding will be visible in the status bar
+4. Phát hiện sau sẽ hiển thị trên thanh trạng thái
    ![SQL-Injection-2](/images/2/sql-injection-2.png?width=90pc)
 
-5. To views details of the findings, hold your cursor over the insecure code and click on “View Details” to learn more:
+5. Để xem chi tiết các phát hiện, giữ con trỏ chuột trên đoạn mã không an toàn và nhấp vào “View Details” để tìm hiểu thêm:
    ![SQL-Injection-3](/images/2/sql-injection-3.png?width=90pc)
    ![SQL-Injection-3](/images/2/sql-injection-4.png?width=90pc)
 
-6. To fix the SQL Injection vulnerability in the provided code, you should use parameterized queries, also known as prepared statements. This method ensures that user inputs are handled safely, preventing attackers from injecting malicious SQL code.
+6. Để khắc phục lỗ hổng SQL Injection trong đoạn mã được cung cấp, bạn nên sử dụng các truy vấn tham số hóa, còn được gọi là prepared statements. Phương pháp này đảm bảo rằng các đầu vào của người dùng được xử lý an toàn, ngăn chặn kẻ tấn công chèn mã SQL độc hại.
 
-   Below is an example of how this code can be fixed. Make sure to save the file prior to re-running the scan.
+   Dưới đây là một ví dụ về cách khắc phục đoạn mã này. Đảm bảo lưu tệp trước khi chạy lại quá trình quét.
 
    ```
    def execute_query_compliant(request):
@@ -64,4 +64,4 @@ SQL injection vulnerability is present within code when user-provided inputs are
        connection.close()
    ```
 
-7. Try fixing the issue and running the scan again.
+7. Thử khắc phục vấn đề và chạy lại quá trình quét.
