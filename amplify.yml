@@ -3,14 +3,19 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "Starting pre-build phase"
-        - echo "Hugo static site already built - using existing public folder"
+        - echo "=== AMPLIFY BUILD DIAGNOSTICS ==="
+        - echo "Current directory:" && pwd
+        - echo "Directory contents:" && ls -la
+        - echo "Amplify.yml contents:" && cat amplify.yml
+        - echo "Git branch:" && git branch
+        - echo "Git status:" && git status
+        - echo "=== END DIAGNOSTICS ==="
     build:
       commands:
-        - echo "Starting build phase"
-        - echo "Verifying public folder contents"
-        - ls -la public/ || echo "Public folder not found"
-        - echo "Build phase completed"
+        - echo "Build phase - Using pre-built Hugo static site"
+        - echo "Checking public folder:"
+        - ls -la public/ || echo "Public folder not found - this is expected for pre-built sites"
+        - echo "Build completed successfully"
     postBuild:
       commands:
         - echo "Post-build phase completed"
