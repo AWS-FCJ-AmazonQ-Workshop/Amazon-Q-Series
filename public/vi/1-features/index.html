@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.7">
+    <meta name="description" content="">
+<meta name="author" content="journeyoftheaverageguy@gmail.com">
+
+    <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
+
+    <title>Tính năng của Amazon Q Developer :: AWS Serverless</title>
+
+    
+    <link href="//localhost:1313/css/nucleus.css?1750061118" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1750061118" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1750061118" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1750061118" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1750061118" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1750061118" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1750061118" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1750061118" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1750061118" rel="stylesheet">
+    
+    <link href="//localhost:1313/css/theme-workshop.css?1750061118" rel="stylesheet">
+    
+    
+
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1750061118"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="//localhost:1313/vi/1-features/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="//localhost:1313/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1750061118"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1750061118"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/localhost:1313\/\/vi";
+    
+</script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1750061118"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-features/" title="Tính năng của Amazon Q Developer" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="//localhost:1313/vi/1-features/">
+          <b>1. </b>Tính năng của Amazon Q Developer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-tiers-of-service/" title="Các gói dịch vụ của Amazon Q Developer" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/2-tiers-of-service/">
+          <b>2. </b>Các gói dịch vụ của Amazon Q Developer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-tiers-of-service/1-pro-tier/" title="Gói Amazon Q Developer Pro" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/2-tiers-of-service/1-pro-tier/">
+          <b> 2.1 </b>Gói Amazon Q Developer Pro
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-tiers-of-service/2-free-tier/" title="Gói Amazon Q Developer miễn phí" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/2-tiers-of-service/2-free-tier/">
+          <b>  2.2 </b>Gói Amazon Q Developer miễn phí
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-getting-started/" title="Bắt đầu với Amazon Q Developer" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/3-getting-started/">
+          <b>3. </b>Bắt đầu với Amazon Q Developer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-getting-started/1-in-visual-studio-code/" title="Amazon Q Developer trong Visual Studio Code" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/3-getting-started/1-in-visual-studio-code/">
+          <b>3.1 </b>Amazon Q Developer trong Visual Studio Code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-getting-started/2-operational-investigations/" title="Điều tra vận hành với Amazon Q Developer" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/3-getting-started/2-operational-investigations/">
+          <b>3.2 </b>Điều tra vận hành với Amazon Q Developer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-conclusion/" title="Kết luận" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/4-conclusion/">
+          <b>4. </b>Kết luận
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="//localhost:1313/1-features/">English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="//localhost:1313/vi/1-features/" selected>Tiếng Việt</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    
+     <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830891&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
+</left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange> 11/06/2025 </font></i>
+    </left>
+    <left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+
+                <a href="https://www.linkedin.com/in/minhnghia2k3/"  style="color:orange">Le Minh Nghia</a> <br>
+
+                <a href="https://www.linkedin.com/in/trandoancongly/"  style="color:orange">Tran Doan Cong Ly</a> <br>
+
+                <a href="https://www.linkedin.com/in/vanhoangkha/"  style="color:orange">Van Hoang Kha</a>
+        </i>
+        </left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='//localhost:1313/vi/'>Bắt đầu với Amazon Q Developer</a> > Tính năng của Amazon Q Developer
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Tính năng của Amazon Q Developer
+            </h1>
+          
+
+        
+
+
+
+	<h4 id="tổng-quan">Tổng quan</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer là trợ lý AI toàn diện, có mặt trên toàn bộ hệ sinh thái môi trường và dịch vụ AWS, đồng thời hoạt động như một trợ lý lập trình thông minh trong các IDE của bên thứ ba. Dịch vụ này cung cấp giao diện tương tác bằng ngôn ngữ tự nhiên để hỗ trợ các hoạt động liên quan đến AWS, phát triển mã nguồn, khám phá tài nguyên và xử lý sự cố.</p>
+<h4 id="khả-năng-cốt-lõi">Khả năng cốt lõi</h4>
+<h4 id="di-chuyển-và-chuyển-đổi-hệ-thống">Di chuyển và chuyển đổi hệ thống</h4>
+<p><strong>ℹ️ Thông tin</strong>: Tính năng chuyển đổi của Amazon Q Developer hỗ trợ doanh nghiệp thực hiện:</p>
+<ul>
+<li>Khám phá và đánh giá các ứng dụng kế thừa</li>
+<li>Xây dựng chiến lược di chuyển toàn diện</li>
+<li>Triển khai các dự án hiện đại hóa hệ thống</li>
+<li>Quản lý hiệu quả các khối lượng công việc tại chỗ và trên đám mây</li>
+</ul>
+<h4 id="phân-tích-dữ-liệu">Phân tích dữ liệu</h4>
+<p><strong>ℹ️ Thông tin</strong>: Tích hợp Amazon Q với Amazon QuickSight mang lại khả năng:</p>
+<ul>
+<li>Tạo lập báo cáo Business Intelligence tự động</li>
+<li>Tổng hợp và trình bày dữ liệu cho ban lãnh đạo</li>
+<li>Thực hiện truy vấn dữ liệu bằng ngôn ngữ tự nhiên</li>
+<li>Sinh tạo các câu chuyện dữ liệu một cách tự động</li>
+</ul>
+<h4 id="quản-lý-và-quản-trị-hệ-thống">Quản lý và quản trị hệ thống</h4>
+<h4 id="khám-phá-và-quản-lý-nút">Khám phá và quản lý nút</h4>
+<p><strong>ℹ️ Thông tin</strong>: Thông qua AWS Systems Manager và Amazon Q Developer, bạn có thể:</p>
+<ul>
+<li>Thực hiện truy vấn các nút được quản lý bằng ngôn ngữ tự nhiên</li>
+<li>Lọc và sắp xếp kết quả dựa trên đầu vào văn bản</li>
+<li>Truy xuất thông tin chi tiết về nút thông qua hành động ListNodes</li>
+</ul>
+<h4 id="điều-tra-vận-hành-phiên-bản-xem-trước">Điều tra vận hành (Phiên bản xem trước)</h4>
+<p><strong>ℹ️ Thông tin</strong>: Tính năng điều tra vận hành của Amazon Q Developer nâng cao khả năng:</p>
+<ul>
+<li>Điều tra và phân tích sâu các tài nguyên hệ thống</li>
+<li>Giám sát và theo dõi các sự kiện và hoạt động</li>
+<li>Hiểu rõ các kịch bản phức tạp trong môi trường</li>
+<li>Xác định và phân tích mối quan hệ giữa các thành phần trong môi trường AWS</li>
+</ul>
+
+<div class="notices note" ><p><strong>⚠️ Lưu ý quan trọng</strong>: Tính năng điều tra vận hành của Amazon Q hiện đang trong giai đoạn xem trước và có thể có những thay đổi trong tương lai.</p>
+</div>
+
+<h4 id="kiểm-kê-tài-nguyên-aws">Kiểm kê tài nguyên AWS</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer cung cấp các tính năng:</p>
+<ul>
+<li>Truy vấn thông tin tài nguyên AWS bằng ngôn ngữ tự nhiên</li>
+<li>Tạo liên kết trực tiếp đến các tài nguyên liên quan</li>
+<li>Liệt kê và phân loại tài nguyên theo loại hoặc tiêu chí cụ thể</li>
+<li>Lọc dữ liệu dựa trên trạng thái hoạt động và khu vực địa lý</li>
+</ul>
+<h4 id="điện-toán-đám-mây">Điện toán đám mây</h4>
+<h4 id="lựa-chọn-phiên-bản-amazon-ec2">Lựa chọn phiên bản Amazon EC2</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer hỗ trợ bạn:</p>
+<ul>
+<li>Tìm kiếm loại phiên bản tối ưu nhất</li>
+<li>Đánh giá và phân tích yêu cầu khối lượng công việc</li>
+<li>Cân bằng hiệu quả giữa chi phí và hiệu suất</li>
+<li>Xem xét các tùy chọn nhà sản xuất CPU phù hợp</li>
+</ul>
+<p><img alt="ec2-instance-type-finder" src="//localhost:1313/images/1/ec2-instance-type-finder.gif?width=90pc"></p>
+<h4 id="cơ-sở-dữ-liệu">Cơ sở dữ liệu</h4>
+<h4 id="tạo-truy-vấn-bằng-ngôn-ngữ-tự-nhiên">Tạo truy vấn bằng ngôn ngữ tự nhiên</h4>
+<p><strong>ℹ️ Thông tin</strong>: Khả năng sinh tạo SQL của Amazon Q bao gồm:</p>
+<ul>
+<li>Phân tích và hiểu ý định của người dùng</li>
+<li>Nhận diện và áp dụng các mẫu truy vấn phù hợp</li>
+<li>Xử lý thông tin siêu dữ liệu của lược đồ cơ sở dữ liệu</li>
+<li>Tăng tốc độ tạo truy vấn trong Amazon Redshift</li>
+</ul>
+<h4 id="mạng-và-phân-phối-nội-dung">Mạng và phân phối nội dung</h4>
+<h4 id="khắc-phục-sự-cố-mạng">Khắc phục sự cố mạng</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer hỗ trợ các hoạt động:</p>
+<ul>
+<li>Chẩn đoán và xử lý các vấn đề kết nối VPC</li>
+<li>Thực hiện truy vấn cấu hình mạng bằng ngôn ngữ tự nhiên</li>
+<li>Phân tích khả năng truy cập và kết nối</li>
+<li>Khắc phục sự cố thông qua giao diện hội thoại trực quan</li>
+</ul>
+<h4 id="công-cụ-dành-cho-nhà-phát-triển">Công cụ dành cho nhà phát triển</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer cung cấp hỗ trợ phát triển toàn diện:</p>
+<ul>
+<li>Giải thích logic và sinh tạo mã nguồn tự động</li>
+<li>Tạo các bài kiểm thử đơn vị (unit test)</li>
+<li>Cải thiện chất lượng và gỡ lỗi mã nguồn</li>
+<li>Quét và phát hiện các lỗ hổng bảo mật</li>
+</ul>
+<h4 id="tính-năng-phát-triển-mã-nguồn">Tính năng phát triển mã nguồn</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer hỗ trợ:</p>
+<ul>
+<li>Triển khai tính năng thông qua mô tả bằng ngôn ngữ tự nhiên</li>
+<li>Sinh tạo mã nguồn có nhận thức về ngữ cảnh dự án</li>
+<li>Phát triển các dự án trên nền tảng AWS</li>
+<li>Xây dựng ứng dụng tùy chỉnh theo yêu cầu</li>
+</ul>
+<h4 id="tích-hợp-với-môi-trường-phát-triển-ide">Tích hợp với môi trường phát triển (IDE)</h4>
+<p><strong>ℹ️ Thông tin</strong>: Trong các IDE, Amazon Q Developer cung cấp:</p>
+<ul>
+<li>Đề xuất mã nguồn thông minh theo thời gian thực</li>
+<li>Hỗ trợ đa ngôn ngữ lập trình</li>
+<li>Tính năng xem xét và đánh giá mã nguồn</li>
+<li>Quét bảo mật tự động</li>
+<li>Nâng cấp mã nguồn một cách tự động</li>
+</ul>
+<h4 id="giao-diện-dòng-lệnh-và-aws-cloudshell">Giao diện dòng lệnh và AWS CloudShell</h4>
+<p><strong>ℹ️ Thông tin</strong>: Tính năng CLI của Amazon Q Developer bao gồm:</p>
+<ul>
+<li>Tự động hoàn thành lệnh dựa trên ngữ cảnh</li>
+<li>Chuyển đổi từ ngôn ngữ tự nhiên sang mã shell</li>
+<li>Xử lý các truy vấn phức tạp</li>
+<li>Hỗ trợ đa ngôn ngữ lập trình</li>
+</ul>
+<h4 id="tích-hợp-ứng-dụng">Tích hợp ứng dụng</h4>
+<h4 id="tự-động-hóa-dịch-vụ-aws">Tự động hóa dịch vụ AWS</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer cho phép:</p>
+<ul>
+<li>Tự động hóa các quy trình làm việc</li>
+<li>Chuyển đổi từ giao diện Console sang mã nguồn</li>
+<li>Tạo các script tùy chỉnh theo yêu cầu</li>
+<li>Tự động hóa việc cấu hình tài nguyên</li>
+</ul>
+<h4 id="tích-hợp-dữ-liệu">Tích hợp dữ liệu</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer trong AWS Glue cung cấp:</p>
+<ul>
+<li>Hỗ trợ tương tác bằng ngôn ngữ tự nhiên</li>
+<li>Sinh tạo script ETL (Extract, Transform, Load)</li>
+<li>Hỗ trợ khắc phục sự cố</li>
+<li>Hướng dẫn áp dụng các phương pháp thực hành tốt nhất</li>
+</ul>
+<h4 id="công-cụ-của-bên-thứ-ba">Công cụ của bên thứ ba</h4>
+<h4 id="tích-hợp-gitlab">Tích hợp GitLab</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer tích hợp với GitLab Duo để hỗ trợ:</p>
+<ul>
+<li>Các hoạt động phát triển phần mềm</li>
+<li>Quản lý và kiểm soát mã nguồn</li>
+<li>Tự động hóa các hành động nhanh</li>
+<li>Tối ưu hóa quy trình làm việc</li>
+</ul>
+<h4 id="quản-lý-tài-chính-đám-mây">Quản lý tài chính đám mây</h4>
+<h4 id="phân-tích-chi-phí">Phân tích chi phí</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer hỗ trợ bạn:</p>
+<ul>
+<li>Truy vấn thông tin thanh toán và hóa đơn AWS</li>
+<li>Phân tích xu hướng và biến động chi phí</li>
+<li>Giải thích chi tiết các thành phần chi phí</li>
+<li>Truy xuất dữ liệu chi phí theo tài khoản</li>
+</ul>
+<h4 id="hỗ-trợ-khách-hàng">Hỗ trợ khách hàng</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer cung cấp hỗ trợ cho:</p>
+<ul>
+<li>Kích hoạt và thiết lập tài khoản</li>
+<li>Phân tích và tối ưu hóa chi phí</li>
+<li>Điều chỉnh và xử lý hóa đơn</li>
+<li>Phát hiện và ngăn chặn gian lận</li>
+<li>Giám sát tình trạng sức khỏe hệ thống</li>
+<li>Khắc phục sự cố tài nguyên</li>
+</ul>
+<h4 id="quản-lý-phiếu-hỗ-trợ">Quản lý phiếu hỗ trợ</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer hỗ trợ:</p>
+<ul>
+<li>Tạo và quản lý các trường hợp hỗ trợ</li>
+<li>Kết nối trực tiếp với đội ngũ hỗ trợ kỹ thuật</li>
+<li>Lập tài liệu chi tiết về vấn đề</li>
+<li>Theo dõi tiến trình giải quyết</li>
+</ul>
+<h4 id="tích-hợp-ứng-dụng-nhắn-tin">Tích hợp ứng dụng nhắn tin</h4>
+<p><strong>ℹ️ Thông tin</strong>: Amazon Q Developer có sẵn trên các nền tảng:</p>
+<ul>
+<li>Slack</li>
+<li>Microsoft Teams</li>
+<li>Giao diện trò chuyện chuyên dụng của AWS</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="//localhost:1313/vi/" title="Bắt đầu với Amazon Q Developer"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="//localhost:1313/vi/2-tiers-of-service/" title="Các gói dịch vụ của Amazon Q Developer" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="//localhost:1313/js/clipboard.min.js?1750061118"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1750061118"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1750061118"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1750061118"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1750061118"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1750061118"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1750061118"></script>
+    <script src="//localhost:1313/js/learn.js?1750061118"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1750061118"></script>
+
+    <link href="//localhost:1313/mermaid/mermaid.css?1750061118" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1750061118"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
