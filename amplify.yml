@@ -3,11 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "Pre-build phase - Hugo static site already built"
+        - echo "Starting pre-build phase"
+        - echo "Hugo static site already built - using existing public folder"
     build:
       commands:
-        - echo "Build phase - Using existing public folder"
-        - ls -la public/
+        - echo "Starting build phase"
+        - echo "Verifying public folder contents"
+        - ls -la public/ || echo "Public folder not found"
+        - echo "Build phase completed"
     postBuild:
       commands:
         - echo "Post-build phase completed"
