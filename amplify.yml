@@ -1,0 +1,19 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "Pre-build phase - Hugo static site already built"
+    build:
+      commands:
+        - echo "Build phase - Using existing public folder"
+        - ls -la public/
+    postBuild:
+      commands:
+        - echo "Post-build phase completed"
+  artifacts:
+    baseDirectory: public
+    files:
+      - '**/*'
+  cache:
+    paths: []
