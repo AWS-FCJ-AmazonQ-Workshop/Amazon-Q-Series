@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.131.0">
+    <meta name="description" content="">
+<meta name="author" content="journeyoftheaverageguy@gmail.com">
+
+    <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
+
+    <title>Amazon Q Developer in Visual Studio Code :: AWS Serverless</title>
+
+    
+    <link href="//localhost:1313/css/nucleus.css?1746772573" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1746772573" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1746772573" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1746772573" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1746772573" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1746772573" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1746772573" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1746772573" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1746772573" rel="stylesheet">
+    
+    <link href="//localhost:1313/css/theme-workshop.css?1746772573" rel="stylesheet">
+    
+    
+
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1746772573"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="//localhost:1313/vi/3-getting-started/1-in-visual-studio-code/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="//localhost:1313/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1746772573"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1746772573"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/localhost:1313\/\/vi";
+    
+</script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1746772573"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-features/" title="Amazon Q Developer features" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/1-features/">
+          <b>1. </b>Amazon Q Developer features
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-tiers-of-service/" title="Tiers of service for Amazon Q Developer" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/2-tiers-of-service/">
+          <b>2. </b>Tiers of service for Amazon Q Developer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-tiers-of-service/2-free-tier/" title="Amazon Q Developer Free tier" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/2-tiers-of-service/2-free-tier/">
+          <b>2.2 </b>Amazon Q Developer Free tier
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-tiers-of-service/1-pro-tier/" title="Amazon Q Developer Pro tier" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/2-tiers-of-service/1-pro-tier/">
+          <b>2.1 </b>Amazon Q Developer Pro tier
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-getting-started/" title="Getting started with Amazon Q Developer" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="//localhost:1313/vi/3-getting-started/">
+          <b>3. </b>Getting started with Amazon Q Developer
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-getting-started/1-in-visual-studio-code/" title="Amazon Q Developer in Visual Studio Code" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="//localhost:1313/vi/3-getting-started/1-in-visual-studio-code/">
+          <b>3.1 </b>Amazon Q Developer in Visual Studio Code
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-getting-started/2-operational-investigations/" title="Amazon Q Developer operational investigations" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/3-getting-started/2-operational-investigations/">
+          <b>3.2 </b>Amazon Q Developer operational investigations
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-conclusion/" title="Conclution" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/vi/4-conclusion/">
+          <b>4. </b>Conclution
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="//localhost:1313/3-getting-started/1-in-visual-studio-code/">English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="//localhost:1313/vi/3-getting-started/1-in-visual-studio-code/" selected>Tiếng Việt</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    
+     <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830891&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
+</left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>23/04/2025</font></i>
+    </left>
+    <left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+                <a href="https://www.linkedin.com/in/minhnghia2k3/"  style="color:orange">Le Minh Nghia</a> <br>
+
+                <a href="https://www.linkedin.com/in/trandoancongly/"  style="color:orange">Tran Doan Cong Ly</a>
+        </i>
+        </left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='//localhost:1313/vi/'>Getting started with Amazon Q Developer</a> > <a href='//localhost:1313/vi/3-getting-started/'>Getting started with Amazon Q Developer</a> > Amazon Q Developer in Visual Studio Code
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#install-the-amazon-q-extension-in-visual-studio-code">Install the Amazon Q extension in Visual Studio Code</a></li>
+        <li><a href="#install-the-amazon-q-extension">Install the Amazon Q extension</a></li>
+        <li><a href="#authenticate">Authenticate</a></li>
+        <li><a href="#ask-amazon-q-a-question-in-the-ide">Ask Amazon Q a question in the IDE</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Amazon Q Developer in Visual Studio Code
+            </h1>
+          
+
+        
+
+
+
+	<h3 id="install-the-amazon-q-extension-in-visual-studio-code">Install the Amazon Q extension in Visual Studio Code</h3>
+<p>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. Ensure you have installed <a href="https://code.visualstudio.com/download">Visual Studio Code</a> for your operating system. You can find the <a href="https://code.visualstudio.com/docs/setup/setup-overview">setup</a> steps in their official documentation.</p>
+<h3 id="install-the-amazon-q-extension">Install the Amazon Q extension</h3>
+<ol>
+<li>Open <strong>Visual Studio Code</strong></li>
+<li>Click on <strong>Extensions</strong> on the left activity bar.</li>
+<li>In the extensions, search for &ldquo;<strong>Amazon Q</strong>&rdquo;.</li>
+<li>Select <strong>Install</strong> the extension, restart/reload VSCode if required.</li>
+</ol>
+<p><img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQ-1.png?width=90pc"></p>
+<h3 id="authenticate">Authenticate</h3>
+<p>You have 2 options to sign-in and this blog explores both the authentication methods:</p>
+<ol>
+<li>with <a href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/builder-id.html">Builder ID</a> for Individual users with Free Tier</li>
+<li>with <a href="https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/sso-credentials.html">AWS IAM Identity Center</a> for Professional users with Pro Tier</li>
+</ol>
+<p>You might use a workforce identity in IAM Identity Center to represent your work-self and an AWS Builder ID to represent your private-self. These identities operate independently. <a href="https://aws.amazon.com/q/developer/pricing/">Amazon Q Developer Pricing</a> for more details.</p>
+<p><img alt="AmazonQ-2" src="//localhost:1313/images/3/AmazonQ-2.png?width=90pc">
+<em>Source: <strong>Amazon Q Developer Pricing</strong></em></p>
+<p>In the Visual Studio Code, Open Amazon Q from the left Activity Bar. You will be presented with following screen:</p>
+<p><img alt="AmazonQ-3" src="//localhost:1313/images/3/AmazonQ-3.png?width=90pc"></p>
+<h4 id="with-aws-builder-id-no-aws-account-required">With AWS Builder ID (no AWS account required)</h4>
+<p>Choose this option to use Amazon Q for free. You do not need an AWS Account, however, you do need to sign up for an AWS Builder ID. <a href="https://docs.aws.amazon.com/signin/latest/userguide/sign-in-aws_builder_id.html">AWS Builder ID</a> is a personal profile that provides access to <a href="https://docs.aws.amazon.com/signin/latest/userguide/aws_builder_id-apps.html">select tools and services</a>. AWS Builder ID is free. You only pay for the AWS resources you consume in your AWS accounts, which is separate from Builder ID. You can use the same email for your AWS Builder ID and for the root user email of an AWS account.</p>
+<ol>
+<li>
+<p>Select on the first option &ldquo;<strong>Use for Free</strong>&rdquo; and click &ldquo;<strong>Continue</strong>&rdquo;.
+<img alt="AmazonQ-4" src="//localhost:1313/images/3/AmazonQ-4.png?width=90pc"></p>
+</li>
+<li>
+<p>Enter your email address, click <strong>Next</strong>
+<img alt="AmazonQ-5" src="//localhost:1313/images/3/AmazonQ-8.png?width=90pc"></p>
+</li>
+<li>
+<p>Enter your name, click <strong>Next</strong>
+<img alt="AmazonQ-6" src="//localhost:1313/images/3/AmazonQ-9.png?width=90pc"></p>
+</li>
+<li>
+<p>Enter verification code sent to your email, click <strong>Verify</strong>
+<img alt="AmazonQ-8" src="//localhost:1313/images/3/AmazonQ-10.png?width=90pc"></p>
+</li>
+<li>
+<p>Enter your <strong>password</strong> and type the <strong>CAPTCHA</strong>
+<img alt="AmazonQ-9" src="//localhost:1313/images/3/AmazonQ-11.png?width=90pc"></p>
+</li>
+<li>
+<p>Enter the <strong>email address</strong> you used to register for your Builder ID, click <strong>Next</strong>
+<img alt="AmazonQ-7" src="//localhost:1313/images/3/AmazonQ-18.png?width=90pc"></p>
+</li>
+<li>
+<p>Enter the <strong>password</strong> you used to register for your Builder ID, click <strong>Sign in</strong>
+<img alt="AmazonQ-10" src="//localhost:1313/images/3/AmazonQ-12.png?width=90pc"></p>
+</li>
+<li>
+<p>Enter verification code sent to your email, click <strong>Verify</strong>
+<img alt="AmazonQ-11" src="//localhost:1313/images/3/AmazonQ-13.png?width=90pc"></p>
+</li>
+<li>
+<p>You have successfully created a Builder ID account
+<img alt="AmazonQ-12" src="//localhost:1313/images/3/AmazonQ-14.png?width=90pc"></p>
+</li>
+<li>
+<p>In the Visual Studio Code panel, select <strong>Cancel</strong>
+<img alt="AmazonQ-13" src="//localhost:1313/images/3/AmazonQ-15.png?width=90pc"></p>
+</li>
+<li>
+<p>Select the option &ldquo;<strong>Use for Free</strong>&rdquo; and click &ldquo;<strong>Continue</strong>&rdquo;.
+<img alt="AmazonQ-14" src="//localhost:1313/images/3/AmazonQ-16.png?width=90pc"></p>
+</li>
+<li>
+<p>Click <strong>Open</strong>
+<img alt="AmazonQ-15" src="//localhost:1313/images/3/AmazonQ-17.png?width=90pc"></p>
+</li>
+<li>
+<p>Click <strong>Allow access</strong>
+<img alt="AmazonQ-16" src="//localhost:1313/images/3/AmazonQ-5.png?width=90pc"></p>
+</li>
+<li>
+<p>You have successfully approved the request for AWS IDE Extensions for VS Code
+<img alt="AmazonQ-17" src="//localhost:1313/images/3/AmazonQ-6.png?width=90pc"></p>
+</li>
+<li>
+<p>Once done, you can switch back to your IDE. You have successfully logged into Amazon Q with Builder ID. A Q Chat window should automatically open for you.
+<img alt="AmazonQ-18" src="//localhost:1313/images/3/AmazonQ-7.png?width=90pc"></p>
+</li>
+</ol>
+<p>You can now skip to [<strong><em>Ask Amazon Q a question in the IDE</em></strong>](Ask Amazon Q a question in the IDE).</p>
+<h4 id="pro-license-with-aws-iam-identity-center">Pro license with AWS IAM Identity Center</h4>
+
+<div class="notices warning" ><p><strong>Important!</strong>: <em>If you are following this step, you will incur AWS charges. If you are just testing this out, make sure to remove the users at the end to reduce the cost.</em></p>
+</div>
+
+<p>To authenticate via this method, it is important to have an AWS Account with activated IAM Identity Centre. Amazon Q requires IAM Identity Center. If your AWS Organization does not have IAM Identity Center activated. The Account Administrator must first activate IAM Identity Center in this account in order to set up Amazon Q.</p>
+<p>Request your account administrator to create an identity for you in the IAM Identity Center and <a href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-pro-tier-setting-up-access.html">subscribe this identity to Developer Pro</a>.</p>
+<p>Ensure the Account Administrator shares two key items for you to login via Visual Studio Code:</p>
+<ul>
+<li>Start URL</li>
+<li>AWS Region</li>
+</ul>
+<p>These are available in the AWS Console for IAM Identity Center, in the &ldquo;Settings&rdquo; section you will the AWS access portal URL under Identity Source tab.</p>
+<p>In Visual Studio Code, perform following steps to authenticate:</p>
+<ul>
+<li>Click on &ldquo;<strong>Amazon Q</strong>&rdquo; in the Status Bar below for more options like Pause auto-suggestions, open settings or Sign out.
+<img alt="AmazonQ-19" src="//localhost:1313/images/3/AmazonQ-19.png?width=90pc"></li>
+</ul>
+<ol>
+<li>Access the <a href="https://us-east-1.console.aws.amazon.com/amazonq?region=us-east-1">Amazon Q</a></li>
+</ol>
+<ul>
+<li>Select <strong>Amazon Q Developer</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-1.png?width=90pc"></li>
+</ul>
+<ol start="2">
+<li>Select <strong>Get started</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-2.png?width=90pc"></li>
+</ol>
+<ul>
+<li>Enter <strong>Email address</strong>, <strong>First name</strong> &amp; <strong>Last name</strong></li>
+<li>Select <strong>Continue</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-3.png?width=90pc"></li>
+<li>Type <strong>Profile name</strong></li>
+<li>Select <strong>Create</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-4.png?width=90pc"></li>
+</ul>
+<ol start="3">
+<li>You have successfully created a profile for Amazon Q Developer.</li>
+</ol>
+<ul>
+<li>Copy Start URL
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-5.png?width=90pc"></li>
+</ul>
+<ol start="4">
+<li>Access your email address</li>
+</ol>
+<ul>
+<li>Select <strong>Accept invitation</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-6.png?width=90pc"></li>
+</ul>
+<ol start="5">
+<li>At the New User Registration section</li>
+</ol>
+<ul>
+<li>Type the <strong>New password</strong></li>
+<li>Type the <strong>Confirm password</strong></li>
+<li>Click <strong>Set new password</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-7.png?width=90pc"></li>
+</ul>
+<ol start="6">
+<li>Enter <strong>User name</strong> (your email)</li>
+</ol>
+<ul>
+<li>Click <strong>Next</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-8.png?width=90pc"></li>
+</ul>
+<ol start="7">
+<li>Enter your <strong>Password</strong></li>
+</ol>
+<ul>
+<li>Click <strong>Log in</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-9.png?width=90pc"></li>
+</ul>
+<ol start="8">
+<li>At the MFA Device Enrollment section</li>
+</ol>
+<ul>
+<li>Select <strong>Authenticator Application</strong></li>
+<li>Click <strong>Next</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-10.png?width=90pc"></li>
+</ul>
+<ol start="9">
+<li>At the <strong>Set up authenticator app</strong>
+
+<div class="notices info" ><p>If you haven’t installed a virtual MFA app, please install it using the link:
+<a href="https://chromewebstore.google.com/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai">Authenticator Extension</a></p>
+</div>
+</li>
+</ol>
+<ul>
+<li>Click <strong>Show QR code</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-11.png?width=90pc"></li>
+<li>Use the virtual MFA app or your device&rsquo;s camera to scan the QR code.</li>
+<li>Enter <strong>Code from authenticator</strong></li>
+<li>Click <strong>MFA Designation</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-12.png?width=90pc"></li>
+</ul>
+<ol start="10">
+<li>
+<p>Click <strong>Complete</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-13.png?width=90pc"></p>
+</li>
+<li>
+<p>Check the email <strong>Active Your Amazon Q Developer Pro Subscription</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-14.png?width=90pc"></p>
+</li>
+<li>
+<p>On the Sign-in window in Amazon Q, select on the first option &ldquo;<strong>Use with Pro license</strong>&rdquo; and click &ldquo;<strong>Continue</strong>&rdquo;
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-15.png?width=90pc"></p>
+</li>
+<li>
+<p>You will be asked to enter <strong>Start URL</strong> and <strong>AWS Region</strong> we noted earlier.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Click <strong>Continue</strong>
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-16.png?width=90pc"></p>
+</li>
+<li>
+<p>You will get a pop-up with a confirmation code, click on &ldquo;Proceed to browser&rdquo;.</p>
+</li>
+</ul>
+<ol start="14">
+<li>You will be redirected to a web browser. Confirm the code is same and click on &ldquo;<strong>Confirm and continue</strong>&rdquo;.</li>
+</ol>
+<ul>
+<li>This redirects you to sign in to your Identity Center profile. Once done, simply &ldquo;<strong>Allow access</strong>&rdquo;.
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-17.png?width=90pc"></li>
+</ul>
+<ol start="15">
+<li>You have successfully approved the request for AWS IDE Extensions for VS Code
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-18.png?width=90pc"></li>
+<li>You can now switch back to your Visual Studio Code IDE. You have successfully logged into Amazon Q with Pro license.</li>
+</ol>
+<ul>
+<li>A Amazon Q Chat window should automatically open for you.
+<img alt="AmazonQ-1" src="//localhost:1313/images/3/AmazonQpro-19.png?width=90pc"></li>
+</ul>
+<h3 id="ask-amazon-q-a-question-in-the-ide">Ask Amazon Q a question in the IDE</h3>
+<ol>
+<li>Amazon Q can be found in the activity bar in Visual Studio Code.
+<img alt="AmazonQAsk-1" src="//localhost:1313/images/3/AmazonQask-01.png?width=90pc"></li>
+</ol>
+<ul>
+<li>Open your source code or a GitHub repository.</li>
+<li>Select code, right click send to Amazon Q to explain code OR open the file and ask Q to explain the code.
+<img alt="AmazonQAsk-2" src="//localhost:1313/images/3/AmazonQask-02.png?width=90pc"></li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="//localhost:1313/vi/3-getting-started/" title="Getting started with Amazon Q Developer"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="//localhost:1313/vi/3-getting-started/2-operational-investigations/" title="Amazon Q Developer operational investigations" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="//localhost:1313/js/clipboard.min.js?1746772573"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1746772573"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1746772573"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1746772573"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1746772573"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1746772573"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1746772573"></script>
+    <script src="//localhost:1313/js/learn.js?1746772573"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1746772573"></script>
+
+    <link href="//localhost:1313/mermaid/mermaid.css?1746772573" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1746772573"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
