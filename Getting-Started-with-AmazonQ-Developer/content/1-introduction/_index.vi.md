@@ -8,29 +8,35 @@ pre: " <b> 1. </b> "
 
 #### Tổng quan về Amazon Q Developer
 
-Amazon Q Developer là một trợ lý phát triển phần mềm được trang bị trí tuệ nhân tạo (AI) thế hệ mới, giúp tăng tốc và nâng cao hiệu quả toàn bộ vòng đời phát triển phần mềm. Được xây dựng trên nền tảng Amazon Bedrock, Amazon Q Developer cung cấp khả năng hỗ trợ lập trình viên qua các giai đoạn như viết code, cải tiến, kiểm thử, refactor, và nâng cấp ứng dụng trên AWS một cách tự động và thông minh[\[1\]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html).
+Amazon Q Developer là AI assistant thế hệ mới cho dev, giúp tăng tốc và tối ưu toàn bộ software development lifecycle. Build trên Amazon Bedrock, Q Developer hỗ trợ lập trình viên từ code, refactor, test đến upgrade app trên AWS – tất cả đều tự động, smart[\[1\]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html).
 
-Công cụ này tích hợp sâu với các môi trường phát triển phổ biến như Visual Studio Code, JetBrains, và cả CLI, giúp bạn làm việc trực tiếp trong IDE với các đề xuất code đa dòng chính xác cao, chat tương tác trực tiếp, và hỗ trợ coding tự nhiên với bash[\[2\]](https://www.maginative.com/article/amazon-unveils-q-developer-bringing-generative-ai-to-boost-software-development-productivity/).
+Q Developer tích hợp sâu với các IDE hot như Visual Studio Code, JetBrains, và cả CLI, cho phép bạn code trực tiếp với code suggestion đa dòng, chat AI realtime, và hỗ trợ bash tự nhiên[\[2\]](https://www.maginative.com/article/amazon-unveils-q-developer-bringing-generative-ai-to-boost-software-development-productivity/).
 
-#### Các tính năng chính
+#### Tinh năng chính
 
-- **Code Completion (Tự động hoàn thành code):** Gợi ý đoạn code đa dòng theo ngữ cảnh dự án, giúp tăng tốc viết code và giảm lỗi.
-- **Code Improvement (Cải tiến code):** Đề xuất tối ưu, sửa lỗi, và nâng cao chất lượng code, bao gồm cả quét bảo mật và gợi ý khắc phục lỗ hổng.
-- **Code Transformation (Chuyển đổi code):** Hỗ trợ nâng cấp phiên bản ngôn ngữ (ví dụ Java 8 lên Java 17), chuyển đổi nền tảng (.NET từ Windows sang Linux) một cách tự động.
-- **Chat tương tác:** Trò chuyện trực tiếp với AI để hỏi đáp về kiến trúc AWS, tài nguyên, best practices, hoặc giải thích đoạn code phức tạp ngay trong IDE[\[1\]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)[\[2\]](https://www.maginative.com/article/amazon-unveils-q-developer-bringing-generative-ai-to-boost-software-development-productivity/).
+- **Chat:** Hỗ trợ hỏi đáp về code, giải thích code, refactor, sinh code mới từ đầu, và tư vấn về AWS, kiến trúc, best practices. Có thể sử dụng trực tiếp trên IDE, CLI hoặc web[\[1\]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)[\[2\]](https://aws.amazon.com/q/developer/).
+- **Explore:** Truy vấn và tìm hiểu tài nguyên AWS, filter và hỏi đáp bằng ngôn ngữ tự nhiên (chủ yếu trên web/AWS Console)[\[1\]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html).
+- **Suggestions (Code Completion):** Đề xuất code thông minh, tự động gợi ý khi bạn gõ trong IDE hoặc CLI, giúp tiết kiệm thời gian và giảm lỗi[\[1\]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)[\[2\]](https://aws.amazon.com/q/developer/).
+- **Agent:** Thực hiện các tác vụ phức tạp như mô tả, refactor lớn trên nhiều file, tạo pull request, hoặc tự động hóa quy trình phát triển chỉ từ một prompt duy nhất[\[2\]](https://aws.amazon.com/q/developer/).
+- **Code Scans:** Quét và phát hiện lỗ hổng bảo mật, lỗi tiềm ẩn trong code, giải thích nguyên nhân và đề xuất bản sửa lỗi tự động[\[1\]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)[\[2\]](https://aws.amazon.com/q/developer/).
+- **Transformation:** Tự động refactor hoặc nâng cấp toàn bộ dự án khi chuyển đổi phiên bản ngôn ngữ (ví dụ Java 8 → Java 17) hoặc porting nền tảng (.NET Windows → Linux)[\[2\]](https://aws.amazon.com/q/developer/).
+- **Hỗ trợ đa nền tảng:** Sử dụng được trên Web, IDE (Visual Studio Code, JetBrains, Visual Studio, Eclipse Preview), và CLI (MacOS, Linux, Ubuntu)[\[1\]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)[\[2\]](https://aws.amazon.com/q/developer/).
+- **Model Context Protocol (MCP):** Hỗ trợ MCP trên CLI (update 4/2025), cho phép AI truy cập công cụ ngoài, dữ liệu và API theo chuẩn bảo mật, giúp workflow phát triển phong phú và tùy biến hơn[\[4\]](https://aws.amazon.com/about-aws/whats-new/2025/04/amazon-q-developer-cli-model-context-protocol/).
 
-<!-- (Placeholder) -->
+![Chat with Amazon Q Developer on VS Code](/images/1-introduction/image.png?width=40pc)
 
-#### Ứng dụng thực tiễn và trường hợp sử dụng phổ biến
+*Hình 1: Các tính năng nổi bật của Amazon Q Developer*
 
-- **Tăng năng suất lập trình:** Các tổ chức như BT Group và National Australia Bank đã báo cáo tỉ lệ chấp nhận code gợi ý lên đến 37%-50%, đồng thời tăng 20-40% hiệu suất phát triển[\[3\]](https://www.missioncloud.com/blog/what-is-amazon-q-and-how-does-it-unlock-productivity-for-businesses-and-developers).
-- **Nâng cấp và chuyển đổi ứng dụng:** Tự động hóa các tác vụ nâng cấp phiên bản Java hoặc porting .NET giúp tiết kiệm thời gian và giảm chi phí.
-- **Tối ưu hóa tài nguyên AWS:** Hỗ trợ phân tích chi phí, kiến trúc, và vận hành AWS hiệu quả hơn thông qua chat và đề xuất chuyên sâu.
-- **Tạo tài liệu và sơ đồ kiến trúc:** Amazon Q Developer có thể tự động tạo sơ đồ luồng, class diagram, sequence diagram giúp hiểu rõ cấu trúc hệ thống[\[5\]](https://aws.amazon.com/blogs/dotnet/generate-code-documentation-using-amazon-q-developer/).
+#### Ứng dụng thực tiễn
 
-#### Mục tiêu và kỳ vọng của workshop
+- **Boost productivity:** Các công ty như BT Group, National Australia Bank ghi nhận accept code suggestion 37%-50%, productivity tăng 20-40%[\[3\]](https://www.missioncloud.com/blog/what-is-amazon-q-and-how-does-it-unlock-productivity-for-businesses-and-developers).
+- **Upgrade & migrate app:** Tự động nâng version Java, port .NET, tiết kiệm thời gian, giảm chi phí.
+- **Optimize AWS:** Phân tích cost, kiến trúc, vận hành AWS hiệu quả qua chat và đề xuất chuyên sâu.
+- **Generate docs & diagrams:** Tự động tạo flowchart, class diagram, sequence diagram để hiểu hệ thống[\[5\]](https://aws.amazon.com/blogs/dotnet/generate-code-documentation-using-amazon-q-developer/).
 
-- Giúp người học hiểu rõ khái niệm, vai trò và lợi ích của Amazon Q Developer trong phát triển phần mềm hiện đại.
-- Trải nghiệm thực tế các tính năng chính và cách tích hợp Amazon Q Developer vào quy trình làm việc.
-- Nắm bắt best practices để tận dụng tối đa sức mạnh AI trong việc viết, cải tiến và nâng cấp code.
-- Phát triển kỹ năng sử dụng Amazon Q Developer để tăng năng suất, cải thiện chất lượng và bảo mật phần mềm.
+#### Mục tiêu workshop
+
+- ✅ Hiểu rõ vai trò, lợi ích của Amazon Q Developer.
+- ✅ Trải nghiệm thực tế các tính năng chính, tích hợp Q Developer vào workflow.
+- ✅ Nắm best practices để tận dụng AI tối đa khi code, refactor, upgrade.
+- ✅ Phát triển kỹ năng dùng Q Developer để tăng productivity, cải thiện chất lượng & bảo mật phần mềm.
