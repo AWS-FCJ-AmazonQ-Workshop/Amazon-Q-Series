@@ -8,16 +8,21 @@ pre: " <b> 4. </b> "
 
 #### Introduction
 
-This section provides detailed hands-on exercises so you can experience Amazon Q Developer in real-world scenarios. You will learn how to integrate and use advanced features of Amazon Q Developer to optimize your software development workflow.
+This section provides detailed hands-on exercises for you to experience Amazon Q Developer in real-world environments. You will learn how to integrate and use advanced features of Amazon Q Developer to optimize your software development process.
 
 #### Contents
 
-**4.1. [Using Amazon Q Developer Agent](4.1-sample-application/)**
-- Configure and use specialized Agents
-- Demo `/dev`, `/test`, `/docs`, `/review` agents
-- Automate software development tasks
+**4.1. [Using Amazon Q CLI for DevOps Project](4.1-q-cli/)**
+- Guide to using Amazon Q CLI and MCP server
+- Create DevOps Project, Architecture Diagram, generate Terraform/CDK code
+- Automate infrastructure deployment workflows
 
-**4.2. [Integrate AWS Documentation MCP Server](4.2-mcp-hands-on/)**
+**4.2. [Using Amazon Q Developer in IDE](4.2-q-ide/)**
+- Integrate Amazon Q Developer into VS Code/JetBrains
+- Use specialized Agents in the IDE
+- Optimize software development workflow
+
+**4.3. [Integrate AWS Documentation MCP Server](4.3-mcp-hands-on/)**
 - Install and configure Model Context Protocol (MCP)
 - Look up AWS documentation directly in the IDE
 - Optimize workflow with context-aware AI
@@ -31,7 +36,7 @@ This section provides detailed hands-on exercises so you can experience Amazon Q
 #### Outcomes
 
 After completing this section, you will:
-- Be proficient in using Amazon Q Developer Agents
+- Be proficient in using Amazon Q Developer Agents and CLI
 - Combine Agents with Model Context Protocol
 - Apply best practices in real-world scenarios
 - Significantly improve software development productivity
