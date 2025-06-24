@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with Amazon Q Developer"
-date: "2024-12-22"
+date: "`r Sys.Date()`"
 weight: 1
 chapter: false
 ---

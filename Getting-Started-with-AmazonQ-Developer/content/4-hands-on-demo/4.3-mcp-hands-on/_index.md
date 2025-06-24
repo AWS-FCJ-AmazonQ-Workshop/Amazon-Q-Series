@@ -16,7 +16,7 @@ Guide to using **Model Context Protocol (MCP)** to extend Amazon Q Developer, al
 - Automate tasks based on project context
 - Minimize switching between tools
 
-![MCP Architecture](/images/4-hands-on-demo/4.2-mcp-hands-on/image.png?width=90pc)
+![MCP Architecture](/images/4-hands-on-demo/4.3-mcp-hands-on/image.png?width=90pc)
 
 *Figure 1: MCP architecture - Connecting Amazon Q Developer with AWS Documentation Server*
 
@@ -38,14 +38,14 @@ To use the AWS Documentation MCP Server — an official AWS MCP server for looki
 | **Arguments**            | `awslabs.aws-documentation-mcp-server@latest`                                 |
 | **Environment Variables**| `FASTMCP_LOG_LEVEL=ERROR` & `AWS_DOCUMENTATION_PARTITION=aws`                 |
 
-![MCP Server Configuration](/images/4-hands-on-demo/4.2-mcp-hands-on/image-1.png?width=40pc)
+![MCP Server Configuration](/images/4-hands-on-demo/4.3-mcp-hands-on/image-1.png?width=40pc)
 
 *Figure 2: AWS Documentation MCP Server configuration UI with required parameters*
 
 **Step 3: Set permissions**
 - Choose **Always allow** for development environments (restrict in production)
 
-![MCP Permissions](/images/4-hands-on-demo/4.2-mcp-hands-on/image-2.png?width=40pc)
+![MCP Permissions](/images/4-hands-on-demo/4.3-mcp-hands-on/image-2.png?width=40pc)
 
 *Figure 3: Set MCP Server access permissions - Always allow for development*
 
@@ -68,7 +68,7 @@ search documentation for "Lambda function timeout" limit 3
 recommend content for page https://docs.aws.amazon.com/...
 ```
 
-![AWS Documentation Query](/images/4-hands-on-demo/4.2-mcp-hands-on/PixPin_2025-06-22_22-13-45.gif?width=40pc)
+![AWS Documentation Query](/images/4-hands-on-demo/4.3-mcp-hands-on/PixPin_2025-06-22_22-13-45.gif?width=40pc)
 
 *Figure 4: Demo looking up S3 bucket naming rules - MCP Server returns markdown content with references*
 
