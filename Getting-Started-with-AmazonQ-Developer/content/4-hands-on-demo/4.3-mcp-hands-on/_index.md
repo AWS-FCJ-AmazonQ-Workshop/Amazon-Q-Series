@@ -1,9 +1,9 @@
 ---
 title: "Using MCP with Amazon Q Developer"
 date: "`r Sys.Date()`"
-weight: 2
+weight: 3
 chapter: false
-pre: "4.2. "
+pre: "4.3. "
 ---
 
 Guide to using **Model Context Protocol (MCP)** to extend Amazon Q Developer, allowing the AI to look up AWS documentation directly in your IDE.

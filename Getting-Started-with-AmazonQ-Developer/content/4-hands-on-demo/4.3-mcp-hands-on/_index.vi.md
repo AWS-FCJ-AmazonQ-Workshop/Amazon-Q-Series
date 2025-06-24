@@ -1,9 +1,9 @@
 ---
 title: "Sử dụng MCP với Amazon Q Developer"
 date: "`r Sys.Date()`"
-weight: 2
+weight: 3
 chapter: false
-pre: "4.2. "
+pre: "4.3. "
 ---
 
 Hướng dẫn sử dụng **Model Context Protocol (MCP)** để mở rộng khả năng của Amazon Q Developer, cho phép AI tra cứu tài liệu AWS trực tiếp trong IDE.
@@ -16,7 +16,7 @@ Hướng dẫn sử dụng **Model Context Protocol (MCP)** để mở rộng kh
 - Tự động hóa tác vụ dựa trên ngữ cảnh dự án
 - Giảm thiểu chuyển đổi giữa các công cụ
 
-![MCP Architecture](/images/4-hands-on-demo/4.2-mcp-hands-on/image.png?width=90pc)
+![MCP Architecture](/images/4-hands-on-demo/4.3-mcp-hands-on/image.png?width=90pc)
 
 *Hình 1: Kiến trúc MCP - Kết nối Amazon Q Developer với AWS Documentation Server*
 
@@ -38,14 +38,14 @@ Hướng dẫn sử dụng **Model Context Protocol (MCP)** để mở rộng kh
 | **Arguments**             | `awslabs.aws-documentation-mcp-server@latest`                                |
 | **Environment Variables** | `FASTMCP_LOG_LEVEL=ERROR` & `AWS_DOCUMENTATION_PARTITION=aws`                |
 
-![MCP Server Configuration](/images/4-hands-on-demo/4.2-mcp-hands-on/image-1.png?width=40pc)
+![MCP Server Configuration](/images/4-hands-on-demo/4.3-mcp-hands-on/image-1.png?width=40pc)
 
 *Hình 2: Giao diện cấu hình AWS Documentation MCP Server với các thông số cần thiết*
 
 **Bước 3: Phân quyền**
 - Chọn **Always allow** cho môi trường development (Production nên hạn chế)  
 
-![MCP Permissions](/images/4-hands-on-demo/4.2-mcp-hands-on/image-2.png?width=40pc)
+![MCP Permissions](/images/4-hands-on-demo/4.3-mcp-hands-on/image-2.png?width=40pc)
 
 *Hình 3: Cấu hình quyền truy cập cho MCP Server - Always allow cho development*
 
@@ -68,7 +68,7 @@ search documentation for "Lambda function timeout" limit 3
 recommend content for page https://docs.aws.amazon.com/...
 ```
 
-![AWS Documentation Query](/images/4-hands-on-demo/4.2-mcp-hands-on/PixPin_2025-06-22_22-13-45.gif?width=40pc)
+![AWS Documentation Query](/images/4-hands-on-demo/4.3-mcp-hands-on/PixPin_2025-06-22_22-13-45.gif?width=40pc)
 
 *Hình 4: Demo tra cứu quy tắc đặt tên S3 bucket - MCP Server trả về nội dung markdown với nguồn tham khảo*
 

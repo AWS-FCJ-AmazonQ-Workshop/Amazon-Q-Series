@@ -18,8 +18,8 @@ Workshop phù hợp với:
 - Technical Manager mong muốn nâng cao năng suất đội ngũ phát triển.
 
 #### Workshop Level
-Đây là workshop trình độ cơ bản (Level #100), phù hợp với người chưa từng sử dụng Amazon Q Developer hoặc mới bắt đầu với AI hỗ trợ phát triển phần mềm.
+Đây là workshop trình độ cơ bản (Level #200), phù hợp với người chưa từng sử dụng Amazon Q Developer hoặc mới bắt đầu với AI hỗ trợ phát triển phần mềm.
 
-![Amazon Q Developer](/images/image.png)
+![Amazon Q Developer](/images/image.png?width=90pc)
 
 *Hình 1: Amazon Q Developer*
