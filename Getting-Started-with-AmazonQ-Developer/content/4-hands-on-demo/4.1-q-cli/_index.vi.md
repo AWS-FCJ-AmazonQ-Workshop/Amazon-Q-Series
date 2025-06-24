@@ -6,30 +6,37 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-Phần này sẽ hướng dẫn bạn cách sử dụng **Amazon Q CLI** kết hợp với **Model Context Protocol (MCP)** để nhanh chóng tạo các dự án DevOps và sơ đồ kiến trúc, giúp tự động hóa nhiều tác vụ phát triển và vận hành hạ tầng.
+Phần này hướng dẫn bạn sử dụng **Amazon Q CLI** kết hợp **Model Context Protocol (MCP)** để tự động hóa quá trình xây dựng DevOps Project và Architecture Diagram, giúp tối ưu hóa tốc độ phát triển và vận hành hạ tầng.
+
+#### Điều kiện tiên quyết
+
+1. Cài đặt `uv` từ [Astral](https://docs.astral.sh/uv/getting-started/installation/) hoặc [GitHub README](https://github.com/astral-sh/uv#installation)
+2. Cài đặt Python: `uv python install 3.10`
+3. Cài đặt [GraphViz](https://www.graphviz.org/)
 
 #### Bước 1: Khởi động Amazon Q CLI và tạo thư mục dự án
 
-- Mở terminal, tạo thư mục mới cho dự án DevOps:
+- Tạo thư mục mới cho DevOps Project:
 
 ```bash
 mkdir devops-project
 cd devops-project
 ```
 
-- Khởi động Amazon Q CLI bằng lệnh:
+- Khởi động Amazon Q CLI:
 
 ```bash
 q chat
 ```
 
-- Hiện tại tháng 06/2025, Amazon Q Developer đã hỗ trợ 3 models mới nhât của nhà Anthropic, tại workshop này, chúng ta sẽ tận dụng `claude-4-sonnet` model mới và mạnh mẽ nhất cho xuyên suốt project luôn.
+- Workshop này sử dụng model `claude-4-sonnet` mới nhất của Anthropic nhằm nâng cao hiệu quả cho toàn bộ project.
 
-![alt text](/images/4-hands-on-demo/4.1-q-cli/image.png?width=90pc)*Hình 1: Giao diện Q Chat CLI*
+![alt text](/images/4-hands-on-demo/4.1-q-cli/image.png?width=90pc)
+*Hình 1: Giao diện Q Chat CLI*
 
 #### Bước 2: Cấu hình MCP Servers cho DevOps và Architecture
 
-- Tạo file cấu hình MCP tại `~/.aws/amazonq/mcp.json` (hoặc `.amazonq/mcp.json` trong dự án) với các MCP server hỗ trợ DevOps, ví dụ:
+- Tạo file cấu hình MCP tại `~/.aws/amazonq/mcp.json` (hoặc `.amazonq/mcp.json` trong thư mục dự án) với nội dung ví dụ:
 
 ```json
 {
@@ -52,56 +59,53 @@ q chat
 }
 ```
 
-- Lưu và khởi động lại Amazon Q CLI để tải MCP server.
+- Lưu lại và khởi động lại Q CLI để tải các MCP server.
 
-![alt text](/images/4-hands-on-demo/4.1-q-cli/image-1.png?width=90pc)*Hình 2: Giao diện CLI sau khi tải hoàn thành 2 MCP Tools*
+![alt text](/images/4-hands-on-demo/4.1-q-cli/image-1.png?width=90pc)
+*Hình 2: Q CLI sau khi tải xong MCP Tools*
 
-#### Bước 3: Tạo sơ đồ kiến trúc (Architecture Diagram)
+#### Bước 3: Tạo Architecture Diagram
 
-- Trong phiên làm việc `q chat`, nhập prompt:
+- Trong Q CLI, nhập prompt:
 
 ```
 Create an architecture diagram for a scalable web application using AWS services including VPC, ALB, ECS, RDS, and CloudWatch.
 ```
 
-- Amazon Q CLI gọi MCP server `aws-diagram-mcp-server` để tạo sơ đồ kiến trúc tự động, trả về bản vẽ hoặc mô tả chi tiết.
+![alt text](/images/4-hands-on-demo/4.1-q-cli/gif-1.gif?width=90pc)
+*Hình 3: Tạo Architecture Diagram tự động*
 
-<!-- Hinh query thành công -->
+- Q CLI sẽ gọi MCP server `aws-diagram-mcp-server` để sinh Architecture Diagram và trả về bản vẽ hoặc mô tả chi tiết.
 
-#### Bước 4: Generate Terraform hoặc CDK để triển khai hạ tầng
+![alt text](/images/4-hands-on-demo/4.1-q-cli/image-2.png?width=90pc)
+*Hình 4: Architecture được tạo thành công*
 
-- Tiếp tục trong `q chat`, nhập:
+#### Bước 4: Sinh mã Terraform/CDK để triển khai hạ tầng
+
+- Tiếp tục trong Q CLI, nhập:
 
 ```
 Generate Terraform code for the above architecture with autoscaling ECS cluster and multi-AZ RDS.
 ```
 
-- Amazon Q CLI sử dụng MCP server `cdk-mcp-server` hoặc tương tự để sinh mã Terraform/CDK hoàn chỉnh, giúp bạn triển khai nhanh chóng.
+- Q CLI sẽ sử dụng MCP server `cdk-mcp-server` để sinh mã Terraform/CDK hoàn chỉnh.
 
-<!-- Hinh query thành công -->
+![alt text](/images/4-hands-on-demo/4.1-q-cli/gif-2.gif?width=90pc)
+*Hình 5: Sinh thành công Terraform Code*
 
-#### Bước 5: Tạo tài liệu và tự động hóa workflow DevOps
+#### Bước 5: Sinh tài liệu và tự động hóa workflow DevOps
 
-- Yêu cầu tạo tài liệu mô tả dự án:
+- Yêu cầu tạo tài liệu mô tả project:
 
 ```
 Generate a README.md explaining the architecture and deployment steps.
 ```
 
-<!-- Hinh anh tao thanh cong file README -->
-
-- Hoặc tạo script tự động deploy:
-
-```
-Create a bash script to deploy the infrastructure and start the application.
-```
-
-Amazon Q CLI sẽ tạo script shell hoàn chỉnh, giúp bạn tự động hóa quy trình.
-
-<!-- Hinh anh tao thanh cong deploy script -->
+![alt text](/images/4-hands-on-demo/4.1-q-cli/image-3.png?width=90pc)
+*Hình 6: Sinh thành công file README*
 
 #### Tổng kết
 
-- Amazon Q CLI kết hợp MCP server giúp bạn xây dựng nhanh các dự án DevOps phức tạp, từ thiết kế kiến trúc, sinh mã hạ tầng đến tự động hóa triển khai.  
-- Quy trình hoàn toàn tương tác bằng ngôn ngữ tự nhiên trong CLI, giảm thiểu thời gian viết code thủ công và sai sót.  
-- MCP server cho phép mở rộng dễ dàng, tích hợp nhiều công cụ và dịch vụ khác nhau.
+- Amazon Q CLI kết hợp MCP server giúp bạn xây dựng nhanh chóng các DevOps Project phức tạp, từ thiết kế Architecture, sinh mã hạ tầng đến tự động hóa triển khai.
+- Tất cả thao tác đều thực hiện bằng ngôn ngữ tự nhiên trong CLI, giúp giảm thời gian và hạn chế lỗi thủ công.
+- MCP server dễ dàng mở rộng, tích hợp nhiều công cụ và dịch vụ khác nhau.
