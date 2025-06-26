@@ -1,31 +1,28 @@
-+++
-title = "Bảo Mật Code Của Bạn Với Amazon Q Developer"
-date = 2024
-weight = 1
-chapter = false
-+++
+---
+title: "Bảo mật code của bạn với Amazon Q Developer"
+date: "2025-06-21"
+weight: 1
+chapter: false
+---
 
-# Bảo Mật Code Của Bạn Với Amazon Q Developer
+# Bảo mật code của bạn với Amazon Q Developer
 
-Amazon Q có thể quét codebase của bạn để tìm các lỗ hổng bảo mật và các vấn đề về chất lượng mã nhằm cải thiện trạng thái bảo mật của các ứng dụng của bạn trong suốt chu kỳ phát triển. Bạn có thể bắt đầu quét toàn bộ codebase, phân tích tất cả các tệp trong dự án hoặc không gian làm việc cục bộ của bạn, hoặc bật tính năng tự động quét để đánh giá mã của bạn khi bạn viết.
+#### TL;DR
 
-Điều này giúp các ứng dụng của bạn an toàn và có khả năng phục hồi tốt hơn bằng cách làm nổi bật các vấn đề bảo mật như các lỗ hổng cross-site scripting, log injection, quyền truy cập tệp lỏng lẻo, thông tin đăng nhập được mã hóa cứng và hơn thế nữa. Các vấn đề bảo mật được phát hiện càng sớm thì càng ít công việc và nỗ lực cần thiết để khắc phục chúng.
+Sau khi đã hoàn thành Workshop [Bắt đầu với Amazon Q Developer](https://aws-fcj-amazonq-workshop.github.io/Amazon-Q-Series/Getting-Started-with-AmazonQ-Developer/) và nắm vững các tính năng cơ bản, bạn sẽ tiếp tục với workshop này để khám phá cách sử dụng Amazon Q Developer nhằm tăng cường bảo mật và nâng cao chất lượng mã nguồn trên AWS. Trong workshop này, bạn sẽ được hướng dẫn thiết lập môi trường, thực hiện quét và phát hiện lỗ hổng bảo mật theo thời gian thực, nhận các khuyến nghị sửa lỗi, tự động review code và áp dụng các best practices bảo mật theo tiêu chuẩn quốc tế cho dự án của mình.
 
-Quá trình quét được hỗ trợ bởi [Bộ phát hiện Bảo mật](https://docs.aws.amazon.com/codeguru/detector-library/) từ Thư viện Bộ phát hiện Amazon CodeGuru. Khi các chính sách bảo mật được cập nhật và các bộ phát hiện được thêm vào, quá trình quét sẽ tự động tích hợp các bộ phát hiện mới để đảm bảo mã của bạn tuân thủ các chính sách cập nhật nhất.
+#### Workshop này dành cho ai?
 
-Amazon Q Developer phát hiện các vi phạm chính sách bảo mật và các lỗ hổng trong mã của bạn bằng cách kiểm thử bảo mật ứng dụng tĩnh (SAST), phát hiện bí mật và quét cơ sở hạ tầng dưới dạng mã (IaC). Các vấn đề bảo mật được tìm thấy trong quá trình quét sẽ được làm nổi bật trong bảng Problems (Vấn đề) trong VS Code.
+Workshop này phù hợp với:
 
-Trong phần này, chúng ta sẽ sử dụng các tính năng Quét Bảo mật của Q Developer để phát hiện mã không an toàn.
+- Lập trình viên, kỹ sư phần mềm muốn tích hợp bảo mật vào quy trình phát triển trên AWS.
+- DevOps, Cloud Engineer, kiến trúc sư quan tâm đến tự động hóa kiểm tra bảo mật và chất lượng code.
+- Quản lý kỹ thuật mong muốn nâng cao tiêu chuẩn bảo mật và hiệu quả phát triển của đội ngũ.
 
-{{% notice note %}}
-Module này cố ý bao gồm các đoạn mã sẽ kích hoạt các phát hiện quét bảo mật. Các đoạn mã trong module này chỉ nên được sử dụng cho mục đích trình diễn.
-{{% /notice %}}
+#### Workshop Level
 
-Amazon Q có thể quét toàn bộ codebase của bạn hoặc tự động quét mã của bạn khi bạn viết. Cho mục đích của workshop này, chúng ta sẽ sử dụng quét dựa trên dự án. Có thể quét tối đa 100 MB mã cùng một lúc.
+Đây là workshop trình độ cơ bản (Level #200), phù hợp với những ai mới bắt đầu tìm hiểu về bảo mật ứng dụng hoặc chưa từng sử dụng Amazon Q Developer.
 
-#### Scan dự án của bạn
+![AmazonQ-Developer](/images/1/image.png?width=90pc)
 
-1. Chọn chữ Amazon Q từ vùng hình chữ nhật ở dưới cùng cửa sổ IDE.
-2. Một cửa sổ thả xuống sẽ xuất hiện ở trên cùng, từ đó người dùng có thể chọn **Run Project Scan**.
-
-![autoscans](/images/1/autoscans.png?width=90pc)
+_Hình 1: Amazon Q Developer_
