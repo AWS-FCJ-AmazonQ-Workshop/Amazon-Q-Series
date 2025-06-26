@@ -13,21 +13,27 @@ Amazon Q Developer là AI assistant thế hệ mới, tích hợp bảo mật ng
 
 #### Tổng quan về Security Capabilities
 
-- **Static Application Security Testing (SAST):** Phát hiện lỗi bảo mật phổ biến như SQL injection, XSS, OS command injection, path traversal...[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[4]](https://blog.getsetbuild.cloud/post/secure-coding-with-amazon-q/)
+- **Static Application Security Testing (SAST):** Phát hiện lỗi bảo mật phổ biến như SQL injection, XSS, OS command injection, path traversal...[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[4]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html)
 
-- **Secrets Detection:** Tự động tìm kiếm và cảnh báo khi phát hiện hardcoded passwords, API keys, AWS credentials trong code[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[5]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html).
+- **Secrets Detection:** Tự động tìm kiếm và cảnh báo khi phát hiện hardcoded passwords, API keys, AWS credentials trong code[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[4]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html).
 
-- **Infrastructure as Code (IaC) Scanning:** Kiểm tra cấu hình hạ tầng (CloudFormation, Terraform...) để phát hiện misconfiguration và vi phạm bảo mật[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[5]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html).
+- **Infrastructure as Code (IaC) Scanning:** Kiểm tra cấu hình hạ tầng (CloudFormation, Terraform...) để phát hiện misconfiguration và vi phạm bảo mật[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[4]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html).
 
 #### Hiểu về Security Scanning Modes
 
-Amazon Q Developer cung cấp hai chế độ security scanning chính để phù hợp với different workflows[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[6]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/start-scan.html):
+Amazon Q Developer cung cấp hai security scanning modes chính để phù hợp với different workflows[[1]](https://aws.amazon.com/blogs/devops/code-security-scanning-with-amazon-q-developer/)[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html):
 
 - **Auto Scans (Real-time):** Quét tự động và cảnh báo ngay khi bạn viết code (chỉ có ở bản Pro).
 
 - **Project Scans:** Quét toàn bộ project theo yêu cầu, phù hợp với kiểm tra định kỳ hoặc trước khi release.
 
-Lưu ý: Nên duy trì Auto Scan để phát hiện sớm lỗ hổng, kết hợp Project Scan định kỳ để đảm bảo toàn bộ codebase an toàn.
+![scan-modes](/images/1/AmazonQ-Secure-scan-modes.png?width=90pc)
+
+_Hình 1: Security scanning modes của Amazon Q Developer_
+
+{{% notice note %}}
+Nên duy trì Auto Scan để phát hiện sớm lỗ hổng, kết hợp Project Scan định kỳ để đảm bảo toàn bộ codebase an toàn.
+{{% /notice %}}
 
 #### Ứng dụng thực tiễn
 

@@ -12,20 +12,26 @@ Amazon Q Developer is a next-generation AI assistant that integrates security di
 
 #### Overview of Security Capabilities
 
-- **Static Application Security Testing (SAST):** Detects common security issues such as SQL injection, XSS, OS command injection, path traversal, and more[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[4]](https://blog.getsetbuild.cloud/post/secure-coding-with-amazon-q/).
+- **Static Application Security Testing (SAST):** Detects common security issues such as SQL injection, XSS, OS command injection, path traversal, and more[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[4]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html).
 
-- **Secrets Detection:** Automatically scans for and alerts on hardcoded passwords, API keys, and AWS credentials in your code[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[5]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html).
+- **Secrets Detection:** Automatically scans for and alerts on hardcoded passwords, API keys, and AWS credentials in your code[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[4]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html).
 
-- **Infrastructure as Code (IaC) Scanning:** Checks infrastructure configurations (CloudFormation, Terraform, etc.) for misconfigurations and security violations[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[5]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html).
+- **Infrastructure as Code (IaC) Scanning:** Checks infrastructure configurations (CloudFormation, Terraform, etc.) for misconfigurations and security violations[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[4]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html).
 
 #### Understanding Security Scanning Modes
 
-Amazon Q Developer provides two main security scanning modes to fit different workflows[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)[[6]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/start-scan.html):
+Amazon Q Developer provides two main security scanning modes to fit different workflows[[1]](https://aws.amazon.com/blogs/devops/code-security-scanning-with-amazon-q-developer/)[[3]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html):
 
 - **Auto Scans (Real-time):** Automatically scans and alerts as you write code (Pro version only).
 - **Project Scans:** Scans the entire project on demand, suitable for periodic checks or pre-release reviews.
 
-Note: It is recommended to keep Auto Scan enabled for early vulnerability detection and combine it with regular Project Scans to ensure the entire codebase is secure.
+![scan-modes](/images/1/AmazonQ-Secure-scan-modes.png?width=90pc)
+
+_Figure 1: Security scanning modes of Amazon Q Developer_
+
+{{% notice note %}}
+It is recommended to keep Auto Scan enabled for early vulnerability detection and combine it with regular Project Scans to ensure the entire codebase is secure.
+{{% /notice %}}
 
 #### Practical Applications
 

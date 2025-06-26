@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Prompt Library on AWS Serverless</title>
+    <title>Prompt Library với Amazon Q Developer on AWS Serverless</title>
     <link>//localhost:1313/vi/3-prompt-library/</link>
-    <description>Recent content in Prompt Library on AWS Serverless</description>
+    <description>Recent content in Prompt Library với Amazon Q Developer on AWS Serverless</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <atom:link href="//localhost:1313/vi/3-prompt-library/index.xml" rel="self" type="application/rss+xml" />

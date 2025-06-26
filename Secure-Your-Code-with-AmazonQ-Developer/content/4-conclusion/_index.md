@@ -6,41 +6,47 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-In this workshop we understood how to use Amazon Q Developer to detect security policy violations and vulnerabilities in your code with static application security testing (SAST), secrets detection, and infrastructure as code (IaC) scanning. Security scans in Amazon Q identify security vulnerabilities and suggest how to improve your code.
+#### Key Points Summary
 
-Incorporating security tools like Amazon Q into the development environment, especially within the Integrated Development Environment (IDE), offers significant advantages for maintaining high security and code quality standards. Here are a few:
+- Understand Amazon Q Developer Security features including SAST, secrets detection, and IaC scanning.
+- Master real-time vulnerability detection with Auto Scans and comprehensive Project Scans.
+- Practice hands-on remediation of 6 critical vulnerabilities: Open Redirect, SQL Injection, Privilege Management, Path Traversal, OS Command Injection, and AWS Credentials exposure.
+- Learn to integrate security scanning seamlessly into your IDE development workflow.
 
-Real-Time Detection: By analyzing code in real-time as it's written, developers receive immediate feedback on potential vulnerabilities, coding standards violations, and even simple syntax errors. This instant feedback loop encourages learning and correction on the spot, rather than after the fact.
+#### Benefits of Securing Your Code with Amazon Q Developer
 
-Early Vulnerability Detection: Identifying vulnerabilities early in the development process significantly reduces the costs and effort required to fix them later. Early detection means security issues can often be resolved before the code is merged into the main codebase, much less deployed to production.
+- Early vulnerability detection reduces remediation costs by up to 100x compared to production fixes.
+- Automated security suggestions follow industry best practices and AWS security standards.
+- Real-time feedback loop improves developer security skills and coding practices.
+- Comprehensive coverage across application code, infrastructure, and credential management.
 
-Better Code Practices: With suggestions on how to improve code or remediate vulnerabilities, developers learn best practices in real-time. This not only improves the security of the current project but also enhances the developer's overall coding skills.
+#### Learning Resources & Community
 
-Reduced Remediation Time: Fixing issues in the development phase is significantly cheaper and faster than addressing them in later stages, such as after deployment.
+- Official AWS Amazon Q Developer Security documentation
+- AWS Security Best Practices guides and whitepapers
+- OWASP secure coding guidelines and vulnerability databases
+- AWS Developer Forums and security-focused communities
 
-Keep practising with Amazon Q and leveraging the power of AI to help you improve in your security journey.
+#### Advanced Directions & Deep Security Integration
 
-#### Next Steps
+- Explore advanced context features: @workspace, @file, prompt libraries for security analysis.
+- Integrate Q Developer security scans with CI/CD pipelines and automated testing.
+- Implement project rules for team-wide security standards enforcement.
+- Combine with AWS security services like GuardDuty, Inspector, and Security Hub.
 
-Continue your Amazon Q learning journey by exploring these specialized workshop modules:
+#### Reference Materials
 
-1. [Getting Started With Amazon Q Developer]()
-2. [AI-Assisted Coding with Amazon Q]()
-3. [Troubleshooting and Debugging with Amazon Q]()
-4. [Code Transformation and Modernization with Amazon Q]()
-5. [Amazon Q Business for Enterprise Users]()
-6. [Security Features in Amazon Q]()
-7. [Accelerate Mainframe Modernization with Amazon Q Developer Transform]()
-8. [Secure Your Code with AmazonQ Developer]()
-9. [Building Agentic Workflows on AWS with Amazon Q]()
-10. [Building with Generative AI using PartyRock, Bedrock, and Amazon Q]()
+- [Amazon Q Developer Security Scans](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security-scans.html)
+- [Code Security Scanning with Amazon Q Developer](https://aws.amazon.com/blogs/devops/code-security-scanning-with-amazon-q-developer/)
+- [Amazon Q Developer Context Features](https://aws.amazon.com/blogs/devops/amazon-q-developers-new-context-features/)
+- [Amazon Q Developer Code Reviews](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-reviews.html)
+- [Secure Coding with Amazon Q](https://blog.getsetbuild.cloud/post/secure-coding-with-amazon-q/)
+- [AWS Well-Architected Security Pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html)
+- [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
+- [AWS Security Best Practices](https://aws.amazon.com/architecture/security-identity-compliance/)
+- [AWS Prescriptive Guidance: Security](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html)
+- [Securing Your Code Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/fe2c944b-f014-44d6-a243-1fc2e30b5f73/en-US)
 
-Each module provides detailed hands-on experience to help you build production-ready Amazon Q applications.
+The hands-on vulnerability detection exercises help you apply security practices in real scenarios, and this conclusion provides guidance for building a comprehensive security-first development approach with Amazon Q Developer.
 
-#### Credits
-
-Tran Doan Cong Ly - https://www.linkedin.com/in/trandoancongly/
-
-#### References
-
-- [Securing Your Code With Amazon Q Developer](https://catalog.us-east-1.prod.workshops.aws/workshops/fe2c944b-f014-44d6-a243-1fc2e30b5f73/en-US)
+![Security Journey](/images/7/conclusion-Amazon-Q.png)
