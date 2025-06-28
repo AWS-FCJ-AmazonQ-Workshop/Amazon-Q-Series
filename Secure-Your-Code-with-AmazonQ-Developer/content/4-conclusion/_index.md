@@ -46,8 +46,8 @@ Real-Time Detection: Developers receive immediate feedback on vulnerabilities, c
 - [AWS Prescriptive Guidance: Security](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html)
 - [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
 - [Securing Your Code Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/fe2c944b-f014-44d6-a243-1fc2e30b5f73/en-US)
-- [Amazon Q Developer Pricing](https://aws.amazon.com/amazon-q/pricing/)
-- [CodeGuru Detector Library](https://docs.aws.amazon.com/codeguru/latest/dg/detector-library.html)
+- [Amazon Q Developer Pricing](https://aws.amazon.com/vi/q/pricing/)
+- [CodeGuru Detector Library](https://docs.aws.amazon.com/codeguru/detector-library/)
 
 Keep practicing with Amazon Q Developer and leverage AI to continuously improve your security posture and coding skills. Thank you for participating, and continue your journey toward building more secure, resilient applications!
 

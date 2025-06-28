@@ -46,6 +46,8 @@ Phát hiện theo thời gian thực: Developer nhận được phản hồi nga
 - [AWS Prescriptive Guidance: Security](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html)
 - [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
 - [Securing Your Code Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/fe2c944b-f014-44d6-a243-1fc2e30b5f73/en-US)
+- [Amazon Q Developer Pricing](https://aws.amazon.com/vi/q/pricing/)
+- [CodeGuru Detector Library](https://docs.aws.amazon.com/codeguru/detector-library/)
 
 Hãy tiếp tục thực hành với Amazon Q Developer và tận dụng AI để không ngừng nâng cao kỹ năng lập trình và bảo mật của bạn. Cảm ơn bạn đã tham gia và hãy tiếp tục hành trình xây dựng các ứng dụng an toàn, vững chắc hơn!
 
