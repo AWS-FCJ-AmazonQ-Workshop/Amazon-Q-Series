@@ -15,6 +15,18 @@
                 href="//localhost:1313/"
                 />
   </url><url>
+    <loc>//localhost:1313/3-prompt-library/1-create-vulnerable-code-samples/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-prompt-library/1-create-vulnerable-code-samples/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-prompt-library/1-create-vulnerable-code-samples/"
+                />
+  </url><url>
     <loc>//localhost:1313/1-introduction/</loc>
     <xhtml:link
                 rel="alternate"
@@ -37,6 +49,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/2-hands-on-vulnerability-detection/1-open-redirect-vulnerability/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3-prompt-library/2-create-security-prompt-library/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-prompt-library/2-create-security-prompt-library/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-prompt-library/2-create-security-prompt-library/"
                 />
   </url><url>
     <loc>//localhost:1313/2-hands-on-vulnerability-detection/</loc>
@@ -85,6 +109,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/3-prompt-library/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3-prompt-library/3-test-security-prompts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-prompt-library/3-test-security-prompts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-prompt-library/3-test-security-prompts/"
                 />
   </url><url>
     <loc>//localhost:1313/4-conclusion/</loc>

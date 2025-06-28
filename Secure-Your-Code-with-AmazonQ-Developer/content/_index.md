@@ -7,22 +7,29 @@ chapter: false
 
 # Secure Your Code With Amazon Q Developer
 
-#### TL;DR
+#### Quick Summary
 
 After completing the [Getting Started with Amazon Q Developer](https://aws-fcj-amazonq-workshop.github.io/Amazon-Q-Series/Getting-Started-with-AmazonQ-Developer/) workshop and mastering the basic features, you will continue with this workshop to explore how to use Amazon Q Developer to enhance security and improve code quality on AWS. In this workshop, you will be guided through environment setup, real-time security scanning and vulnerability detection, receiving remediation recommendations, automated code reviews, and applying international security best practices to your projects.
 
-#### Who is this workshop for?
+#### Duration
 
-This workshop is suitable for:
+Approximately 2 hours, including environment setup and hands-on practice.
 
-- Developers and software engineers who want to integrate security into their development workflow on AWS.
-- DevOps, Cloud Engineers, and architects interested in automating security checks and code quality assessments.
-- Technical managers looking to raise security standards and development efficiency for their teams.
+#### Target Audience
 
-#### Workshop Level
+- Application Developers
+- Cybersecurity Professionals
+- Anyone interested in Secure Coding Practices
 
-This is a beginner-level workshop (Level #200), suitable for those who are new to application security or have never used Amazon Q Developer.
+#### Prerequisite Knowledge
 
-![AmazonQ-Developer](/images/1/image.png?width=90pc)
+- Basic knowledge of Python to understand code samples and the impact of security vulnerabilities
+- General understanding of the OWASP Top Ten will help you better grasp the vulnerabilities in the code samples
 
-_Figure 1: Amazon Q Developer_
+#### Cost
+
+This workshop uses the Amazon Q Developer Free Tier, which provides vulnerability scanning features with a limit of 50 interactions per month. This is a significant advantage as you can fully experience the features without incurring any costs.
+
+![AmazonQ-Developer](/images/1/QDeveloper.png?width=90pc)
+
+_Figure 1: Improve reliability and security with Amazon Q Developer_

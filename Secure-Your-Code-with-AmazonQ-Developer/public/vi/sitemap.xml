@@ -39,16 +39,16 @@
                 href="//localhost:1313/vi/2-hands-on-vulnerability-detection/1-open-redirect-vulnerability/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-hands-on-vulnerability-detection/2-sql-injection/</loc>
+    <loc>//localhost:1313/vi/3-prompt-library/1-create-vulnerable-code-samples/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-hands-on-vulnerability-detection/2-sql-injection/"
+                href="//localhost:1313/3-prompt-library/1-create-vulnerable-code-samples/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-hands-on-vulnerability-detection/2-sql-injection/"
+                href="//localhost:1313/vi/3-prompt-library/1-create-vulnerable-code-samples/"
                 />
   </url><url>
     <loc>//localhost:1313/vi/2-hands-on-vulnerability-detection/</loc>
@@ -63,6 +63,30 @@
                 href="//localhost:1313/vi/2-hands-on-vulnerability-detection/"
                 />
   </url><url>
+    <loc>//localhost:1313/vi/3-prompt-library/2-create-security-prompt-library/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-prompt-library/2-create-security-prompt-library/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-prompt-library/2-create-security-prompt-library/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/2-hands-on-vulnerability-detection/2-sql-injection/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-hands-on-vulnerability-detection/2-sql-injection/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-hands-on-vulnerability-detection/2-sql-injection/"
+                />
+  </url><url>
     <loc>//localhost:1313/vi/2-hands-on-vulnerability-detection/3-improper-privilege-management/</loc>
     <xhtml:link
                 rel="alternate"
@@ -73,6 +97,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="//localhost:1313/vi/2-hands-on-vulnerability-detection/3-improper-privilege-management/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/3-prompt-library/3-test-security-prompts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-prompt-library/3-test-security-prompts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-prompt-library/3-test-security-prompts/"
                 />
   </url><url>
     <loc>//localhost:1313/vi/3-prompt-library/</loc>
