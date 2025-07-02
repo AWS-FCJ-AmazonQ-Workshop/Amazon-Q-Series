@@ -9,24 +9,24 @@
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Create Vulnerable Code Samples :: AWS Serverless</title>
+    <title>Create Vulnerable Code Samples :: Amazon Q Developer Series</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1751110515" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1751110515" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1751110515" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1751110515" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1751110515" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1751110515" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1751110515" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1751110515" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1751110515" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1751443466" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1751110515" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1751443466" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1751110515"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1751443466"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1751110515"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1751110515"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1751443466"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1751443466"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1751110516"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1751443466"></script>
 
     
   </div>
@@ -642,14 +642,10 @@
 
 	<p>To practice with Amazon Q Developer security scanning, we&rsquo;ll create code files containing common security vulnerabilities. These files will be used to test various security prompts in our library.</p>
 <h4 id="setup-test-environment">Setup Test Environment</h4>
-<ol>
-<li>Create a new directory for security testing:</li>
-</ol>
+<p><strong>1. Create a new directory for security testing:</strong></p>
 <pre tabindex="0"><code>mkdir security-test
 cd security-test
-</code></pre><ol start="2">
-<li>Create the vulnerable code files as instructed below.</li>
-</ol>
+</code></pre><p><strong>2. Create the vulnerable code files as instructed below.</strong></p>
 <h4 id="create-vulnerable-app">Create Vulnerable App</h4>
 <p>File name: <code>vulnerable_app.py</code></p>
 <p>This file contains 3 main vulnerability types in a Flask web application:</p>
@@ -681,9 +677,9 @@ def ping_host():
     return result.stdout
 </code></pre><p>Vulnerabilities in this file:</p>
 <ul>
-<li>SQL Injection - String concatenation in query</li>
-<li>Open Redirect - No URL validation before redirect</li>
-<li>Command Injection - Unsafe shell execution</li>
+<li><strong>SQL Injection</strong> - String concatenation in query</li>
+<li><strong>Open Redirect</strong> - No URL validation before redirect</li>
+<li><strong>Command Injection</strong> - Unsafe shell execution</li>
 </ul>
 <h4 id="create-file-handler">Create File Handler</h4>
 <p>File name: <code>file_handler.py</code></p>
@@ -704,8 +700,8 @@ def connect_database():
     return connection_string
 </code></pre><p>Vulnerabilities in this file:</p>
 <ul>
-<li>Path Traversal - No filename input sanitization</li>
-<li>Credential Exposure - Hardcoded password and credential logging</li>
+<li><strong>Path Traversal</strong> - No filename input sanitization</li>
+<li><strong>Credential Exposure</strong> - Hardcoded password and credential logging</li>
 </ul>
 <h4 id="create-auth-service">Create Auth Service</h4>
 <p>File name: <code>auth_service.py</code></p>
@@ -725,8 +721,8 @@ def delete_user(current_user, target_user_id):
 API_KEY = &#34;sk-1234567890abcdef&#34;
 </code></pre><p>Vulnerabilities in this file:</p>
 <ul>
-<li>Privilege Escalation - Weak access control logic</li>
-<li>Credential Exposure - Hardcoded API key</li>
+<li><strong>Privilege Escalation</strong> - Weak access control logic</li>
+<li><strong>Credential Exposure</strong> - Hardcoded API key</li>
 </ul>
 <p>These files will be used in subsequent labs to test different security prompts.</p>
 
@@ -1006,19 +1002,19 @@ API_KEY = &#34;sk-1234567890abcdef&#34;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1751110516"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1751110516"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1751110516"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1751110516"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1751110516"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1751110516"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1751443466"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1751443466"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1751443466"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1751443466"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1751443466"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1751443466"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1751110516"></script>
-    <script src="//localhost:1313/js/learn.js?1751110516"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1751110516"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1751443466"></script>
+    <script src="//localhost:1313/js/learn.js?1751443466"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1751443466"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1751110516" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1751110516"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1751443466" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1751443466"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

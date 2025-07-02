@@ -31,6 +31,8 @@ Công cụ này giúp phát hiện các vấn đề bảo mật như:
 - **SQL Injection**: Chèn mã SQL độc hại vào truy vấn.
 - **Secrets exposure**: Lộ thông tin nhạy cảm trong code hoặc log.
 
+![scanning-models](/images/1/AmazonQ-Scanning-models.png?width=90pc)
+
 #### Prompt Library
 
 Amazon Q Developer hiện tại cho phép xây dựng thư viện các prompt thông dụng, được lưu trữ dưới dạng file Markdown trong thư mục **~/.aws/amazonq/prompts**. Điều này giúp tái sử dụng các prompt trên nhiều cuộc hội thoại và dự án khác nhau, đặc biệt hữu ích cho việc tạo các loại diagram như **Entity-Relationship (ER) diagram** hoặc **sequence diagram**.

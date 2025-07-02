@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Create Security Prompt Library on AWS Serverless</title>
+    <title>Create Security Prompt Library on Amazon Q Developer Series</title>
     <link>//localhost:1313/3-prompt-library/2-create-security-prompt-library/</link>
-    <description>Recent content in Create Security Prompt Library on AWS Serverless</description>
+    <description>Recent content in Create Security Prompt Library on Amazon Q Developer Series</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="//localhost:1313/3-prompt-library/2-create-security-prompt-library/index.xml" rel="self" type="application/rss+xml" />

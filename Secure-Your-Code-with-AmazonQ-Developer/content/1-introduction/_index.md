@@ -31,6 +31,8 @@ The tool helps detect security issues such as:
 - **SQL Injection**: Injecting malicious SQL code into queries.
 - **Secrets exposure**: Sensitive information leaked in code or logs.
 
+![scanning-models](/images/1/AmazonQ-Scanning-models.png?width=90pc)
+
 #### Prompt Library
 
 mazon Q Developer currently allows you to build a library of common prompts, stored as Markdown files in the **~/.aws/amazonq/prompts** directory. This enables prompt reuse across multiple conversations and projects, which is especially useful for generating diagrams such as **Entity-Relationship (ER) diagram** or **sequence diagram**.

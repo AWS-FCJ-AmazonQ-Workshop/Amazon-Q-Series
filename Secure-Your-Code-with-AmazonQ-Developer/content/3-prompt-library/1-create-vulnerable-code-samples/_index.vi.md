@@ -10,14 +10,14 @@ pre: " <b> 3.1 </b> "
 
 #### Setup Test Environment
 
-1. Tạo một thư mục mới cho security testing:
+**1. Tạo một thư mục mới cho security testing:**
 
 ```
 mkdir security-test
 cd security-test
 ```
 
-2. Tạo các file code có lỗ hổng như hướng dẫn bên dưới.
+**2. Tạo các file code có lỗ hổng như hướng dẫn bên dưới.**
 
 #### Create Vulnerable App
 
@@ -56,9 +56,9 @@ def ping_host():
 
 Các vulnerabilities trong file này:
 
-- SQL Injection - Nối chuỗi trực tiếp trong query
-- Open Redirect - Không kiểm tra hợp lệ URL trước khi redirect
-- Command Injection - Thực thi shell không an toàn
+- **SQL Injection** - Nối chuỗi trực tiếp trong query
+- **Open Redirect** - Không kiểm tra hợp lệ URL trước khi redirect
+- **Command Injection** - Thực thi shell không an toàn
 
 #### Create File Handler
 
@@ -85,8 +85,8 @@ def connect_database():
 
 Các vulnerabilities trong file này:
 
-- Path Traversal - Không kiểm tra/sanitize input filename
-- Credential Exposure - Hardcoded password và credential logging
+- **Path Traversal** - Không kiểm tra/sanitize input filename
+- **Credential Exposure** - Hardcoded password và credential logging
 
 #### Create Auth Service
 
@@ -112,7 +112,7 @@ API_KEY = "sk-1234567890abcdef"
 
 Các vulnerabilities trong file này:
 
-- Privilege Escalation - Logic kiểm soát truy cập yếu
-- Credential Exposure - Hardcoded API key
+- **Privilege Escalation** - Logic kiểm soát truy cập yếu
+- **Credential Exposure** - Hardcoded API key
 
 Những file này sẽ được sử dụng trong các lab tiếp theo để test các security prompts khác nhau.

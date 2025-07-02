@@ -9,24 +9,24 @@
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Tạo Vulnerable Code Samples :: AWS Serverless</title>
+    <title>Tạo Vulnerable Code Samples :: Amazon Q Developer Series</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1751110516" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1751110516" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1751110516" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1751110516" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1751110516" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1751110516" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1751110516" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1751110516" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1751110516" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1751443466" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1751443466" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1751110516" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1751443466" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1751110516"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1751443466"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1751110516"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1751110516"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1751443466"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1751443466"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1751110516"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1751443466"></script>
 
     
   </div>
@@ -436,13 +436,13 @@
  
   
     
-    <li data-nav-id="/vi/4-conclusion/" title="Conclusion and Next Steps" class="dd-item 
+    <li data-nav-id="/vi/4-conclusion/" title="Kết luận và Bước tiếp theo" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/vi/4-conclusion/">
-           <b> 4. </b> Conclusion and Next Steps
+           <b> 4. </b> Kết luận và Bước tiếp theo
           
             <i class="fas fa-check read-icon"></i>
           
@@ -642,14 +642,10 @@
 
 	<p>Để thực hành với tính năng quét bảo mật của Amazon Q Developer, chúng ta sẽ tạo các file mã nguồn chứa các lỗ hổng bảo mật phổ biến. Những file này sẽ được sử dụng để kiểm tra các prompt bảo mật khác nhau trong thư viện của bạn.</p>
 <h4 id="setup-test-environment">Setup Test Environment</h4>
-<ol>
-<li>Tạo một thư mục mới cho security testing:</li>
-</ol>
+<p><strong>1. Tạo một thư mục mới cho security testing:</strong></p>
 <pre tabindex="0"><code>mkdir security-test
 cd security-test
-</code></pre><ol start="2">
-<li>Tạo các file code có lỗ hổng như hướng dẫn bên dưới.</li>
-</ol>
+</code></pre><p><strong>2. Tạo các file code có lỗ hổng như hướng dẫn bên dưới.</strong></p>
 <h4 id="create-vulnerable-app">Create Vulnerable App</h4>
 <p>Tên file: <code>vulnerable_app.py</code></p>
 <p>File này chứa 3 loại vulnerability chính trong một Flask web application:</p>
@@ -681,9 +677,9 @@ def ping_host():
     return result.stdout
 </code></pre><p>Các vulnerabilities trong file này:</p>
 <ul>
-<li>SQL Injection - Nối chuỗi trực tiếp trong query</li>
-<li>Open Redirect - Không kiểm tra hợp lệ URL trước khi redirect</li>
-<li>Command Injection - Thực thi shell không an toàn</li>
+<li><strong>SQL Injection</strong> - Nối chuỗi trực tiếp trong query</li>
+<li><strong>Open Redirect</strong> - Không kiểm tra hợp lệ URL trước khi redirect</li>
+<li><strong>Command Injection</strong> - Thực thi shell không an toàn</li>
 </ul>
 <h4 id="create-file-handler">Create File Handler</h4>
 <p>Tên file: <code>file_handler.py</code></p>
@@ -704,8 +700,8 @@ def connect_database():
     return connection_string
 </code></pre><p>Các vulnerabilities trong file này:</p>
 <ul>
-<li>Path Traversal - Không kiểm tra/sanitize input filename</li>
-<li>Credential Exposure - Hardcoded password và credential logging</li>
+<li><strong>Path Traversal</strong> - Không kiểm tra/sanitize input filename</li>
+<li><strong>Credential Exposure</strong> - Hardcoded password và credential logging</li>
 </ul>
 <h4 id="create-auth-service">Create Auth Service</h4>
 <p>Tên file: <code>auth_service.py</code></p>
@@ -725,8 +721,8 @@ def delete_user(current_user, target_user_id):
 API_KEY = &#34;sk-1234567890abcdef&#34;
 </code></pre><p>Các vulnerabilities trong file này:</p>
 <ul>
-<li>Privilege Escalation - Logic kiểm soát truy cập yếu</li>
-<li>Credential Exposure - Hardcoded API key</li>
+<li><strong>Privilege Escalation</strong> - Logic kiểm soát truy cập yếu</li>
+<li><strong>Credential Exposure</strong> - Hardcoded API key</li>
 </ul>
 <p>Những file này sẽ được sử dụng trong các lab tiếp theo để test các security prompts khác nhau.</p>
 
@@ -1006,19 +1002,19 @@ API_KEY = &#34;sk-1234567890abcdef&#34;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1751110516"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1751110516"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1751110516"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1751110516"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1751110516"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1751110516"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1751443466"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1751443466"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1751443466"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1751443466"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1751443466"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1751443466"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1751110516"></script>
-    <script src="//localhost:1313/js/learn.js?1751110516"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1751110516"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1751443466"></script>
+    <script src="//localhost:1313/js/learn.js?1751443466"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1751443466"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1751110516" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1751110516"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1751443466" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1751443466"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

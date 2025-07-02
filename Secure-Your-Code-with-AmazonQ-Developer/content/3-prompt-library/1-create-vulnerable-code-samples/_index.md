@@ -10,14 +10,14 @@ To practice with Amazon Q Developer security scanning, we'll create code files c
 
 #### Setup Test Environment
 
-1. Create a new directory for security testing:
+**1. Create a new directory for security testing:**
 
 ```
 mkdir security-test
 cd security-test
 ```
 
-2. Create the vulnerable code files as instructed below.
+**2. Create the vulnerable code files as instructed below.**
 
 #### Create Vulnerable App
 
@@ -56,9 +56,9 @@ def ping_host():
 
 Vulnerabilities in this file:
 
-- SQL Injection - String concatenation in query
-- Open Redirect - No URL validation before redirect
-- Command Injection - Unsafe shell execution
+- **SQL Injection** - String concatenation in query
+- **Open Redirect** - No URL validation before redirect
+- **Command Injection** - Unsafe shell execution
 
 #### Create File Handler
 
@@ -85,8 +85,8 @@ def connect_database():
 
 Vulnerabilities in this file:
 
-- Path Traversal - No filename input sanitization
-- Credential Exposure - Hardcoded password and credential logging
+- **Path Traversal** - No filename input sanitization
+- **Credential Exposure** - Hardcoded password and credential logging
 
 #### Create Auth Service
 
@@ -112,7 +112,7 @@ API_KEY = "sk-1234567890abcdef"
 
 Vulnerabilities in this file:
 
-- Privilege Escalation - Weak access control logic
-- Credential Exposure - Hardcoded API key
+- **Privilege Escalation** - Weak access control logic
+- **Credential Exposure** - Hardcoded API key
 
 These files will be used in subsequent labs to test different security prompts.
