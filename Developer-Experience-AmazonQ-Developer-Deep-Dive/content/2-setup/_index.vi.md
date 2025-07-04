@@ -1,13 +1,8 @@
 ---
-title: "Giới thiệu về Amazon Q Developer"
+title: "Cài đặt môi trường cho Amazon Q Developer"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 2
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 2. </b> "
 ---
 
-#### Tổng quan về Amazon Q Developer
-
-#### Prerequisites
-
-#### Mục tiêu workshop

@@ -1,13 +1,7 @@
 ---
-title: "Giới thiệu về Amazon Q Developer"
+title: "Vòng đời phát triển phần mềm"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 3s
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 3s. </b> "
 ---
-
-#### Tổng quan về Amazon Q Developer
-
-#### Prerequisites
-
-#### Mục tiêu workshop
