@@ -6,66 +6,52 @@ chapter: false
 pre: "<b>3.3.2.2 </b>"
 ---
 
-# Single Line Comment Prompts
+Single Line Comment
+Amazon Q Developer can understand your intent and provide intelligent code suggestions based on concise single line comments. This approach is ideal for simple functions or when you want to quickly prototype logic without writing detailed documentation.
 
-## Overview
-Single line comment prompts use inline comments to generate specific code suggestions. Amazon Q Developer analyzes the comment context and provides relevant code implementations directly following the comment.
+## Why Use Single Line Comments?
+- **Speed:** Instantly generate code for common tasks
+- **Clarity:** A well-written comment can express intent clearly
+- **Simplicity:** Great for small, focused functions
 
-## Use Cases
-- Generate simple function implementations
-- Create variable assignments
-- Add conditional logic
-- Implement basic algorithms
+**Best Practice:** Write comments that are action-oriented and specific about the function's purpose.
 
-## Best Practices
+---
 
-### 1. Be Specific and Clear
+### Example #1: Print a Message
+**Prompt:**
+
 ```python
-# Calculate the factorial of a number using recursion
+# function to print a message
 ```
 
-### 2. Include Context
-```javascript
-// Validate email format using regex pattern
-```
+Amazon Q Developer Suggestion:
 
-### 3. Specify Expected Behavior
-```java
-// Sort array in ascending order using bubble sort
-```
-
-## Example Implementation
-
-### Python Example
 ```python
-# Create a function to check if a number is prime
-def is_prime(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+def print_message(message):
+    print(message)
+    return
 ```
 
-### JavaScript Example
-```javascript
-// Convert string to title case
-function toTitleCase(str) {
-    return str.replace(/\w\S*/g, (txt) => 
-        txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-    );
-}
+---
+
+### Example #2: Add Two Numbers
+**Prompt:**
+
+```python
+# function to add two numbers
 ```
 
-## Key Benefits
-- **Quick Implementation**: Fast code generation for simple tasks
-- **Context Awareness**: Leverages surrounding code for better suggestions
-- **Minimal Syntax**: Simple comment format requires no special syntax
-- **Language Agnostic**: Works across multiple programming languages
+Amazon Q Developer Suggestion:
 
-## Tips for Effective Use
-1. Position comments directly above where code should be generated
-2. Use descriptive language that clearly indicates intent
-3. Include parameter or return type hints when applicable
-4. Keep comments concise but informative
+```python
+def add_numbers(a, b):
+    return a + b
+```
+
+---
+
+## Key Takeaways
+- Use single line comments for quick, simple code generation
+- Be specific in your comment to get the most relevant suggestion
+- For more complex logic, consider using multi-line comments or prompts

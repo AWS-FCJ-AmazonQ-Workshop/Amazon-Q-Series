@@ -1,13 +1,9 @@
 ---
-title: "Giới thiệu về Amazon Q Developer"
+title: "Unit test creation"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 5
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.5 </b> "
 ---
 
-#### Tổng quan về Amazon Q Developer
-
-#### Prerequisites
-
-#### Mục tiêu workshop
+Vui lòng xem chi tiết cách tạo unit test trong Amazon Q Developer tại mục [3.3.4 Unit Test Generation](../../3-sdlc/3.3-develop/3.3.4-unit-test-generation/).

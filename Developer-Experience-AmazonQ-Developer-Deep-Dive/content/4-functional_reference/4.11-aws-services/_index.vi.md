@@ -1,13 +1,17 @@
 ---
-title: "Giới thiệu về Amazon Q Developer"
+title: "Amazon Q Developer: Dịch vụ AWS"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 11
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.11 </b> "
 ---
 
-#### Tổng quan về Amazon Q Developer
+## Dịch vụ AWS
 
-#### Prerequisites
+Amazon Q Developer có thể gợi ý và sinh mã cho nhiều dịch vụ AWS. Trong phần này, bạn sẽ học cách sử dụng Amazon Q Developer với:
 
-#### Mục tiêu workshop
+- S3
+- DynamoDB
+- SQS
+
+Khám phá từng dịch vụ để thấy Amazon Q Developer giúp tăng tốc phát triển AWS như thế nào với sinh mã và Best practices.

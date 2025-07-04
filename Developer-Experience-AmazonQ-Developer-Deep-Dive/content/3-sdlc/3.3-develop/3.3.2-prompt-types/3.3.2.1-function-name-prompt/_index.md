@@ -9,50 +9,27 @@ pre: " <b> 3.3.2.1. </b> "
 Function Name Prompt
 Amazon Q Developer can understand your intent and provides suggestions based on the function names. The more descriptive the function name is, the better the suggestions.
 
-Example #1
-Towers of Hanoi
-General Prompt
-1
- In this case,  the prompt is the function name and there is no other information need to be provided
+## Why Use Function Name Prompts?
+A well-chosen function name acts as a powerful prompt for Amazon Q Developer. By simply typing a clear, descriptive function name, you can:
+- Instantly generate relevant code logic
+- Reduce the need for lengthy comments or extra context
+- Accelerate prototyping and implementation
 
+**Best Practice:** Use function names that clearly express the purpose and expected behavior of the function. Avoid vague or generic names.
 
-Python
+---
 
-JavaScript
+### Example #1: Towers of Hanoi
+**Prompt:**
+In this case, the prompt is the function name and there is no other information needed.
 
-TypeScript
-
-C#
-
-Java
-
-Scala
-
-Go
-
-PHP
-
-Rust
-Prompt
-1
-2
-
+```python
 def towers_of_hanoi(
+```
 
+If you start typing `def towers_of_hanoi(` in your VSCode file (e.g., `basic.py`), Amazon Q Developer will suggest a complete implementation:
 
-Create a file in your VSCode and name it basic.py.
-
-In your VSCode If you start typing def towers_of_hanoi( and wait a few seconds, Amazon Q Developer will provide the following suggestion:
-
-Amazon Q Developer Suggestion #1
-Towers of hanoi
-1
-2
-3
-4
-5
-6
-7
+```python
 def towers_of_hanoi(n, source, destination, auxiliary):
     if n == 1:
         print(source, destination)
@@ -60,105 +37,63 @@ def towers_of_hanoi(n, source, destination, auxiliary):
     towers_of_hanoi(n - 1, source, auxiliary, destination)
     print(source, destination)
     towers_of_hanoi(n - 1, auxiliary, destination, source)
+```
 
+---
 
-Example #2:
-Average
-General Prompt:
- In this case,  the prompt is the function name and there is no other information need to be provided
+### Example #2: Average Calculation
+**Prompt:**
+Again, the function name alone is enough:
 
-Python
-
-JavaScript
-
-TypeScript
-
-C#
-
-Java
-
-Scala
-
-Go
-
-php
-Prompt:
-1
+```python
 def get_average(numbers):
+```
 
+Amazon Q Developer will suggest:
 
-In your VSCode If you type def get_average(numbers): and press enter, Amazon Q Developer will provide the following suggestion:
-
-Amazon Q Developer Suggestion:
-def get_average
-1
-2
-3
-def get_average(numbers): 
-    mean = sum(numbers) / len(numbers) 
+```python
+def get_average(numbers):
+    mean = sum(numbers) / len(numbers)
     return mean
+```
 
+---
 
-Sometimes you have multiple code suggestions. If you hover over the suggestion, you will see a popup with the following information:
+### Multiple Suggestions
+Sometimes, Amazon Q Developer offers multiple code suggestions. Use the arrow keys to navigate and Tab to accept the one that best fits your needs.
 
-Multiple Options
+---
 
-The number of suggestions is shown in the left corner of the popup. You can use the arrow keys to navigate through the suggestions. Once you want to accept a suggestion, press Tab.
+### Example #3: Standard Deviation
+**Prompt:**
 
-Example #3:
-Standard Deviation
-General Prompt:
- In this case,  the prompt is the function name and there is no other information need to be provided
-
-Python
-
-JavaScript
-
-TypeScript
-
-C#
-
-Java
-
-Scala
-
-Go
-
-PHP
-
-Rust
-Prompt:
-1
+```python
 def standard_deviation(numbers):
+```
 
+Amazon Q Developer may suggest:
 
-In your VSCode If you type def standard_deviation(numbers): and press enter, Amazon Q Developer will provide the following suggestion:
-
-Amazon Q Developer Suggestion #1:
-def standard_deviation
-1
-2
-3
-def standard_deviation(numbers): 
-    mean = sum(numbers) / len(numbers) 
+```python
+def standard_deviation(numbers):
+    mean = sum(numbers) / len(numbers)
     return (sum((x - mean) ** 2 for x in numbers) / len(numbers)) ** 0.5
+```
 
+Or a more modular approach:
 
-Amazon Q Developer Suggestion #2:
-def standard_deviation
-1
-2
-3
-4
-5
-6
-7
-8
+```python
 import math
 def standard_deviation(numbers):
-
     return math.sqrt(variance(numbers))
 
-def variance(numbers): 
-    mean = sum(numbers) / len(numbers) 
+def variance(numbers):
+    mean = sum(numbers) / len(numbers)
     return sum([(x - mean) ** 2 for x in numbers]) / len(numbers)
+```
+
+---
+
+## Key Takeaways
+- Descriptive function names are often enough for Amazon Q Developer to generate high-quality code.
+- For more complex logic, start with a clear function name and refine with comments or additional context as needed.
+- Experiment with naming and review multiple suggestions to find the best fit for your use case.

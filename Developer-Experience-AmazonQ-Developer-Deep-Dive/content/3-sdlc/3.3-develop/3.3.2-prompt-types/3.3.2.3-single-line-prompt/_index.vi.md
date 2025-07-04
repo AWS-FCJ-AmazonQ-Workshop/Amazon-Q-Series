@@ -1,104 +1,60 @@
 ---
-title: "Prompt Đơn Dòng"
-date: 2023-08-17T00:00:00-00:00
+title: "Single Line Prompt"
+date: "`r Sys.Date()`"
 weight: 3
 chapter: false
 pre: "<b>3.3.2.3 </b>"
 ---
 
-# Prompt Đơn Dòng
+Single Line Prompt
+Amazon Q Developer sẽ hiểu ý định của bạn và đưa ra gợi ý dựa trên các prompt hoặc comment một dòng mang tính chỉ thị rõ ràng. Cách này đặc biệt hữu ích khi bạn muốn hướng dẫn AI thực hiện các hành động như CREATE, RETURN hoặc các thao tác cụ thể khác.
 
-## Tổng Quan
-Prompt đơn dòng là những hướng dẫn ngắn gọn, một dòng để hướng dẫn Amazon Q Developer tạo ra các đoạn code cụ thể. Những prompt này lý tưởng cho các tác vụ tạo code nhanh và implementation đơn giản.
+#### Tại sao nên dùng Single Line Prompt?
+- **Chỉ thị rõ ràng:** Dẫn dắt AI bằng các hành động cụ thể (ví dụ: CREATE, RETURN)
+- **Hiệu quả:** Sinh mã nhanh cho các tác vụ phổ biến
+- **Rõ ràng:** Hướng dẫn hành động rõ ràng sẽ cho kết quả tốt hơn
 
-## Đặc Điểm
-- **Ngắn Gọn**: Một dòng text mô tả
-- **Rõ Ràng**: Hướng dẫn rõ ràng và không mơ hồ
-- **Cụ Thể**: Tập trung vào một task hoặc function duy nhất
-- **Nhận Thức Ngữ Cảnh**: Tận dụng ngữ cảnh code hiện có
+**Khuyến nghị:** Sử dụng động từ mệnh lệnh và mô tả cụ thể mục đích, kết quả mong muốn của hàm.
 
-## Mẫu Phổ Biến
+---
 
-### 1. Prompt Tạo Function
+#### Ví dụ #1: Hàm lấy tuổi người dùng
+**Prompt:**
+
 ```python
-# Create a function to validate password strength
-# Generate a method to calculate compound interest
-# Write a function to merge two sorted arrays
+# create a function called get user age
+# ask the user to input their age
+# return the user's age
 ```
 
-### 2. Prompt Xử Lý Dữ Liệu
-```javascript
-// Convert JSON string to object
-// Filter array for positive numbers only
-// Remove duplicates from list
-```
+Gợi ý của Amazon Q Developer:
 
-### 3. Implementation Thuật Toán
-```java
-// Implement binary search algorithm
-// Create quicksort function
-// Generate Fibonacci sequence
-```
-
-## Thực Hành Tốt
-
-### 1. Sử Dụng Động Từ Hành Động
 ```python
-# Calculate monthly payment for loan
-# Validate user input format
-# Convert temperature from Celsius to Fahrenheit
+def get_user_age():
+    age = input("Please enter your age: ")
+    return age
 ```
 
-### 2. Bao Gồm Input/Output Mong Đợi
-```javascript
-// Parse CSV string into array of objects
-// Format date to MM/DD/YYYY string
-// Generate random password with 8 characters
-```
+---
 
-### 3. Chỉ Định Chi Tiết Implementation
+#### Ví dụ #2: Tính diện tích
+**Prompt:**
+
 ```python
-# Sort dictionary by values in descending order
-# Connect to MySQL database using connection pool
-# Encrypt text using AES-256 encryption
+# create a function to calculate the area of a rectangle
+# return the area
 ```
 
-## Ví Dụ Implementation
+Gợi ý của Amazon Q Developer:
 
-### Ví Dụ Python
 ```python
-# Create a function to find the longest word in a sentence
-def find_longest_word(sentence):
-    words = sentence.split()
-    return max(words, key=len)
+def calculate_area(length, width):
+    return length * width
 ```
 
-### Ví Dụ JavaScript
-```javascript
-// Generate array of random numbers between 1 and 100
-function generateRandomArray(size) {
-    return Array.from({length: size}, () => Math.floor(Math.random() * 100) + 1);
-}
-```
+---
 
-### Ví Dụ Java
-```java
-// Check if string is a palindrome
-public boolean isPalindrome(String str) {
-    String cleaned = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-    return cleaned.equals(new StringBuilder(cleaned).reverse().toString());
-}
-```
-
-## Mẹo Hiệu Quả
-1. **Cụ Thể**: Tránh các thuật ngữ mơ hồ như "làm gì đó"
-2. **Bao Gồm Ngữ Cảnh**: Đề cập đến data type, ràng buộc, hoặc yêu cầu
-3. **Sử Dụng Thuật Ngữ Chuẩn**: Sử dụng các khái niệm lập trình được biết đến
-4. **Đặt Vị Trí Đúng**: Đặt prompt ở nơi code cần được tạo
-
-## Trường Hợp Sử Dụng Phổ Biến
-- Tạo utility function nhanh
-- Các task chuyển đổi dữ liệu
-- Implementation thuật toán đơn giản
-- Logic validation cơ bản
-- Code configuration và setup
+#### Tổng kết
+- Dùng single line prompt với chỉ thị rõ ràng để sinh mã nhanh, chính xác
+- Kết hợp nhiều prompt một dòng cho logic phức tạp hơn
+- Xem xét và chỉnh sửa gợi ý để phù hợp nhất với nhu cầu của bạn

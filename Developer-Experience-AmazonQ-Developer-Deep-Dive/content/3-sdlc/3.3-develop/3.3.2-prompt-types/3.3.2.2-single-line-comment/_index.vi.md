@@ -1,71 +1,57 @@
 ---
-title: "Comment Đơn Dòng"
-date: 2023-08-17T00:00:00-00:00
-weight: 2
+title: "Single Line Comment"
+date: "`r Sys.Date()`"
+weight: 1
 chapter: false
-pre: "<b>3.3.2.2 </b>"
+pre: " <b>3.3.2.2 </b> "
 ---
 
-# Prompt Comment Đơn Dòng
+Single Line Comment
+Amazon Q Developer có thể hiểu ý định của bạn và đưa ra gợi ý mã thông minh dựa trên comment một dòng ngắn gọn. Cách này rất phù hợp cho các hàm đơn giản hoặc khi bạn muốn prototype nhanh mà không cần viết tài liệu chi tiết.
 
-## Tổng Quan
-Prompt comment đơn dòng sử dụng comment nội tuyến để tạo ra các gợi ý code cụ thể. Amazon Q Developer phân tích ngữ cảnh comment và cung cấp các implementation code phù hợp ngay sau comment.
+#### Tại sao nên dùng comment một dòng?
+- **Nhanh chóng:** Sinh mã cho các tác vụ phổ biến ngay lập tức
+- **Rõ ràng:** Comment tốt sẽ thể hiện rõ mục đích
+- **Đơn giản:** Lý tưởng cho các hàm nhỏ, tập trung
 
-## Trường Hợp Sử Dụng
-- Tạo implementation function đơn giản
-- Tạo variable assignment
-- Thêm logic điều kiện
-- Implement thuật toán cơ bản
+**Khuyến nghị:** Viết comment mang tính hành động và cụ thể về mục đích của hàm.
 
-## Thực Hành Tốt
+---
 
-### 1. Cụ Thể và Rõ Ràng
+#### Ví dụ #1: In ra một thông điệp
+**Prompt:**
+
 ```python
-# Calculate the factorial of a number using recursion
+# function to print a message
 ```
 
-### 2. Bao Gồm Ngữ Cảnh
-```javascript
-# Validate email format using regex pattern
-```
+Gợi ý của Amazon Q Developer:
 
-### 3. Chỉ Định Hành Vi Mong Đợi
-```java
-// Sort array in ascending order using bubble sort
-```
-
-## Ví Dụ Implementation
-
-### Ví Dụ Python
 ```python
-# Create a function to check if a number is prime
-def is_prime(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+def print_message(message):
+    print(message)
+    return
 ```
 
-### Ví Dụ JavaScript
-```javascript
-// Convert string to title case
-function toTitleCase(str) {
-    return str.replace(/\w\S*/g, (txt) => 
-        txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-    );
-}
+---
+
+#### Ví dụ #2: Cộng hai số
+**Prompt:**
+
+```python
+# function to add two numbers
 ```
 
-## Lợi Ích Chính
-- **Implementation Nhanh**: Tạo code nhanh chóng cho các tác vụ đơn giản
-- **Nhận Thức Ngữ Cảnh**: Tận dụng code xung quanh cho gợi ý tốt hơn
-- **Cú Pháp Tối Thiểu**: Format comment đơn giản không cần cú pháp đặc biệt
-- **Không Phụ Thuộc Ngôn Ngữ**: Hoạt động trên nhiều ngôn ngữ lập trình
+Gợi ý của Amazon Q Developer:
 
-## Mẹo Sử Dụng Hiệu Quả
-1. Đặt comment ngay phía trên nơi code cần được tạo
-2. Sử dụng ngôn ngữ mô tả rõ ràng ý định
-3. Bao gồm gợi ý về parameter hoặc return type khi phù hợp
-4. Giữ comment ngắn gọn nhưng có thông tin
+```python
+def add_numbers(a, b):
+    return a + b
+```
+
+---
+
+#### Tổng kết
+- Dùng comment một dòng để sinh mã nhanh cho các hàm đơn giản
+- Hãy cụ thể trong comment để nhận được gợi ý phù hợp nhất
+- Với logic phức tạp, hãy cân nhắc dùng comment nhiều dòng hoặc prompt chi tiết hơn
