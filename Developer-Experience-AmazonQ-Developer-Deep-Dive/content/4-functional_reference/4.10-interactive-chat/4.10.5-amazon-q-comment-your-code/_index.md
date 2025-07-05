@@ -7,11 +7,11 @@ pre: " <b> 4.10.5. </b> "
 ---
 
 
-## Amazon Q: Comment Your Code
+#### Amazon Q: Comment Your Code
 
 Amazon Q Developer can automatically comment your code. Select code in your IDE, right-click, and choose to send to Q for commenting. Type your prompt if needed.
 
-### Example: Add Comments to Code
+#### Example: Add Comments to Code
 **Prompt:**
 Comment the following code:
 ```python

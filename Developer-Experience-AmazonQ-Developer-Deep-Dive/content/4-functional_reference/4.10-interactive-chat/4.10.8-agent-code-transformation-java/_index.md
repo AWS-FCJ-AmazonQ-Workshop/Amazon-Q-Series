@@ -7,11 +7,11 @@ pre: " <b> 4.10.8. </b> "
 ---
 
 
-## Amazon Q: Agent for Code Transformation (Java)
+#### Amazon Q: Agent for Code Transformation (Java)
 
 Amazon Q Developer Agent helps you transform Java projects (e.g., Java 8 to Java 17). Open your project in the IDE, then use Q Chat with the `/transform` command to start the transformation.
 
-### Example: Java 8 to Java 17
+#### Example: Java 8 to Java 17
 **Prompt:**
 Chuyển đổi dự án Java 8 sang Java 17.
 

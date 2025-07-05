@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-## Bước 1: Cài đặt môi trường
+#### Bước 1: Cài đặt môi trường
 
 - Sử dụng IDE Python (ví dụ: VS Code) có bật Amazon Q Developer.
 - Cài Python 3.9+ và các thư viện:
@@ -26,7 +26,7 @@ pip install streamlit pandas matplotlib seaborn jupyter
     - `configuration.ini` (file cấu hình)
     - `weather.py` (ứng dụng Streamlit chính)
 
-## Bước 2: Chuẩn bị dữ liệu
+#### Bước 2: Chuẩn bị dữ liệu
 
 - Sử dụng bộ dữ liệu thời tiết (CSV) với các cột: NAME, DATE, TAVG, TMAX, TMIN.
 - Làm sạch và biến đổi dữ liệu trong `data/data.ipynb` với các prompt Amazon Q Developer:
@@ -40,7 +40,7 @@ pip install streamlit pandas matplotlib seaborn jupyter
   - Ghi DataFrame đã xử lý ra CSV
 - Thử cả prompt từng dòng và prompt nhiều dòng để sinh code.
 
-## Bước 3: Ứng dụng Streamlit
+#### Bước 3: Ứng dụng Streamlit
 
 - Tạo `configuration.ini` để chỉ đường dẫn dữ liệu đã làm sạch.
 - Trong `weather.py`, import các thư viện cần thiết:

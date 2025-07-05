@@ -7,11 +7,11 @@ pre: " <b> 4.10.7. </b> "
 ---
 
 
-## Amazon Q: Dev Project
+#### Amazon Q: Dev Project
 
 Amazon Q Developer helps you create implementation plans for code changes. Open the panel in your IDE, type "/dev" and press Enter to start a dev project.
 
-### Example: Web Page Dev Plan
+#### Example: Web Page Dev Plan
 **Prompt:**
 Tôi cần một trang web có ô nhập tên, nút gửi, gọi API và hiển thị kết quả trả về.
 

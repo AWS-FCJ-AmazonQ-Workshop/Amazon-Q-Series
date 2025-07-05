@@ -7,11 +7,11 @@ pre: " <b> 4.10.4. </b> "
 ---
 
 
-## Amazon Q: Optimize, Refactor, Fix and Explain
+#### Amazon Q: Optimize, Refactor, Fix and Explain
 
 Amazon Q Developer helps you optimize, refactor, fix, and explain code. Highlight code in your IDE, right-click, and select the desired action. Type your question if needed.
 
-### Example: Optimize and Explain Code
+#### Example: Optimize and Explain Code
 **Prompt:**
 Tối ưu hoặc giải thích đoạn mã sau:
 ```python

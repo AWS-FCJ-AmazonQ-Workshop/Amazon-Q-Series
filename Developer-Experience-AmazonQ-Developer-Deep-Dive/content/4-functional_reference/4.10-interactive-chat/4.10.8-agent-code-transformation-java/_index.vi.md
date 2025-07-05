@@ -6,11 +6,11 @@ chapter: false
 pre: " <b> 4.10.8 </b> "
 ---
 
-## Amazon Q: Agent chuyển đổi mã nguồn (Java)
+#### Amazon Q: Agent chuyển đổi mã nguồn (Java)
 
 Amazon Q Developer Agent giúp bạn chuyển đổi dự án Java (ví dụ: Java 8 sang Java 17). Mở dự án trong IDE, dùng Q Chat với lệnh `/transform` để bắt đầu chuyển đổi.
 
-### Quy trình chuyển đổi Java 8 sang Java 17
+#### Quy trình chuyển đổi Java 8 sang Java 17
 
 1. **Bắt đầu Agent chuyển đổi mã nguồn**
    - Tab Agent for Code Transformation sẽ hiển thị form với các tùy chọn:

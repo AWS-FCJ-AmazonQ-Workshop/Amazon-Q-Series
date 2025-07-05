@@ -12,6 +12,8 @@ This phase focuses on knowledge acquisition, system understanding, and team onbo
 
 Access Amazon Q Developer in your AWS Console by clicking the icon on the right side. For AWS event participants, refer to the Configuration section for account setup instructions.
 
+![](/images/3-sdlc/3.1-understand-and-learn/image.png?width=90pc)
+
 #### Example 1: AWS Resource Discovery
 
 **Scenario**: Understanding your current AWS environment
@@ -22,6 +24,8 @@ How many running EC2 instances do I have?
 ```
 
 **Use Case**: Quickly assess infrastructure inventory and resource utilization across your AWS account.
+
+![](/images/3-sdlc/3.1-understand-and-learn/image-1.png?width=40pc)
 
 #### Example 2: Knowledge Gap Resolution
 
@@ -35,6 +39,8 @@ Show me how to implement DDD patterns on AWS with serverless and microservices.
 
 **Use Case**: Bridge knowledge gaps for enterprise digital transformation initiatives.
 
+![](/images/3-sdlc/3.1-understand-and-learn/image-2.png?width=40pc)
+
 {{% notice tip %}}
 **Context Management**: Amazon Q maintains conversation context within sessions. Use "New conversation" to clear context when switching topics for more accurate responses.
 {{% /notice %}}
@@ -43,7 +49,9 @@ Show me how to implement DDD patterns on AWS with serverless and microservices.
 
 **Scenario**: Developer onboarding from Python to Java/C# in enterprise environment
 
-Switch to your IDE and open Q Chat for this example.
+{{% notice info %}}
+**Switch to IDE** and open Q Chat for this example.
+{{% /notice %}}
 
 **Prompt**:
 ```
@@ -53,6 +61,8 @@ Use practical examples for comparison.
 ```
 
 **Use Case**: Accelerate developer onboarding and cross-language knowledge transfer.
+
+![](/images/3-sdlc/3.1-understand-and-learn/image-3.png?width=40pc)
 
 #### Example 4: Framework Learning
 

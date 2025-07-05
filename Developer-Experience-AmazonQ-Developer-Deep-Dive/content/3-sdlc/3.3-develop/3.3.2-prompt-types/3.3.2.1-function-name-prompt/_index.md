@@ -9,7 +9,7 @@ pre: " <b> 3.3.2.1. </b> "
 Function Name Prompt
 Amazon Q Developer can understand your intent and provides suggestions based on the function names. The more descriptive the function name is, the better the suggestions.
 
-## Why Use Function Name Prompts?
+#### Why Use Function Name Prompts?
 A well-chosen function name acts as a powerful prompt for Amazon Q Developer. By simply typing a clear, descriptive function name, you can:
 - Instantly generate relevant code logic
 - Reduce the need for lengthy comments or extra context
@@ -19,7 +19,7 @@ A well-chosen function name acts as a powerful prompt for Amazon Q Developer. By
 
 ---
 
-### Example #1: Towers of Hanoi
+##### Example #1: Towers of Hanoi
 **Prompt:**
 In this case, the prompt is the function name and there is no other information needed.
 
@@ -41,7 +41,7 @@ def towers_of_hanoi(n, source, destination, auxiliary):
 
 ---
 
-### Example #2: Average Calculation
+##### Example #2: Average Calculation
 **Prompt:**
 Again, the function name alone is enough:
 
@@ -59,12 +59,12 @@ def get_average(numbers):
 
 ---
 
-### Multiple Suggestions
+##### Multiple Suggestions
 Sometimes, Amazon Q Developer offers multiple code suggestions. Use the arrow keys to navigate and Tab to accept the one that best fits your needs.
 
 ---
 
-### Example #3: Standard Deviation
+##### Example #3: Standard Deviation
 **Prompt:**
 
 ```python
@@ -93,7 +93,7 @@ def variance(numbers):
 
 ---
 
-## Key Takeaways
+#### Key Takeaways
 - Descriptive function names are often enough for Amazon Q Developer to generate high-quality code.
 - For more complex logic, start with a clear function name and refine with comments or additional context as needed.
 - Experiment with naming and review multiple suggestions to find the best fit for your use case.

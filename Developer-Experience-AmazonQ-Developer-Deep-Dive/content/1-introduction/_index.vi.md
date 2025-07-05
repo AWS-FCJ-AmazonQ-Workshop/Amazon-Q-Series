@@ -17,7 +17,7 @@ Workshop này cung cấp trải nghiệm hands-on với các advanced capabiliti
 #### Workshop Tracks
 Chọn track phù hợp với thời gian và mục tiêu học tập của bạn:
 
-![alt text](image.png?width=90pc)
+![alt text](/images/1-introduction/image.png?width=90pc)
 
 {{%expand "Short Track [Level 200] - 1.5 giờ" %}}
 

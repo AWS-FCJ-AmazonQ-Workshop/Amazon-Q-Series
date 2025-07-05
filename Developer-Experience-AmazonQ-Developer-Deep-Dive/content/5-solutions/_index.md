@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-## Solutions
+#### Solutions
 
 Amazon Q Developer can suggest and generate code for practical scenarios. In this section, you'll find Python-based examples and solutions that demonstrate how to use Amazon Q Developer for real-world tasks and workflows.
 

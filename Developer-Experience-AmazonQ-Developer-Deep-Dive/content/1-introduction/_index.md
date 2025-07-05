@@ -17,7 +17,7 @@ This workshop provides hands-on experience with Amazon Q Developer's advanced ca
 #### Workshop Tracks
 Choose the track that matches your available time and learning objectives:
 
-![alt text](image.png?width=90pc)
+![alt text](/images/1-introduction/image.png?width=90pc)
 
 {{%expand "Short Track [Level 200] - 1.5 hours" %}}
 

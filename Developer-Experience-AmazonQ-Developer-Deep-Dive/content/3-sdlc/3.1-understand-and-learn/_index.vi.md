@@ -12,7 +12,7 @@ Giai đoạn này tập trung vào knowledge acquisition, system understanding, 
 
 Truy cập Amazon Q Developer trong AWS Console bằng cách click icon ở phía bên phải. Đối với participants tham gia AWS event, tham khảo phần Configuration để setup account.
 
-![alt text](image.png?width=90pc)
+![alt text](/images/3-sdlc/3.1-understand-and-learn/image.png?width=90pc)
 
 #### Example 1: AWS Resource Discovery
 
@@ -25,7 +25,7 @@ How many running EC2 instances do I have?
 
 **Use Case**: Nhanh chóng assess infrastructure inventory và resource utilization trong AWS account.
 
-![alt text](image-1.png?width=40pc)
+![alt text](/images/3-sdlc/3.1-understand-and-learn/image-1.png?width=40pc)
 
 #### Example 2: Knowledge Gap Resolution
 
@@ -39,7 +39,7 @@ Show me how to implement DDD patterns on AWS with serverless and microservices.
 
 **Use Case**: Khắc phục knowledge gaps cho enterprise digital transformation initiatives.
 
-![alt text](image-2.png?width=40pc)
+![alt text](/images/3-sdlc/3.1-understand-and-learn/image-2.png?width=40pc)
 
 {{% notice tip %}}
 **Context Management**: Amazon Q duy trì conversation context trong sessions. Sử dụng "New conversation" để clear context khi chuyển topics để có responses chính xác hơn.
@@ -62,7 +62,7 @@ Use practical examples for comparison.
 
 **Use Case**: Tăng tốc developer onboarding và cross-language knowledge transfer.
 
-![alt text](image-3.png?width=40pc)
+![alt text](/images/3-sdlc/3.1-understand-and-learn/image-3.png?width=40pc)
 
 #### Example 4: Framework Learning
 

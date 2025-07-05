@@ -6,11 +6,11 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-## Amazon S3 Service with Amazon Q Developer
+#### Amazon S3 Service with Amazon Q Developer
 
 Amazon Q Developer can generate code for common S3 operations in multiple programming languages. Below are concise examples for typical S3 tasks using Python. You can request similar code for JavaScript, TypeScript, C#, Java, Scala, Go, or PHP.
 
-### Example 1: Create a Bucket
+#### Example 1: Create a Bucket
 **Prompt:**
 Tạo một bucket với tên cho trước và trả về đối tượng bucket nếu thành công, ngược lại trả về None.
 
@@ -27,7 +27,7 @@ def create_bucket(bucket_name, session):
         return None
 ```
 
-### Example 2: List Buckets
+#### Example 2: List Buckets
 **Prompt:**
 Trả về danh sách tất cả các bucket trong tài khoản nếu thành công, ngược lại trả về None.
 
@@ -41,13 +41,13 @@ def list_buckets(session):
         return None
 ```
 
-### Example 3: Recursive Delete Bucket
+#### Example 3: Recursive Delete Bucket
 **Prompt:**
 Xóa đệ quy tất cả các folder, object và bucket. Trả về True nếu thành công, ngược lại trả về False.
 
 // ...code sample for recursive delete (add as needed)...
 
-### Example 4: Check if Bucket Exists
+#### Example 4: Check if Bucket Exists
 **Prompt:**
 Kiểm tra bucket có tồn tại không, trả về True nếu có, ngược lại trả về False.
 

@@ -45,7 +45,7 @@ The agent will generate a detailed development plan and code suggestions. Review
 
 ---
 
-## Best Practices for Scaffolding
+#### Best Practices for Scaffolding
 - **Be Specific:** Clearly define your requirements in the prompt for more accurate scaffolding.
 - **Iterate:** Use feedback and code review features to refine the generated structure.
 - **Leverage Automation:** Use the Agent for Software Development for complex or multi-service projects.

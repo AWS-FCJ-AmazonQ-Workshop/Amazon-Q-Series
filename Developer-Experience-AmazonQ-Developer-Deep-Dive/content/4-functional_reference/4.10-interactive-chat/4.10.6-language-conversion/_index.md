@@ -7,11 +7,11 @@ pre: " <b> 4.10.6. </b> "
 ---
 
 
-## Amazon Q: Language Conversion
+#### Amazon Q: Language Conversion
 
 Amazon Q Developer can help you convert code between programming languages. Provide your source code and specify the target language.
 
-### Example: Convert from COBOL
+#### Example: Convert from COBOL
 **Prompt:**
 Convert the following COBOL code to Python.
 

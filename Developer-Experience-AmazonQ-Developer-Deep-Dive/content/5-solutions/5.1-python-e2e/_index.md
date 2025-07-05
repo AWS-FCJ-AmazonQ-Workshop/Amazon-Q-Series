@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-## Step 1: Setup
+#### Step 1: Setup
 
 - Use a Python IDE (e.g., VS Code) with Amazon Q Developer enabled.
 - Install Python 3.9+ and the following libraries:
@@ -26,7 +26,7 @@ pip install streamlit pandas matplotlib seaborn jupyter
     - `configuration.ini` (config file)
     - `weather.py` (main Streamlit app)
 
-## Step 2: Data Preparation
+#### Step 2: Data Preparation
 
 - Use a weather dataset (CSV) with columns: NAME, DATE, TAVG, TMAX, TMIN.
 - Clean and transform data step-by-step in `data/data.ipynb` using Amazon Q Developer prompts:
@@ -40,7 +40,7 @@ pip install streamlit pandas matplotlib seaborn jupyter
   - Write cleaned DataFrame to CSV
 - Try both single-line and multi-line prompting for code generation.
 
-## Step 3: Streamlit Application
+#### Step 3: Streamlit Application
 
 - Create `configuration.ini` to specify the cleaned dataset path.
 - In `weather.py`, import required libraries:

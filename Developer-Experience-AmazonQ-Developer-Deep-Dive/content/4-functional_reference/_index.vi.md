@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-## Tham khảo chức năng
+#### Tham khảo chức năng
 
 Phần này cung cấp cái nhìn chuyên sâu về các tính năng kỹ thuật của Amazon Q Developer, bao gồm:
 

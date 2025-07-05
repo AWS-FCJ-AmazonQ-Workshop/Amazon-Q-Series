@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-## Functional Reference
+#### Functional Reference
 
 This section provides a technical deep dive into Amazon Q Developer's capabilities, including:
 

@@ -6,15 +6,13 @@ chapter: false
 pre: " <b> 3.3.3. </b> "
 ---
 
-# Class Creation with Amazon Q Developer
-
 Creating classes with Amazon Q Developer is intuitive and efficient. By providing clear prompts, you can generate well-structured classes with appropriate methods and attributes. This section demonstrates various approaches to class creation using AI assistance.
 
-## Example 1: Creating a Folder Class
+#### Example 1: Creating a Folder Class
 
 Let's start with a practical example of creating a folder management system.
 
-### Prompt Strategy
+##### Prompt Strategy
 Use descriptive prompts that clearly define the class requirements:
 
 ```text
@@ -23,11 +21,10 @@ folders has name, children, and optional parent
 a child cannot be added twice
 ```
 
-### Implementation Steps
+##### Implementation Steps
 
 **Step 1:** Create a new file `folder_class.py` in VSCode
 
-**Step 2:** Enter the following multi-line comment prompt:
 **Step 2:** Enter the following multi-line comment prompt:
 
 ```python
@@ -40,7 +37,7 @@ a child cannot be added twice
 
 **Step 3:** Press Enter repeatedly to accept Amazon Q Developer's suggestions
 
-### Generated Code
+##### Generated Code
 
 Amazon Q Developer will generate a comprehensive Folder class:
 
@@ -69,7 +66,7 @@ class Folder:
         return self.name
 ```
 
-### Extending the Class
+##### Extending the Class
 
 Continue pressing Enter to let Amazon Q Developer add more functionality:
 
@@ -90,22 +87,21 @@ Continue pressing Enter to let Amazon Q Developer add more functionality:
 **Key Insight**: Amazon Q Developer continues to enhance the class as long as you keep accepting suggestions. This iterative approach helps build comprehensive, well-designed classes.
 {{% /notice %}}
 
-## Example 2: Creating a User Class
+#### Example 2: Creating a User Class
 
 Let's create a more complex class with multiple attributes and methods.
 
-### Prompt Strategy
+##### Prompt Strategy
 
 ```text
 Create a class call User
 add first_name, last_name, age, email, phone, login_attempts, and password attributes
 ```
 
-### Implementation Steps
+##### Implementation Steps
 
 **Step 1:** Create a new file `user_class.py`
 
-**Step 2:** Enter the prompt:
 **Step 2:** Enter the prompt:
 
 ```python
@@ -121,7 +117,7 @@ add first_name, last_name, age, email, phone, login_attempts, and password attri
 
 **Step 3:** Accept the suggestions by pressing Enter
 
-### Generated User Class
+##### Generated User Class
 
 Amazon Q Developer will create a comprehensive User class:
 
@@ -159,7 +155,7 @@ class User:
         print(f"Password updated successfully")
 ```
 
-### Continuous Enhancement
+##### Continuous Enhancement
 
 As you continue pressing Enter at the end of methods, Amazon Q Developer will:
 
@@ -168,19 +164,19 @@ As you continue pressing Enter at the end of methods, Amazon Q Developer will:
 - Create utility functions
 - Add error handling
 
-## Best Practices for Class Creation
+##### Best practices for Class Creation
 
-### 1. Clear and Specific Prompts
+##### 1. Clear and Specific Prompts
 - Define all required attributes upfront
 - Specify relationships between objects
 - Include business rules and constraints
 
-### 2. Iterative Development
+##### 2. Iterative Development
 - Start with basic structure
 - Allow Amazon Q Developer to suggest enhancements
 - Review and accept relevant additions
 
-### 3. Multi-Language Support
+##### 3. Multi-Language Support
 Amazon Q Developer can create similar classes in various languages:
 
 {{< tabs >}}
@@ -211,7 +207,7 @@ Create a class called User with attributes and methods
 {{% /tab %}}
 {{< /tabs >}}
 
-## Next Steps
+#### Next Steps
 
 With classes created, you can now:
 - Generate unit tests for your classes

@@ -6,11 +6,11 @@ chapter: false
 pre: " <b> 4.10.4 </b> "
 ---
 
-## Amazon Q: Tối ưu, Refactor, Sửa lỗi và Giải thích mã nguồn
+#### Amazon Q: Tối ưu, Refactor, Sửa lỗi và Giải thích mã nguồn
 
 Amazon Q Developer giúp bạn tối ưu, refactor, sửa lỗi và giải thích mã nguồn. Chọn đoạn mã trong IDE, nhấn chuột phải và chọn hành động mong muốn. Có thể nhập câu hỏi nếu cần.
 
-### Ví dụ: Tối ưu và giải thích mã
+#### Ví dụ: Tối ưu và giải thích mã
 **Prompt:**
 Tối ưu hoặc giải thích đoạn mã sau:
 ```python

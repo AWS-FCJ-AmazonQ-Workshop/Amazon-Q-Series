@@ -7,7 +7,7 @@ pre: " <b> 4.10.2. </b> "
 ---
 
 
-## Amazon Q: Generate Code
+#### Amazon Q: Generate Code
 
 Amazon Q Developer can generate code for CLI commands and infrastructure automation. Open the Amazon Q Developer panel in your IDE, type your question, and press Enter to get code suggestions.
 
@@ -20,7 +20,7 @@ How can I check the number of Amazon S3 buckets I have using the AWS CLI?
 aws s3api list-buckets --query "length(Buckets)"
 ```
 
-### Example 2: Generate Infrastructure as Code
+#### Example 2: Generate Infrastructure as Code
 **Prompt:**
 Write a template to create an S3 bucket.
 

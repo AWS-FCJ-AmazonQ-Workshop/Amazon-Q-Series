@@ -7,11 +7,11 @@ pre: " <b> 4.10.3. </b> "
 ---
 
 
-## Amazon Q: Conversational Coding Flow
+#### Amazon Q: Conversational Coding Flow
 
 Amazon Q Developer supports multi-step coding conversations. Start a chat in your IDE, send prompts, and Amazon Q will maintain context and provide relevant instructions.
 
-### Example: Multi-step Coding
+#### Example: Multi-step Coding
 **Prompt:**
 1. Tạo danh sách các chương trình TV bằng Python.
 2. Tạo danh sách điểm đánh giá cho các chương trình này.

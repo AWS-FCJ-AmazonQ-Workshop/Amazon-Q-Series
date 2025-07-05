@@ -8,16 +8,16 @@ pre: "<b>3.3.2.7 </b>"
 
 Considerations
 
-## General Best Practices
+#### General Best Practices
 Be intentional with your naming and prompt structure. This helps both you and others (including AI) understand your code and requirements. Be specific and descriptive in all aspects of your code and prompts.
 
-### Avoid
+#### Avoid
 - Single letter variable names (except for short-lived loop counters)
 - Generic names like `data` or `value`
 - Abbreviations like `val` or `num`
 - Vague or ambiguous function names
 
-### Use
+#### Use
 - Descriptive names like `numberOfStudents` or `totalPrice`
 - Names that are specific to the context and type of the variable
 - Names that reflect the value, purpose, and scope (global, local, class, etc.)
