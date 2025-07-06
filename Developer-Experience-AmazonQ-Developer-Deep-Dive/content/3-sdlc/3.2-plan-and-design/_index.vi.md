@@ -12,7 +12,7 @@ Giai đoạn này tập trung vào architectural planning, design patterns resea
 **Recommended Environment**: Sử dụng IDE Chat feature để duy trì consistent context trong các modules tiếp theo. AWS event participants có thể tham khảo Configuration section cho VSCode setup.
 {{% /notice %}}
 
-#### Example 1: Design Patterns Research
+##### Example 1: Design Patterns Research
 
 **Scenario**: Hiểu DDD architecture patterns cho AWS implementation
 
@@ -32,7 +32,7 @@ and their implementation context in AWS?
 - **Event Sourcing**: DynamoDB Streams, Kinesis
 - **Layered/Onion Architecture**: Cross-service implementation
 
-#### Example 2: Modernization Strategy
+##### Example 2: Modernization Strategy
 
 **Scenario**: Gradual legacy modernization without big-bang approach
 
@@ -51,7 +51,7 @@ Guide me on architecture patterns and implementation strategy.
 - **CI/CD**: CodePipeline automation
 - **Monitoring**: CloudWatch, X-Ray observability
 
-#### Example 3: Requirements Engineering
+##### Example 3: Requirements Engineering
 
 **Context Reset**: Sử dụng `/clear` command để reset conversation context trước section này.
 
@@ -92,7 +92,7 @@ using a methodical weighted scoring approach?
 - **Process**: Score 1-5, multiply by weights, rank by total scores
 - **Tools**: Spreadsheets, QuickSight cho visualization
 
-#### Example 4: User Story Development
+##### Example 4: User Story Development
 
 **4.1 User Story Creation**
 

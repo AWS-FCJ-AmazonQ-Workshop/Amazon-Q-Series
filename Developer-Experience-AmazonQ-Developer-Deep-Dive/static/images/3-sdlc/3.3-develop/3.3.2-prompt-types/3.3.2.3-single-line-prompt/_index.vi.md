@@ -18,7 +18,7 @@ Amazon Q Developer sẽ hiểu ý định của bạn và đưa ra gợi ý dự
 
 ---
 
-#### Ví dụ #1: Hàm lấy tuổi người dùng
+##### Ví dụ #1: Hàm lấy tuổi người dùng
 **Prompt:**
 
 ```python
@@ -37,7 +37,7 @@ def get_user_age():
 
 ---
 
-#### Ví dụ #2: Tính diện tích
+##### Ví dụ #2: Tính diện tích
 **Prompt:**
 
 ```python

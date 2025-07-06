@@ -49,8 +49,6 @@ pre: " <b> 6. </b> "
 #### Troubleshooting reference documentation
 
 - [Amazon Q Developer Troubleshooting Guide](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/troubleshooting.html)
-- [AWS CloudFormation Troubleshooting with Amazon Q](https://aws.amazon.com/about-aws/whats-new/2023/11/cloudformation-troubleshooting-q-developer-assistance/)
-- [Amazon Q Developer Console Error Troubleshooting](https://aws.amazon.com/blogs/aws/amazon-q-developer-now-helps-you-troubleshoot-aws-console-errors/)
 - [Amazon Q Developer Security Best Practices](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-code-generation/security-best-practices.html)
 - [Amazon Q Developer IDE Setup Guide](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/setup-qdeveloper.html)
 - [Amazon Q Developer Community Guide](https://community.aws/content/2fVw1hN4VeTF3qtVSZHfQiQUS16/getting-started-with-amazon-q-developer-in-visual-studio-code)

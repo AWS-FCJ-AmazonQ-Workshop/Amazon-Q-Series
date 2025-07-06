@@ -1,22 +1,24 @@
 ---
-title: "Introduction to Amazon Q Developer"
+title: "SQL with Amazon Q Developer"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 8
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.8 </b> "
 ---
 
-SQL
-Amazon Q Developer can generate ANSI & database specific SQL DDL and DML statements. If a database vendor has specific DLL or DML implementation, Amazon Q Developer generates the specific implementation.
+#### Overview of SQL with Amazon Q Developer
 
-In this section, you will prompt Amazon Q Developer using comments to generate DDL and DML statements to:
+Amazon Q Developer can generate ANSI & database-specific SQL DDL and DML statements. If a database vendor has specific DDL or DML implementation, Amazon Q Developer generates the specific implementation.
 
-Create Users Table
-E-Commerce Schema
-You will use Amazon Q Developer to generate the statements for:
+In this section, you will use Amazon Q Developer through comments to generate DDL and DML statements to:
 
-ANSI SQL
-MySQL
-Postgres
-Oracle
-SQL Server
+- Create Users Table
+- Build E-Commerce Schema
+
+You will use Amazon Q Developer to generate code for:
+
+- ANSI SQL
+- MySQL
+- PostgreSQL
+- Oracle
+- SQL Server

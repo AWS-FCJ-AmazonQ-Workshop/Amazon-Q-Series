@@ -24,7 +24,7 @@ I need to create a project framework where a team of C# developers will be able 
 **Phản hồi mẫu:**
 Amazon Q Developer sẽ cung cấp kế hoạch từng bước, bao gồm cấu trúc dự án, đoạn mã mẫu và hướng dẫn triển khai. Bạn có thể làm theo các bước này hoặc dùng làm tài liệu tham khảo cho dự án của mình.
 
-![alt text](image.png?width=40pc)
+![alt text](/images/3-sdlc/3.3-develop/3.3.1-Scaffolding/image.png?width=40pc)
 
 > **Mẹo:** Nếu bạn hạn chế thời gian hoặc theo track L200, có thể bỏ qua phần thực hành. Điều quan trọng là bạn biết Amazon Q Developer có thể tăng tốc quá trình khởi tạo dự án.
 
@@ -46,7 +46,7 @@ Create a project framework where a team of C# developers will be able to develop
 **Phản hồi mẫu:**
 Agent sẽ tạo kế hoạch phát triển chi tiết và đề xuất mã. Xem xét mã đề xuất, chấp nhận hoặc phản hồi để lặp lại cho phù hợp. Khi hài lòng, bạn có thể chèn mã vào workspace của mình.
 
-![alt text](image-1.png?width=40pc)
+![alt text](/images/3-sdlc/3.3-develop/3.3.1-Scaffolding/image-1.png?width=40pc)
 
 ---
 

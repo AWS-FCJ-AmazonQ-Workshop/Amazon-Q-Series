@@ -10,7 +10,7 @@ pre: " <b> 4.10.5 </b> "
 
 Amazon Q Developer có thể tự động thêm chú thích cho mã nguồn của bạn. Chọn đoạn mã trong IDE, nhấn chuột phải và gửi đến Q để nhận chú thích. Có thể nhập prompt nếu cần.
 
-#### Ví dụ: Thêm chú thích cho mã
+##### Ví dụ: Thêm chú thích cho mã
 **Prompt:**
 Thêm chú thích cho đoạn mã sau:
 ```python

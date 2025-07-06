@@ -10,7 +10,7 @@ pre: " <b> 4.10.7 </b> "
 
 Amazon Q Developer giúp bạn tạo kế hoạch triển khai cho các thay đổi mã nguồn. Mở bảng trong IDE, nhập "/dev" và nhấn Enter để bắt đầu dự án.
 
-#### Ví dụ: Kế hoạch phát triển trang web
+##### Ví dụ: Kế hoạch phát triển trang web
 **Prompt:**
 Tôi cần một trang web có ô nhập tên, nút gửi, gọi API và hiển thị kết quả trả về.
 

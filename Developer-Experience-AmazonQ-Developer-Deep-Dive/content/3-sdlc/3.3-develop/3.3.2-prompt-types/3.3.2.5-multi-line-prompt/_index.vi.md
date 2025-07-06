@@ -18,7 +18,7 @@ Amazon Q Developer hiểu ý định của bạn và đưa ra gợi ý dựa tr�
 
 ---
 
-#### Ví dụ #1: Định dạng số và chuỗi
+##### Ví dụ #1: Định dạng số và chuỗi
 **Prompt:**
 
 ```python
@@ -43,7 +43,7 @@ def format_list(lst):
 
 ---
 
-#### Ví dụ #2: Tìm giá trị lớn nhất
+##### Ví dụ #2: Tìm giá trị lớn nhất
 **Prompt:**
 
 ```python

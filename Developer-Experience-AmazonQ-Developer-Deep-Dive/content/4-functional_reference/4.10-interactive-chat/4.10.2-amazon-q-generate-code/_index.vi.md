@@ -1,16 +1,16 @@
 ---
-title: "Amazon Q: Sinh mã nguồn"
+title: "Amazon Q: Generate Code"
 date: "`r Sys.Date()`"
 weight: 2
 chapter: false
 pre: " <b> 4.10.2 </b> "
 ---
 
-#### Amazon Q: Sinh mã nguồn
+#### Amazon Q: Generate Code
 
 Amazon Q Developer có thể sinh mã cho các lệnh CLI và tự động hóa hạ tầng. Mở bảng Amazon Q Developer trong IDE, nhập câu hỏi và nhấn Enter để nhận gợi ý mã nguồn.
 
-#### Ví dụ 1: Sinh lệnh CLI
+##### Ví dụ 1: Sinh lệnh CLI
 **Prompt:**
 Làm thế nào để kiểm tra số lượng Amazon S3 bucket tôi có bằng AWS CLI?
 
@@ -19,7 +19,7 @@ Làm thế nào để kiểm tra số lượng Amazon S3 bucket tôi có bằng 
 aws s3api list-buckets --query "length(Buckets)"
 ```
 
-#### Ví dụ 2: Sinh mã hạ tầng tự động (IaC)
+##### Ví dụ 2: Sinh mã hạ tầng tự động (IaC)
 **Prompt:**
 Viết template để tạo một S3 bucket.
 
@@ -38,7 +38,7 @@ Resources:
         RestrictPublicBuckets: true
 ```
 
-#### Ví dụ 3: Sinh mã SDK
+##### Ví dụ 3: Sinh mã SDK
 **Prompt:**
 Viết chương trình Python để tạo một Amazon S3 Bucket.
 
@@ -68,7 +68,7 @@ def create_s3_bucket(bucket_name, region=None):
 create_s3_bucket('my-example-bucket', 'us-west-2')
 ```
 
-#### Ví dụ 4: Sinh mã COBOL
+##### Ví dụ 4: Sinh mã COBOL
 **Prompt:**
 Cho một đối tượng JSON có các dòng mục, viết chương trình COBOL tính tổng các dòng mục và tính thuế 7%.
 

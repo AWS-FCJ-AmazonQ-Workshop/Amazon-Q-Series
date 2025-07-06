@@ -18,7 +18,7 @@ Amazon Q Developer có thể hiểu ý định của bạn và đưa ra gợi ý
 
 ---
 
-#### Ví dụ #1: In ra một thông điệp
+##### Ví dụ #1: In ra một thông điệp
 **Prompt:**
 
 ```python
@@ -35,7 +35,7 @@ def print_message(message):
 
 ---
 
-#### Ví dụ #2: Cộng hai số
+##### Ví dụ #2: Cộng hai số
 **Prompt:**
 
 ```python

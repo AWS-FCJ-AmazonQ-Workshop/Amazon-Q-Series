@@ -10,7 +10,7 @@ pre: " <b> 4.4.3. </b> "
 
 Amazon Q Developer có thể sinh mã cho các bài toán thuật toán phức tạp như tối đa hóa lợi nhuận với k lần giao dịch (Max Profit With K Transactions).
 
-#### Ví dụ prompt
+##### Ví dụ prompt
 Bạn được cung cấp một mảng `prices` trong đó `prices[i]` là giá cổ phiếu tại ngày thứ i. Hãy tìm lợi nhuận tối đa có thể đạt được với tối đa hai lần giao dịch. Lưu ý: Không được thực hiện nhiều giao dịch cùng lúc (phải bán xong mới được mua tiếp).
 
 #### Ngôn ngữ hỗ trợ

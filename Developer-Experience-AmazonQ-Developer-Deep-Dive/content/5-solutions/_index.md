@@ -1,9 +1,9 @@
 ---
 title: "Amazon Q Developer: Solutions"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 5
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 5. </b> "
 ---
 
 #### Solutions

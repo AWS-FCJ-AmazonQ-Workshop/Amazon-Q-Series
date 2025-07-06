@@ -8,7 +8,7 @@ pre: " <b> 3.3.3. </b> "
 
 Việc tạo class với Amazon Q Developer rất trực quan và hiệu quả. Bằng cách cung cấp các prompt rõ ràng, bạn có thể tạo ra các class có cấu trúc tốt với các phương thức và thuộc tính phù hợp. Phần này sẽ minh họa các cách tiếp cận khác nhau để tạo class sử dụng sự hỗ trợ của AI.
 
-#### Ví dụ 1: Tạo Class Folder
+##### Ví dụ 1: Tạo Class Folder
 
 Hãy bắt đầu với một ví dụ thực tế về việc tạo hệ thống quản lý thư mục.
 
@@ -87,7 +87,7 @@ Tiếp tục nhấn Enter để Amazon Q Developer thêm nhiều chức năng h�
 **Insight quan trọng**: Amazon Q Developer tiếp tục nâng cao class miễn là bạn tiếp tục chấp nhận các gợi ý. Cách tiếp cận lặp này giúp xây dựng các class toàn diện và được thiết kế tốt.
 {{% /notice %}}
 
-#### Ví dụ 2: Tạo Class User
+##### Ví dụ 2: Tạo Class User
 
 Hãy tạo một class phức tạp hơn với nhiều thuộc tính và phương thức.
 

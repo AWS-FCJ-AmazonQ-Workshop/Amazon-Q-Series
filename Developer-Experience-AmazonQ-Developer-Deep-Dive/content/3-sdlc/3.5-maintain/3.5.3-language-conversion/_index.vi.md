@@ -8,7 +8,7 @@ pre: " <b> 3.5.3. </b> "
 
 Amazon Q Developer giúp bạn hiện đại hóa mã legacy bằng cách chuyển đổi từ ngôn ngữ lập trình cũ sang ngôn ngữ hiện đại. Điều này đặc biệt hữu ích khi di chuyển từ các ngôn ngữ cũ (như COBOL) sang Python, Java hoặc C#.
 
-#### Ví dụ: Chuyển từ COBOL
+##### Ví dụ: Chuyển từ COBOL
 
 **Bước 1:** Tạo file mới tên `program.cbl` trong VSCode và dán mã COBOL của bạn.
 

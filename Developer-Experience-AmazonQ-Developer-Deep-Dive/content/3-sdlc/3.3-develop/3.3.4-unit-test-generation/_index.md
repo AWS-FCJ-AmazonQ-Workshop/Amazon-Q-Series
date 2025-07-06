@@ -16,7 +16,7 @@ Automated test generation with Amazon Q Developer provides:
 - **Multiple Test Frameworks**: Support for various testing libraries
 - **Best Practices**: Following testing conventions and patterns
 
-#### Example 1: Testing the Folder Class
+##### Example 1: Testing the Folder Class
 
 Let's create unit tests for the Folder class we developed earlier.
 
@@ -123,7 +123,7 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-#### Example 2: Testing the User Class
+##### Example 2: Testing the User Class
 
 Let's generate tests for the User class with more complex validation scenarios.
 

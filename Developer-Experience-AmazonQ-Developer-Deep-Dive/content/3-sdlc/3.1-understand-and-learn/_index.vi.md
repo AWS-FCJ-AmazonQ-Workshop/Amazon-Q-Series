@@ -14,7 +14,7 @@ Truy cập Amazon Q Developer trong AWS Console bằng cách click icon ở phí
 
 ![alt text](/images/3-sdlc/3.1-understand-and-learn/image.png?width=90pc)
 
-#### Example 1: AWS Resource Discovery
+##### Example 1: AWS Resource Discovery
 
 **Scenario**: Hiểu current AWS environment của bạn
 
@@ -27,7 +27,7 @@ How many running EC2 instances do I have?
 
 ![alt text](/images/3-sdlc/3.1-understand-and-learn/image-1.png?width=40pc)
 
-#### Example 2: Knowledge Gap Resolution
+##### Example 2: Knowledge Gap Resolution
 
 **Scenario**: Strategic technology adoption đòi hỏi hiểu Domain Driven Design (DDD)
 
@@ -45,7 +45,7 @@ Show me how to implement DDD patterns on AWS with serverless and microservices.
 **Context Management**: Amazon Q duy trì conversation context trong sessions. Sử dụng "New conversation" để clear context khi chuyển topics để có responses chính xác hơn.
 {{% /notice %}}
 
-#### Example 3: Programming Language Transition
+##### Example 3: Programming Language Transition
 
 **Scenario**: Developer onboarding từ Python sang Java/C# trong enterprise environment
 
@@ -64,7 +64,7 @@ Use practical examples for comparison.
 
 ![alt text](/images/3-sdlc/3.1-understand-and-learn/image-3.png?width=40pc)
 
-#### Example 4: Framework Learning
+##### Example 4: Framework Learning
 
 **Scenario**: Hiểu .NET Entity Framework và LINQ mà không có documentation hoặc mentorship
 

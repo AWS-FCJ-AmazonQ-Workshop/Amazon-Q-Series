@@ -6,105 +6,49 @@ chapter: false
 pre: " <b> 4.4.4. </b> "
 ---
 
-Custom Algo 01
-Let's try to create some random algorithms using Amazon Q Developer and Amazon Q Developer .
+#### Developing Custom Algorithms
 
-General Prompt:
-Given a list of prices for a stock,
-Find the minimum price 
-Find the maximum profit
-Find the average
+Amazon Q Developer not only supports classical algorithms but can also develop complex custom algorithms tailored to specific business logic.
 
-then subtract the average from the maximum profit
-then add the average to the minimum price
+#### Problem Requirements
 
-return the difference
-Example #1:
-Custom Algo 01
+Given a list of stock prices, perform the following steps:
+1. Calculate the minimum, maximum, and average prices
+2. Calculate the max profit (max - min)
+3. Compute (max_profit - average) and (min_price + average)
+4. Return the difference between the two values
 
-Python
+#### Supported Languages
+Python, JavaScript, TypeScript, C#, Java, Go, PHP
 
-JavaScript
+#### Demo with Python
 
-TypeScript
+1. Create a file `custom_algo_1.py`
+2. Describe the requirements in a comment
+3. Accept suggestions from Amazon Q Developer
 
-C#
-
-Java
-
-Go
-
-php
-In your VSCode create a file custom_algo_1.py and type the following code:
-
-Prompt:
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-
-""" 
-Given a list of prices for a stock, Find the minimum price Find the maximum
-profit Find the average
-
-then subtract the average from the maximum profit then add the average to the
-minimum price
-
-return the difference 
-"""
-
-
-Keep hitting the enter key to accept the suggestions. Amazon Q Developer will create the following code for you:
-
-Amazon Q Developer Suggestion:
-Custom 01
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-def  average(list):
+#### Generated Result
+```python
+def average(list):
     return sum(list)/len(list)
 
-def  max_profit(list):
+def max_profit(list):
     return max(list) - min(list)
 
-def  min_price(list):
+def min_price(list):
     return min(list)
 
-def  max_price(list):
+def max_price(list):
     return max(list)
 
-def  difference(list):
+def difference(list):
     return max_profit(list) - average(list)
 
-def  main():
+def main():
     list = [1,2,3,4,5,6,7,8,9,10]
     print(difference(list))
     print(average(list))
     print(max_profit(list))
     print(min_price(list))
     print(max_price(list))
+```

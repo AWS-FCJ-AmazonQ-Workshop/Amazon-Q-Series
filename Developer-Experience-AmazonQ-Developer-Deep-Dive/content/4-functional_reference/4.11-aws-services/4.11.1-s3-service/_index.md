@@ -3,16 +3,16 @@ title: "Amazon S3 Service with Amazon Q Developer"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.11.1. </b> "
 ---
 
 #### Amazon S3 Service with Amazon Q Developer
 
 Amazon Q Developer can generate code for common S3 operations in multiple programming languages. Below are concise examples for typical S3 tasks using Python. You can request similar code for JavaScript, TypeScript, C#, Java, Scala, Go, or PHP.
 
-#### Example 1: Create a Bucket
+##### Example 1: Create a Bucket
 **Prompt:**
-Tạo một bucket với tên cho trước và trả về đối tượng bucket nếu thành công, ngược lại trả về None.
+Create a bucket with a given name and return the bucket object if successful, otherwise return None.
 
 ```python
 import boto3
@@ -27,9 +27,9 @@ def create_bucket(bucket_name, session):
         return None
 ```
 
-#### Example 2: List Buckets
+##### Example 2: List Buckets
 **Prompt:**
-Trả về danh sách tất cả các bucket trong tài khoản nếu thành công, ngược lại trả về None.
+Return a list of all buckets in the account if successful, otherwise return None.
 
 ```python
 def list_buckets(session):
@@ -41,15 +41,30 @@ def list_buckets(session):
         return None
 ```
 
-#### Example 3: Recursive Delete Bucket
+##### Example 3: Recursive Delete Bucket
 **Prompt:**
-Xóa đệ quy tất cả các folder, object và bucket. Trả về True nếu thành công, ngược lại trả về False.
+Recursively delete all folders, objects, and the bucket. Return True if successful, otherwise return False.
 
-// ...code sample for recursive delete (add as needed)...
+```python
+def delete_bucket_recursive(bucket_name, session):
+    s3 = session.resource('s3')
+    try:
+        bucket = s3.Bucket(bucket_name)
+        # Delete all objects
+        bucket.objects.all().delete()
+        # Delete all object versions (if versioning is enabled)
+        bucket.object_versions.all().delete()
+        # Delete bucket
+        bucket.delete()
+        return True
+    except Exception as e:
+        print(e)
+        return False
+```
 
-#### Example 4: Check if Bucket Exists
+##### Example 4: Check if Bucket Exists
 **Prompt:**
-Kiểm tra bucket có tồn tại không, trả về True nếu có, ngược lại trả về False.
+Check if a bucket exists, return True if it does, otherwise return False.
 
 ```python
 import boto3

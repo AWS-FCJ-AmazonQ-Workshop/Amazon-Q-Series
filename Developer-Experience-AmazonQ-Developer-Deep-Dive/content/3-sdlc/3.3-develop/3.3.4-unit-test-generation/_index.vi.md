@@ -16,7 +16,7 @@ Việc tạo test tự động với Amazon Q Developer cung cấp:
 - **Nhiều Test Framework**: Hỗ trợ nhiều thư viện testing khác nhau
 - **Best practices**: Tuân theo quy ước và mẫu testing
 
-#### Ví dụ 1: Test Class Folder
+##### Ví dụ 1: Test Class Folder
 
 Hãy tạo unit test cho class Folder mà chúng ta đã phát triển trước đó.
 
@@ -123,7 +123,7 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-#### Ví dụ 2: Test Class User
+##### Ví dụ 2: Test Class User
 
 Hãy tạo test cho class User với các tình huống validation phức tạp hơn.
 

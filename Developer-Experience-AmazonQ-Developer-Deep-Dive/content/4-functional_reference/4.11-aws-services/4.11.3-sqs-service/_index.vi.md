@@ -10,7 +10,7 @@ pre: " <b> 4.11.3 </b> "
 
 Amazon Q Developer giúp bạn sinh mã cho các thao tác SQS phổ biến bằng nhiều ngôn ngữ lập trình. Dưới đây là ví dụ ngắn gọn với Python. Bạn có thể yêu cầu mã tương tự cho JavaScript, TypeScript, C#, Java, Scala, Go hoặc PHP.
 
-#### Ví dụ 1: Tạo queue
+##### Ví dụ 1: Tạo queue
 **Prompt:**
 Tạo một queue nếu chưa tồn tại, trả về đối tượng queue.
 
@@ -27,7 +27,7 @@ def create_queue(queue_name):
         return None
 ```
 
-#### Ví dụ 2: Kiểm tra queue tồn tại
+##### Ví dụ 2: Kiểm tra queue tồn tại
 **Prompt:**
 Kiểm tra queue có tồn tại không, trả về đối tượng queue nếu có, ngược lại trả về None.
 
@@ -42,7 +42,7 @@ def check_queue(queue_name):
         return None
 ```
 
-#### Ví dụ 3: Đưa item vào queue
+##### Ví dụ 3: Đưa item vào queue
 **Prompt:**
 Đưa một item vào queue, tạo queue nếu chưa tồn tại. Trả về True nếu thành công, ngược lại trả về False.
 
@@ -59,7 +59,7 @@ def put_item_on_queue(queue_name, item):
         return False
 ```
 
-#### Ví dụ 4: Lấy item từ queue
+##### Ví dụ 4: Lấy item từ queue
 **Prompt:**
 Lấy item từ queue, trả về True nếu thành công, ngược lại trả về False.
 

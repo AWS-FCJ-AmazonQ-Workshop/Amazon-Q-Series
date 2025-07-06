@@ -10,7 +10,7 @@ pre: " <b> 4.6 </b> "
 
 Một trong những thách thức lớn khi phát triển phần mềm là tạo dữ liệu giả lập (fake data). Amazon Q Developer có thể giúp bạn sinh dữ liệu giả nhanh chóng thông qua các prompt phù hợp.
 
-#### Ví dụ 1: Sinh dữ liệu giả cho cổ phiếu
+##### Ví dụ 1: Sinh dữ liệu giả cho cổ phiếu
 
 **Prompt mẫu:**
 ```
@@ -33,7 +33,7 @@ fake_stock_prices = {
 }
 ```
 
-#### Ví dụ 2: Sinh nhiều bộ dữ liệu
+##### Ví dụ 2: Sinh nhiều bộ dữ liệu
 
 Thêm dấu phẩy sau bộ dữ liệu đầu tiên và nhấn Enter, Amazon Q Developer sẽ tiếp tục sinh thêm dữ liệu:
 
@@ -57,7 +57,7 @@ fake_data = {
 }
 ```
 
-#### Ví dụ 3: Sinh mã tự động cho ký hiệu cổ phiếu
+##### Ví dụ 3: Sinh mã tự động cho ký hiệu cổ phiếu
 
 **Prompt:**
 ```python
@@ -76,7 +76,7 @@ def generate_stock_symbols(n):
     return [random.choice(string.ascii_uppercase) + random.choice(string.ascii_uppercase) + random.choice(string.ascii_uppercase) + random.choice(string.ascii_uppercase) for i in range(n)]
 ```
 
-#### Ví dụ 4: Sinh dữ liệu chi tiết với function
+##### Ví dụ 4: Sinh dữ liệu chi tiết với function
 
 **Prompt:**
 ```python
@@ -112,7 +112,7 @@ def generate_fake_stock_prices(num_data=100):
     return stock_prices
 ```
 
-#### Ví dụ 5: Sử dụng thư viện Faker
+##### Ví dụ 5: Sử dụng thư viện Faker
 
 **Prompt:**
 ```python

@@ -5,6 +5,8 @@ weight: 1
 chapter: false
 ---
 
+# Deep Dive with Amazon Q Developer
+
 #### TL;DR
 Workshop này sẽ Deep Dive vào Amazon Q Developer trong Software Development Life Cycle (SDLC), tập trung vào các kỹ thuật nâng cao, functional reference và thực hành trong môi trường enterprise.
 

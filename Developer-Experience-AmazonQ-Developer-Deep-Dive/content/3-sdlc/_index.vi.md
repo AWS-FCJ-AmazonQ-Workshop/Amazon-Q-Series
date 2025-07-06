@@ -12,7 +12,7 @@ Phần này khám phá cách Amazon Q Developer nâng cao mọi giai đoạn c�
 
 Mặc dù định nghĩa SDLC khác nhau giữa các methodologies, chúng ta tập trung vào sáu giai đoạn chính mà Amazon Q Developer mang lại giá trị đáng kể:
 
-![alt text](image.png?width=90pc)
+![alt text](/images/3-sdlc/image.png?width=90pc)
 
 **1. Understand & Learn**
 - Team onboarding và knowledge transfer

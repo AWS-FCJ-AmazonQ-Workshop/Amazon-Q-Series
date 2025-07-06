@@ -3,12 +3,14 @@ title: "Introduction to Amazon Q Developer: OOP Concepts"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.1. </b> "
 ---
 
 #### Object-Oriented Programming: Polymorphism & Inheritance
 
 Polymorphism and inheritance are foundational concepts in object-oriented programming (OOP) that enable code reusability, modularity, and extensibility.
+
+![alt text](/images/4-functional_reference/4.1-oop/image.png?width=90pc)
 
 #### Polymorphism
 Polymorphism allows objects or methods to take on multiple forms or behaviors. It enables objects of different classes to be treated as instances of a common superclass, supporting the principle of "one interface, multiple implementations." This flexibility makes code more adaptable and easier to maintain.

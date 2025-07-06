@@ -1,13 +1,9 @@
 ---
-title: "Introduction to Amazon Q Developer"
+title: "Unit Test Creation"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 5
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.5 </b> "
 ---
 
-Unit Test Generation
-Amazon Q Developer can generate unit tests for your code. This is a great way to get started with unit testing. You can use the generated tests as a starting point and then add additional tests as needed.
-
-Unit Testing - Folders Class
-Unit Testing - User Class
+Please refer to the details of unit test creation in Amazon Q Developer in section [3.3.4 Unit Test Generation](../../3-sdlc/3.3-develop/3.3.4-unit-test-generation/).

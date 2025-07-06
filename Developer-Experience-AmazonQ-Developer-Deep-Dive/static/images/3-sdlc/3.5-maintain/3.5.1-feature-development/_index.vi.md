@@ -10,7 +10,7 @@ Giả sử bạn có một mã nguồn hiện tại là máy tính đơn giản.
 
 Trong phần này, bạn sẽ trải nghiệm sử dụng Amazon Q Developer Agent for Software Development để bổ sung tính năng mới. Trong IDE, mở bảng chat Amazon Q Developer, gõ `/dev` và nhấn Enter hai lần để mở Agent ở tab mới.
 
-#### Ví dụ:
+##### Ví dụ:
 
 **Bước 1:** Tạo file mới tên `calculator.py` trong VSCode và dán mã máy tính đơn giản hiện có.
 

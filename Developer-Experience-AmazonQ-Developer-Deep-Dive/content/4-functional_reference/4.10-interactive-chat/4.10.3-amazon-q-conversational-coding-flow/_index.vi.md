@@ -10,7 +10,7 @@ pre: " <b> 4.10.3 </b> "
 
 Amazon Q Developer hỗ trợ hội thoại nhiều bước khi lập trình. Bắt đầu chat trong IDE, gửi các prompt, Amazon Q sẽ giữ ngữ cảnh và cung cấp hướng dẫn phù hợp.
 
-#### Ví dụ: Lập trình nhiều bước
+##### Ví dụ: Lập trình nhiều bước
 **Prompt:**
 1. Tạo danh sách các chương trình TV bằng Python.
 2. Tạo danh sách điểm đánh giá cho các chương trình này.

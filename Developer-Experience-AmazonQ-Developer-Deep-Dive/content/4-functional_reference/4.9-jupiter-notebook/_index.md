@@ -1,251 +1,119 @@
 ---
-title: "Introduction to Amazon Q Developer"
+title: "Jupyter Notebook with Amazon Q Developer"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 9
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.9 </b> "
 ---
 
-Jupyter Notebook
-Use Amazon Q Developer to help you write code in Jupyter Notebooks and linear regression.
+#### Jupyter Notebook with Amazon Q Developer
 
-SETUP
-Install Jupyter Notebook
-Open a terminal window.
-Type pip install jupyterlab and press enter.
-Type jupyter notebook and press enter.
-Install Amazon Q Developer Extension for Jupyter Notebook
-Open a terminal window.
-In the VSCode Extensions tab, search for jupyter and install the Jupyter extensions.
-Install and Activate virtual environment
-Open a terminal window.
-Type python -m venv venv and press enter.
-Type source venv/bin/activate and press enter.
-Install Pandas, Numpy, and Matplotlib, and Scikit-learn
-Open a terminal window.
-Type pip install pandas numpy matplotlib scikit-learn and press enter.
+Amazon Q Developer helps you write code in Jupyter Notebooks and perform data analysis such as linear regression.
 
-Jupyter Notebook - KMeans
-Amazon Q Developer can provide suggestions when working with Jupyter Notebooks.
+#### Setup
 
-Example #1:
+1. **Install Jupyter Notebook**
+   - Open a terminal window
+   - Type `pip install jupyterlab` and press Enter
+   - Type `jupyter notebook` and press Enter
 
-Python
+2. **Install Amazon Q Developer Extension for Jupyter Notebook**
+   - Open a terminal window
+   - In the VSCode Extensions tab, search for "jupyter" and install the Jupyter extensions
 
-JavaScript
+3. **Install and Activate Virtual Environment**
+   - Open a terminal window
+   - Type `python -m venv venv` and press Enter
+   - Type `source venv/bin/activate` and press Enter
 
-TypeScript
+4. **Install Pandas, Numpy, Matplotlib, and Scikit-learn**
+   - Open a terminal window
+   - Type `pip install pandas numpy matplotlib scikit-learn` and press Enter
 
-Go
+#### Jupyter Notebook - KMeans
 
-php
-In your VSCode create a jupyter notebook file and name it --> kmeans.ipynb
+Amazon Q Developer provides suggestions when working with Jupyter Notebooks.
 
-Note: You can use the keyboard shortcut Ctrl+Shift+P to open the command palette and type Jupyter: Create New Blank Notebook to create a new notebook file.
+**Example:**
 
-Note: Please follow the SETUP instructions.
+1. In VSCode, create a Jupyter Notebook file and name it `kmeans.ipynb`
 
-Prompt:
-# import pandas as pd
-# import numpy as np
-# import matplotlib.pyplot as plt
+   > **Note:** You can use the keyboard shortcut Ctrl+Shift+P to open the command palette and type "Jupyter: Create New Blank Notebook" to create a new notebook file.
 
-Amazon Q Developer Suggestion:
-Imports
-1
-2
-3
-4
-5
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
+2. **Import Libraries**
+   ```python
+   import pandas as pd
+   import numpy as np
+   import matplotlib.pyplot as plt
+   from sklearn.cluster import KMeans
+   ```
 
+3. **Read Data**
+   ```python
+   df = pd.read_json('data.json')
+   ```
 
+4. **View First 5 Rows**
+   ```python
+   df.head()
+   ```
 
-Prompt:
+5. **Get Dataframe Information**
+   ```python
+   df.info()
+   ```
 
-"""
-# read the data.json file into a dataframe
+6. **Extract X Coordinates from Elevation Column**
+   ```python
+   x_coords = df['Elevation']
+   ```
 
-"""
-Amazon Q Developer Suggestion:
-Read
-1
-2
+7. **Extract Y Coordinates from HR Column**
+   ```python
+   y_coords = df['HR']
+   ```
 
-df = pd.read_json('data.json')
+8. **Plot Scatter Plot**
+   ```python
+   plt.scatter(x_coords, y_coords)
+   ```
 
-Prompt:
-"""
-# Get the first 5 rows of the dataframe
+9. **Create List of Coordinates**
+   ```python
+   coordinates = list(zip(x_coords, y_coords))
+   ```
 
+10. **Create KMeans Object**
+    ```python
+    kmeans = KMeans(n_clusters=3)
+    ```
 
-"""
-Amazon Q Developer Suggestion:
-First 5 rows
-1
-df.head()
+11. **Train Model**
+    ```python
+    kmeans.fit(coordinates)
+    ```
 
+12. **Get Cluster Labels**
+    ```python
+    labels = kmeans.labels_
+    ```
 
-Prompt:
-"""
-# Get information about the dataframe
+13. **Get Cluster Centers**
+    ```python
+    centers = kmeans.cluster_centers_
+    ```
 
-"""
-Amazon Q Developer Suggestion:
-Get Info
-1
-df.info()
+14. **Plot Cluster Centers**
+    ```python
+    plt.scatter(centers[:, 0], centers[:, 1], c='red', marker='x')
+    ```
 
+15. **Plot Coordinates with Labels**
+    ```python
+    plt.scatter(x_coords, y_coords, c=labels)
+    ```
 
-Prompt:
-"""
-# get x coordinates from the Elevation column in the data frame
-
-"""
-Amazon Q Developer Suggestion:
-X coordinate
-1
-x = df['Elevation']
-
-
-Prompt:
-"""
-# get y coordinates from the HR column
-
-
-"""
-Amazon Q Developer Suggestion:
-Y Coordinate
-1
-y = df['HR']
-
-
-Prompt:
-"""
-# scatter plot the x and y coordinates
-"""
-Amazon Q Developer Suggestion:
-Plot X and Y
-1
-2
-plt.scatter(x, y)
-plt.show()
-
-
-Prompt:
-"""
-# turn the dataset into a list set of coordinates using zip
-"""
-Amazon Q Developer Suggestion:
-Create List
-1
-coordinates = list(zip(x, y))
-
-
-Prompt:
-"""
-# create a kmeans object with k=2
-
-
-"""
-Amazon Q Developer Suggestion:
-Kmeans Object
-1
-kmeans = KMeans(n_clusters=2)
-
-
-Prompt:
-"""
-# fit the kmeans object to the coordinates
-
-
-"""
-Amazon Q Developer Suggestion:
-Fit
-1
-kmeans.fit(coordinates)
-
-
-Prompt:
-"""
-# get the cluster labels
-
-
-"""
-Amazon Q Developer Suggestion:
-Labels
-1
-labels = kmeans.labels_
-
-
-Prompt:
-"""
-# get the cluster centers
-
-
-"""
-Amazon Q Developer Suggestion:
-Centers
-1
-centers = kmeans.cluster_centers_
-
-
-Prompt:
-"""
-# plot the cluster centers
-
-
-"""
-Amazon Q Developer Suggestion:
-Plot Centers
-1
-plt.scatter(centers[:, 0], centers[:, 1], c='red', s=100, alpha=0.5)
-
-Prompt:
-"""
-# plot the x and y coordinates with labels
-
-
-"""
-Amazon Q Developer Suggestion:
-Plot X, Y with labels
-1
-2
-plt.scatter(x, y, c=labels, s=50, cmap='viridis')
-plt.show()
-
-
-Prompt:
-"""
-# write the centroid coordinates to a csv file
-
-"""
-Amazon Q Developer Suggestion:
-Write
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-plt.scatter(x, y, c=labels, s=50, cmap='viridis')
-import csv
-def write_centroid_csv(centroid_coords, output_file):
-    with open(output_file, 'w') as csv_file:
-        writer = csv.writer(csv_file)
-        writer.writerow(['x', 'y'])
-        for coord in centroid_coords:
-            writer.writerow([coord[0], coord[1]])
-
-    return True
-
-write_centroid_csv(centers, "all_centers.csv")
+16. **Write Cluster Centers to CSV File**
+    ```python
+    pd.DataFrame(centers, columns=['X', 'Y']).to_csv('cluster_centers.csv', index=False)
+    ```

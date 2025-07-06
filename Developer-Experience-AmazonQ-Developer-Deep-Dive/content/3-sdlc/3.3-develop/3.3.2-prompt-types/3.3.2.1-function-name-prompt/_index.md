@@ -62,6 +62,8 @@ def get_average(numbers):
 ##### Multiple Suggestions
 Sometimes, Amazon Q Developer offers multiple code suggestions. Use the arrow keys to navigate and Tab to accept the one that best fits your needs.
 
+![alt text](/images/3-sdlc/3.3-develop/3.3.2-prompt-types/3.3.2.1-function-name-prompt/image.png?width=40pc)
+
 ---
 
 ##### Example #3: Standard Deviation

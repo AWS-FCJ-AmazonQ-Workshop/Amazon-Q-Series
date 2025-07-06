@@ -10,7 +10,7 @@ Suppose you have an existing codebase implementing a simple calculator. Now, bus
 
 In this section, you'll experience using Amazon Q Developer Agent for Software Development to implement additional features. In your IDE, open the Amazon Q Developer Chat panel, type `/dev`, and press Enter twice to bring up the Agent for Software Development in a new tab.
 
-#### Example: Enhancing a Calculator
+##### Example: Enhancing a Calculator
 
 **Step 1:** Create a new file called `calculator.py` in VSCode and paste in your existing simple calculator code.
 
@@ -29,6 +29,8 @@ class Calculator:
 **Step 2:** Use the Agent to add scientific functions (e.g., sin, cos, tan, sqrt, power).
 
 **Step 3:** Review and accept the code suggestions, or iterate as needed.
+
+![alt text](/images/3-sdlc/3.5-maintain/3.5.1-feature-development/image.png?width=40pc)
 
 #### Best Practices
 - Use clear prompts describing the new features you want

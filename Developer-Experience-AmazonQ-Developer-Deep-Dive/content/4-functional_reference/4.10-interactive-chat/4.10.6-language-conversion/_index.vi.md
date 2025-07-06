@@ -10,7 +10,7 @@ pre: " <b> 4.10.6 </b> "
 
 Amazon Q Developer giúp bạn chuyển đổi mã nguồn giữa các ngôn ngữ lập trình. Cung cấp mã nguồn và chỉ định ngôn ngữ đích.
 
-#### Ví dụ 1: Chuyển từ COBOL sang Python
+##### Ví dụ 1: Chuyển từ COBOL sang Python
 **Prompt:**
 Chuyển đoạn mã COBOL sau sang Python:
 
@@ -102,7 +102,7 @@ calculate_tax()
 display_results()
 ```
 
-#### Ví dụ 2: Chuyển từ Microsoft SQL Server sang PostgreSQL
+##### Ví dụ 2: Chuyển từ Microsoft SQL Server sang PostgreSQL
 **Prompt:**
 Chuyển đoạn mã T-SQL sau sang PostgreSQL:
 

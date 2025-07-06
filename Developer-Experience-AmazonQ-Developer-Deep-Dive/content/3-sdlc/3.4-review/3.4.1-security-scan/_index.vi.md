@@ -40,19 +40,19 @@ Có hai cách để sử dụng tính năng quét bảo mật (security scan).
 **Cách 1: Auto-scan**
 Để sử dụng cách này, bạn chỉ cần đảm bảo rằng tính năng auto-scan bảo mật đang được bật. Để kiểm tra trong phần cài đặt nếu bạn dùng VSCode:
 
-![alt text](image.png?width=40pc)
+![alt text](/images/3-sdlc/3.4-review/3.4.1-security-scan/image.png?width=40pc)
 
 Với cách này, bạn chỉ cần chờ vài giây, Amazon Q Developer sẽ tự động quét mã nguồn khi bạn viết. Nếu phát hiện lỗ hổng, bạn sẽ thấy cảnh báo ngay trong dòng mã như hình dưới:
 
-![alt text](image-1.png?width=90pc)
+![alt text](/images/3-sdlc/3.4-review/3.4.1-security-scan/image-1.png?width=90pc)
 
 Tại đây, bạn có thể nhấn vào Explain để xem chi tiết. Nhấn View Details, sau đó từ panel chi tiết, nhấn tiếp vào Explain. Lúc này Amazon Q Developer sẽ tự động đưa ngữ cảnh và prompt phù hợp vào Chat, bạn sẽ nhận được giải thích về lỗ hổng và hướng dẫn cách khắc phục.
 
 **Cách 2: Quét toàn bộ project (Project-wide scan)**
 Để sử dụng cách này:
 
-![alt text](image-2.png?width=90pc)
+![alt text](/images/3-sdlc/3.4-review/3.4.1-security-scan/image-2.png?width=90pc)
 
 Sau khi quét xong, bạn sẽ thấy tất cả các lỗ hổng được phát hiện trong tab Problems.
 
-![alt text](image-3.png?width=40pc)
+![alt text](/images/3-sdlc/3.4-review/3.4.1-security-scan/image-3.png?width=40pc)

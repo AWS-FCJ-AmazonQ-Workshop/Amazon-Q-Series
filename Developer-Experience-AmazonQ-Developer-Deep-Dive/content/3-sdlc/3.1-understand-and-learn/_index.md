@@ -14,7 +14,7 @@ Access Amazon Q Developer in your AWS Console by clicking the icon on the right 
 
 ![](/images/3-sdlc/3.1-understand-and-learn/image.png?width=90pc)
 
-#### Example 1: AWS Resource Discovery
+##### Example 1: AWS Resource Discovery
 
 **Scenario**: Understanding your current AWS environment
 
@@ -27,7 +27,7 @@ How many running EC2 instances do I have?
 
 ![](/images/3-sdlc/3.1-understand-and-learn/image-1.png?width=40pc)
 
-#### Example 2: Knowledge Gap Resolution
+##### Example 2: Knowledge Gap Resolution
 
 **Scenario**: Strategic technology adoption requires understanding Domain Driven Design (DDD)
 
@@ -45,7 +45,7 @@ Show me how to implement DDD patterns on AWS with serverless and microservices.
 **Context Management**: Amazon Q maintains conversation context within sessions. Use "New conversation" to clear context when switching topics for more accurate responses.
 {{% /notice %}}
 
-#### Example 3: Programming Language Transition
+##### Example 3: Programming Language Transition
 
 **Scenario**: Developer onboarding from Python to Java/C# in enterprise environment
 
@@ -64,7 +64,7 @@ Use practical examples for comparison.
 
 ![](/images/3-sdlc/3.1-understand-and-learn/image-3.png?width=40pc)
 
-#### Example 4: Framework Learning
+##### Example 4: Framework Learning
 
 **Scenario**: Understanding .NET Entity Framework and LINQ without documentation or mentorship
 

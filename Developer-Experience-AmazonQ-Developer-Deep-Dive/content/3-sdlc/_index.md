@@ -12,6 +12,8 @@ This section explores how Amazon Q Developer enhances every phase of the Softwar
 
 While SDLC definitions vary across methodologies, we focus on six key phases where Amazon Q Developer provides significant value:
 
+![alt text](/images/3-sdlc/image.png?width=90pc)
+
 **1. Understand & Learn**
 - Team onboarding and knowledge transfer
 - Requirements analysis and translation

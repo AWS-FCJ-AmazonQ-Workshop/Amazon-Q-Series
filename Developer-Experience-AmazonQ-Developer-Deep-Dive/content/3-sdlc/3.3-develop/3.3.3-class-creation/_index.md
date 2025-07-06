@@ -8,7 +8,7 @@ pre: " <b> 3.3.3. </b> "
 
 Creating classes with Amazon Q Developer is intuitive and efficient. By providing clear prompts, you can generate well-structured classes with appropriate methods and attributes. This section demonstrates various approaches to class creation using AI assistance.
 
-#### Example 1: Creating a Folder Class
+##### Example 1: Creating a Folder Class
 
 Let's start with a practical example of creating a folder management system.
 
@@ -87,7 +87,7 @@ Continue pressing Enter to let Amazon Q Developer add more functionality:
 **Key Insight**: Amazon Q Developer continues to enhance the class as long as you keep accepting suggestions. This iterative approach helps build comprehensive, well-designed classes.
 {{% /notice %}}
 
-#### Example 2: Creating a User Class
+##### Example 2: Creating a User Class
 
 Let's create a more complex class with multiple attributes and methods.
 

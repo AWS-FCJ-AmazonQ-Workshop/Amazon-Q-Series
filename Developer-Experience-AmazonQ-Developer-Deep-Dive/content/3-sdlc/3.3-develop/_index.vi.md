@@ -14,7 +14,7 @@ Trong phần này, bạn sẽ khám phá các hoạt động phát triển phổ
 
 #### Các hoạt động phát triển chính
 
-![alt text](image.png?width=90pc)
+![alt text](/images/3-sdlc/3.3-develop/image.png?width=90pc)
 
 1. **Khung dự án** - Tạo cấu trúc dự án và mã boilerplate
 2. **Kỹ thuật Prompt cho việc tạo mã** - Thành thạo các kỹ thuật prompting khác nhau để có kết quả tối ưu

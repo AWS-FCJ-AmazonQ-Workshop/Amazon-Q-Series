@@ -18,7 +18,7 @@ Amazon Q Developer hiểu ý định của bạn và đưa ra gợi ý dựa tr�
 
 ---
 
-#### Ví dụ #1: Định dạng số và chuỗi
+##### Ví dụ #1: Định dạng số và chuỗi
 **Prompt:**
 
 ```python
@@ -42,7 +42,7 @@ def format_list(lst):
 
 ---
 
-#### Ví dụ #2: Lọc số chẵn
+##### Ví dụ #2: Lọc số chẵn
 **Prompt:**
 
 ```python

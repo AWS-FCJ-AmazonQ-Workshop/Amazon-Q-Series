@@ -3,15 +3,14 @@ title: "Amazon Q: Generate Code"
 date: "`r Sys.Date()`"
 weight: 2
 chapter: false
-pre: " <b> 4.10.2. </b> "
+pre: " <b> 4.10.2 </b> "
 ---
-
 
 #### Amazon Q: Generate Code
 
 Amazon Q Developer can generate code for CLI commands and infrastructure automation. Open the Amazon Q Developer panel in your IDE, type your question, and press Enter to get code suggestions.
 
-### Example 1: Generate CLI Command
+##### Example 1: Generate CLI Command
 **Prompt:**
 How can I check the number of Amazon S3 buckets I have using the AWS CLI?
 
@@ -20,38 +19,12 @@ How can I check the number of Amazon S3 buckets I have using the AWS CLI?
 aws s3api list-buckets --query "length(Buckets)"
 ```
 
-#### Example 2: Generate Infrastructure as Code
+##### Example 2: Generate Infrastructure as Code
 **Prompt:**
 Write a template to create an S3 bucket.
 
-> **Note:** Amazon Q can generate code for various providers and use cases. Answers may include code snippets and explanations.
-
-
-
-AWS
-
-Azure
-
-GCP
-Prompt
-1
-Write a Amazon CloudFormation template to create an S3 bucket?
-
-
-Amazon Q Answer #2
-AWS Cloudformation
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
+**Amazon Q Answer:**
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyS3Bucket:
@@ -63,86 +36,44 @@ Resources:
         BlockPublicPolicy: true
         IgnorePublicAcls: true
         RestrictPublicBuckets: true
+```
 
+##### Example 3: Generate SDK Code
+**Prompt:**
+Write a Python program to create an Amazon S3 Bucket.
 
+**Amazon Q Answer:**
+```python
+import boto3
 
-Example #3
-Generating Code for SDK
-General Prompt
-1
- Write a program in <PROGRAMMING LANGUAGE> to create a <RESOURCE>.
+def create_s3_bucket(bucket_name, region=None):
+    try:
+        if region is None:
+            s3_client = boto3.client('s3')
+            s3_client.create_bucket(Bucket=bucket_name)
+        else:
+            s3_client = boto3.client('s3', region_name=region)
+            location = {'LocationConstraint': region}
+            s3_client.create_bucket(
+                Bucket=bucket_name,
+                CreateBucketConfiguration=location
+            )
+        print(f"S3 bucket {bucket_name} created successfully")
+        return True
+    except Exception as e:
+        print(f"Error creating bucket: {e}")
+        return False
 
+# Use the function
+create_s3_bucket('my-example-bucket', 'us-west-2')
+```
 
+##### Example 4: Generate COBOL Code
+**Prompt:**
+Given a JSON object with line items, write a COBOL program to calculate the sum of the line items and apply a 7% tax.
 
-AWS
-
-Azure
-
-GCP
-
-Python
-
-node.js
-
-C#
-Prompt
-1
- Write a program in python to create an Amazon S3 Bucket.
-
-Amazon Q Answer S3 Bucket - Python
-SDK - AWS S3 Bucket
-Example #4
-Generating Code for COBOL
-Prompt
-1
-2
-3
- Given a json object has line items, 
- write a cobol program that calculates the sum of the line items 
- and calculates the tax of 7%
-
-
-Cobol Generation
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-
+**Amazon Q Answer:**
+```cobol
 identification division.
 program-id. json-sum-tax.
 
@@ -181,3 +112,6 @@ procedure division.
       display "Tax amount: " total-tax-amount.
 
    stop run.
+```
+
+> **Note:** Amazon Q can generate code for various providers and use cases. Answers may include code snippets and explanations.

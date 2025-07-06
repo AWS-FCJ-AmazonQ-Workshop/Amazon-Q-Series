@@ -10,7 +10,7 @@ pre: " <b> 4.11.1 </b> "
 
 Amazon Q Developer giúp bạn sinh mã cho các thao tác S3 phổ biến bằng nhiều ngôn ngữ lập trình. Dưới đây là ví dụ ngắn gọn với Python. Bạn có thể yêu cầu mã tương tự cho JavaScript, TypeScript, C#, Java, Scala, Go hoặc PHP.
 
-#### Ví dụ 1: Tạo bucket
+##### Ví dụ 1: Tạo bucket
 **Prompt:**
 Tạo một bucket với tên cho trước và trả về đối tượng bucket nếu thành công, ngược lại trả về None.
 
@@ -27,7 +27,7 @@ def create_bucket(bucket_name, session):
         return None
 ```
 
-#### Ví dụ 2: Liệt kê buckets
+##### Ví dụ 2: Liệt kê buckets
 **Prompt:**
 Trả về danh sách tất cả các bucket trong tài khoản nếu thành công, ngược lại trả về None.
 
@@ -41,7 +41,7 @@ def list_buckets(session):
         return None
 ```
 
-#### Ví dụ 3: Xóa đệ quy bucket
+##### Ví dụ 3: Xóa đệ quy bucket
 **Prompt:**
 Xóa đệ quy tất cả các folder, object và bucket. Trả về True nếu thành công, ngược lại trả về False.
 
@@ -62,7 +62,7 @@ def delete_bucket_recursive(bucket_name, session):
         return False
 ```
 
-#### Ví dụ 4: Kiểm tra bucket tồn tại
+##### Ví dụ 4: Kiểm tra bucket tồn tại
 **Prompt:**
 Kiểm tra bucket có tồn tại không, trả về True nếu có, ngược lại trả về False.
 

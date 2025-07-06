@@ -1,11 +1,10 @@
 ---
-title: "Introduction to Amazon Q Developer"
+title: "Interactive Chat with Amazon Q Developer"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 10
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.10. </b> "
 ---
-
 
 #### Interactive Chat with Amazon Q Developer
 
@@ -29,5 +28,7 @@ Open the Amazon Q Developer panel in your IDE to access features like:
 - Code commenting
 - Implementation planning
 - Code transformation
+
+![alt text](/images/4-functional_reference/4.10-interactive-chat/image.png?width=40pc)
 
 > **Note:** Amazon Q Developer provides citations/sources for its answers, allowing you to fact-check and build confidence in the information. Answers in this workshop are concise for clarity, but Amazon Q may provide more comprehensive and evolving responses in real use.

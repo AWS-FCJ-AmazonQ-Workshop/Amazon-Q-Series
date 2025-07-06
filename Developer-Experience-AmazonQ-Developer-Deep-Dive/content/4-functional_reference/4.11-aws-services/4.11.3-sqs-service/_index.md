@@ -1,18 +1,18 @@
 ---
 title: "Amazon SQS Service with Amazon Q Developer"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 3
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.11.3. </b> "
 ---
 
 #### Amazon SQS Service with Amazon Q Developer
 
-Amazon Q Developer can generate code for common SQS operations in multiple programming languages. Below are concise examples for typical SQS tasks using Python. You can request similar code for JavaScript, TypeScript, C#, Java, Scala, Go, or PHP.
+Amazon Q Developer helps you generate code for common SQS operations in multiple programming languages. Below are concise examples for typical SQS tasks using Python. You can request similar code for JavaScript, TypeScript, C#, Java, Scala, Go, or PHP.
 
-#### Example 1: Create a Queue
+##### Example 1: Create a Queue
 **Prompt:**
-Tạo một queue nếu chưa tồn tại, trả về đối tượng queue.
+Create a queue if it does not exist, and return the queue object.
 
 ```python
 import boto3
@@ -27,9 +27,9 @@ def create_queue(queue_name):
         return None
 ```
 
-#### Example 2: Check if Queue Exists
+##### Example 2: Check if Queue Exists
 **Prompt:**
-Kiểm tra queue có tồn tại không, trả về đối tượng queue nếu có, ngược lại trả về None.
+Check if a queue exists, return the queue object if it does, otherwise return None.
 
 ```python
 def check_queue(queue_name):
@@ -42,9 +42,9 @@ def check_queue(queue_name):
         return None
 ```
 
-#### Example 3: Put Item on Queue
+##### Example 3: Put Item on Queue
 **Prompt:**
-Đưa một item vào queue, tạo queue nếu chưa tồn tại. Trả về True nếu thành công, ngược lại trả về False.
+Put an item on the queue, create the queue if it does not exist. Return True if successful, otherwise return False.
 
 ```python
 def put_item_on_queue(queue_name, item):
@@ -59,9 +59,9 @@ def put_item_on_queue(queue_name, item):
         return False
 ```
 
-#### Example 4: Get Item from Queue
+##### Example 4: Get Item from Queue
 **Prompt:**
-Lấy item từ queue, trả về True nếu thành công, ngược lại trả về False.
+Retrieve an item from the queue, return True if successful, otherwise return False.
 
 ```python
 def get_item_from_queue(queue_name):
