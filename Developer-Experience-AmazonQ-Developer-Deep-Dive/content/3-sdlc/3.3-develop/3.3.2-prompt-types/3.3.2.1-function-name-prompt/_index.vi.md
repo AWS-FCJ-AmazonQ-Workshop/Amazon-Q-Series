@@ -19,7 +19,7 @@ Một tên hàm được chọn tốt sẽ là prompt mạnh mẽ cho Amazon Q D
 
 ---
 
-#### Ví dụ #1: Tháp Hà Nội
+##### Ví dụ #1: Tháp Hà Nội
 **Prompt:**
 Ở đây, chỉ cần tên hàm là đủ:
 
@@ -41,7 +41,7 @@ def towers_of_hanoi(n, source, destination, auxiliary):
 
 ---
 
-#### Ví dụ #2: Tính trung bình
+##### Ví dụ #2: Tính trung bình
 **Prompt:**
 Một lần nữa, chỉ cần tên hàm:
 
@@ -62,11 +62,11 @@ def get_average(numbers):
 #### Nhiều gợi ý
 Đôi khi Amazon Q Developer sẽ đưa ra nhiều gợi ý mã. Bạn có thể dùng phím mũi tên để duyệt và nhấn Tab để chọn gợi ý phù hợp nhất.
 
-![alt text](image.png?width=40pc)
+![alt text](/images/3-sdlc/3.3-develop/3.3.2-prompt-types/3.3.2.1-function-name-prompt/image.png?width=40pc)
 
 ---
 
-#### Ví dụ #3: Độ lệch chuẩn
+##### Ví dụ #3: Độ lệch chuẩn
 **Prompt:**
 
 ```python

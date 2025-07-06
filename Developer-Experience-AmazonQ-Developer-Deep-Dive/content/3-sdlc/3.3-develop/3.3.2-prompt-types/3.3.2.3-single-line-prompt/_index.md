@@ -9,7 +9,7 @@ pre: "<b>3.3.2.3 </b>"
 Single Line Prompt
 Amazon Q Developer will understand your intent and provide suggestions based on concise, directive single line prompts or comments. This is especially useful for giving clear instructions such as CREATE, RETURN, or other actions.
 
-## Why Use Single Line Prompts?
+#### Why Use Single Line Prompts?
 - **Directives:** Guide the AI with explicit actions (e.g., CREATE, RETURN)
 - **Efficiency:** Quickly generate code for common tasks
 - **Clarity:** Clear, actionable instructions yield better results
@@ -18,7 +18,7 @@ Amazon Q Developer will understand your intent and provide suggestions based on 
 
 ---
 
-### Example #1: User Age Function
+##### Example #1: User Age Function
 **Prompt:**
 
 ```python
@@ -37,7 +37,7 @@ def get_user_age():
 
 ---
 
-### Example #2: Calculate Area
+##### Example #2: Calculate Area
 **Prompt:**
 
 ```python
@@ -54,7 +54,7 @@ def calculate_area(length, width):
 
 ---
 
-## Key Takeaways
+#### Key Takeaways
 - Use single line prompts with clear directives for fast, accurate code generation
 - Combine multiple single line prompts for more complex logic
 - Review and refine suggestions to best fit your needs

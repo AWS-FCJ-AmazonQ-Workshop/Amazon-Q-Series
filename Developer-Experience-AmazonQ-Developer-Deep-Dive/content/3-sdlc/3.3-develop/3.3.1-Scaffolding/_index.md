@@ -23,6 +23,8 @@ I need to create a project framework where a team of C# developers will be able 
 **Sample Response:**
 Amazon Q Developer will provide a step-by-step plan, including project structure, code snippets, and deployment instructions. You can follow these steps to scaffold your project or use them as a reference for your own setup.
 
+![alt text](/images/3-sdlc/3.3-develop/3.3.1-Scaffolding/image.png?width=40pc)
+
 > **Tip:** If you are short on time or following the L200 track, you may skip the hands-on steps. The key takeaway is that Amazon Q Developer can accelerate your project setup.
 
 ---
@@ -43,9 +45,10 @@ Create a project framework where a team of C# developers will be able to develop
 **Sample Response:**
 The agent will generate a detailed development plan and code suggestions. Review the proposed code, accept or provide feedback, and iterate as needed. Once satisfied, you can insert the generated code directly into your workspace.
 
+![alt text](/images/3-sdlc/3.3-develop/3.3.1-Scaffolding/image-1.png?width=40pc)
 ---
 
-## Best Practices for Scaffolding
+#### Best Practices for Scaffolding
 - **Be Specific:** Clearly define your requirements in the prompt for more accurate scaffolding.
 - **Iterate:** Use feedback and code review features to refine the generated structure.
 - **Leverage Automation:** Use the Agent for Software Development for complex or multi-service projects.

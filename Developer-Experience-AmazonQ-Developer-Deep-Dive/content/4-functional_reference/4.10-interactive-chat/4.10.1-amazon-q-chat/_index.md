@@ -6,12 +6,11 @@ chapter: false
 pre: " <b> 4.10.1. </b> "
 ---
 
-
-## Amazon Q: Chat
+#### Amazon Q: Chat
 
 Amazon Q Developer helps you generate code for CLI, IaC, and SDK tasks. To use chat, open the Amazon Q Developer panel in your IDE, type your question, and press Enter. Answers will appear in the panel.
 
-### Example: Checking Cloud Usage and Billing
+##### Example: Checking Cloud Usage and Billing
 
 **Prompt:**
 How do I check my AWS usage bill when logged into the AWS Console?

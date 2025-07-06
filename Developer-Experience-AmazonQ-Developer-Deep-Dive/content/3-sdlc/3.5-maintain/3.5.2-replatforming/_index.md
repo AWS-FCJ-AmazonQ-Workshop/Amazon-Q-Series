@@ -6,11 +6,9 @@ chapter: false
 pre: " <b> 3.5.2. </b> "
 ---
 
-# Replatforming
-
 Suppose you have an existing ASP.NET 8 Web API running on a Windows-based container. You want to replatform it to run on Linux for better portability and cost efficiency.
 
-## Example: Dockerfile Migration
+##### Example: Dockerfile Migration
 
 **Step 1:** Create a new file called `Dockerfile` in VSCode and paste in your existing Windows-based Dockerfile:
 
@@ -31,7 +29,9 @@ WORKDIR /src
 
 **Step 3:** Review and test the new Dockerfile to ensure your app runs correctly on Linux.
 
-## Best Practices
+![alt text](/images/3-sdlc/3.5-maintain/3.5.2-replatforming/image.png?width=40pc)
+
+#### Best Practices
 - Always test replatformed applications in a staging environment
 - Update documentation to reflect new platform requirements
 - Monitor for platform-specific issues after migration

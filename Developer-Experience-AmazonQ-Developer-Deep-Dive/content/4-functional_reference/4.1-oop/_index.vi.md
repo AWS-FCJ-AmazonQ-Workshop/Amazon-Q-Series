@@ -10,7 +10,7 @@ pre: " <b> 4.1 </b> "
 
 Đa hình và kế thừa là hai khái niệm nền tảng trong lập trình hướng đối tượng (OOP), giúp tái sử dụng mã, tăng tính mô-đun và khả năng mở rộng.
 
-![alt text](image.png?width=90pc)
+![alt text](/images/4-functional_reference/4.1-oop/image.png?width=90pc)
 
 #### Đa hình
 Đa hình cho phép đối tượng hoặc phương thức có nhiều hình thức hoặc hành vi khác nhau. Điều này giúp các đối tượng thuộc các lớp khác nhau có thể được xử lý như các đối tượng của cùng một lớp cha, hỗ trợ nguyên tắc "một giao diện, nhiều cách triển khai". Nhờ đó, mã nguồn trở nên linh hoạt và dễ bảo trì hơn.

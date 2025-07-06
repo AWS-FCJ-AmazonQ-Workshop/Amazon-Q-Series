@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
+![alt text](/images/2-setup/image.png?width=90pc)
+
 #### Prerequisites Check
 
 Before proceeding with this deep dive workshop, ensure you have completed the basic Amazon Q Developer setup:

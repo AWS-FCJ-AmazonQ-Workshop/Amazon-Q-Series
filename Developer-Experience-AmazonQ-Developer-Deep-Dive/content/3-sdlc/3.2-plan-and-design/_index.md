@@ -12,7 +12,7 @@ This phase focuses on architectural planning, design patterns research, and requ
 **Recommended Environment**: Use IDE Chat feature for consistent context throughout subsequent modules. AWS event participants can reference Configuration section for VSCode setup.
 {{% /notice %}}
 
-#### Example 1: Design Patterns Research
+##### Example 1: Design Patterns Research
 
 **Scenario**: Understanding DDD architecture patterns for AWS implementation
 
@@ -22,6 +22,8 @@ What are notable architecture patterns employed in Domain-Driven Design (DDD)
 and their implementation context in AWS?
 ```
 
+![alt text](image.png?width=40pc)
+
 **Key Patterns Covered**:
 - **Hexagonal Architecture**: Lambda functions with ports/adapters
 - **Microservices**: ECS/EKS/Lambda with bounded contexts
@@ -30,7 +32,7 @@ and their implementation context in AWS?
 - **Event Sourcing**: DynamoDB Streams, Kinesis
 - **Layered/Onion Architecture**: Cross-service implementation
 
-#### Example 2: Modernization Strategy
+##### Example 2: Modernization Strategy
 
 **Scenario**: Gradual legacy modernization without big-bang approach
 
@@ -49,7 +51,7 @@ Guide me on architecture patterns and implementation strategy.
 - **CI/CD**: CodePipeline automation
 - **Monitoring**: CloudWatch, X-Ray observability
 
-#### Example 3: Requirements Engineering
+##### Example 3: Requirements Engineering
 
 **Context Reset**: Use `/clear` command to reset conversation context before this section.
 
@@ -90,7 +92,7 @@ using a methodical weighted scoring approach?
 - **Process**: Score 1-5, multiply by weights, rank by total scores
 - **Tools**: Spreadsheets, QuickSight for visualization
 
-#### Example 4: User Story Development
+##### Example 4: User Story Development
 
 **4.1 User Story Creation**
 

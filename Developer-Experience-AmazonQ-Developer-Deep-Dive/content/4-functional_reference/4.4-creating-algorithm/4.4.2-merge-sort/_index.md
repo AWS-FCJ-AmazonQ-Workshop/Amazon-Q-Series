@@ -6,65 +6,31 @@ chapter: false
 pre: " <b> 4.4.2. </b> "
 ---
 
-Merge Sort
-Amazon Q Developer and Amazon Q Developer Will create all the necessary functions for you. Example:
+#### Merge Sort Algorithm
 
-Example #1:
-Merge Sort
-General Prompt
+Merge Sort is an efficient sorting algorithm that uses the divide and conquer technique. Amazon Q Developer will automatically generate all the necessary functions.
+
+#### How to Perform
+
+**General Prompt:**
+```
 create a merge_sort function
+```
 
+**Supported Languages:** Python, JavaScript, TypeScript, C#, Java, Scala, Go, PHP
 
-Python
+#### Demo with Python
 
-JavaScript
+1. Create a file `merge_sort.py` in VSCode
+2. Enter the comment prompt:
+```python
+# create a merge_sort function
+```
+3. Accept the suggestions from Amazon Q Developer
 
-TypeScript
-
-C#
-
-Java
-
-Scala
-
-Go
-
-php
-In your VSCode create a file merge_sort.py and type the following code:
-
-Prompt:
-1
-    # create a merge_sort function
-
-Keep hitting the enter key to accept the suggestions. Amazon Q Developer will create the following code for you:
-
-Amazon Q Developer Suggestion:
-Merge Sort
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-   #create a merge_sort function
+**Generated Result:**
+```python
+# create a merge_sort function
 def merge_sort(list):
     if len(list) <= 1:
         return list
@@ -73,8 +39,7 @@ def merge_sort(list):
     right = merge_sort(list[mid:])
     return merge(left, right)
 
-
-  #create a merge function
+# create a merge function
 def merge(left, right):
     result = []
     i, j = 0, 0
@@ -88,3 +53,4 @@ def merge(left, right):
     result += left[i:]
     result += right[j:]
     return result
+```

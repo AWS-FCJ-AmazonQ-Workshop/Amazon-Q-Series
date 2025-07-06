@@ -9,7 +9,7 @@ pre: "<b>3.3.2.2 </b>"
 Single Line Comment
 Amazon Q Developer can understand your intent and provide intelligent code suggestions based on concise single line comments. This approach is ideal for simple functions or when you want to quickly prototype logic without writing detailed documentation.
 
-## Why Use Single Line Comments?
+#### Why Use Single Line Comments?
 - **Speed:** Instantly generate code for common tasks
 - **Clarity:** A well-written comment can express intent clearly
 - **Simplicity:** Great for small, focused functions
@@ -18,7 +18,7 @@ Amazon Q Developer can understand your intent and provide intelligent code sugge
 
 ---
 
-### Example #1: Print a Message
+##### Example #1: Print a Message
 **Prompt:**
 
 ```python
@@ -35,7 +35,7 @@ def print_message(message):
 
 ---
 
-### Example #2: Add Two Numbers
+##### Example #2: Add Two Numbers
 **Prompt:**
 
 ```python
@@ -51,7 +51,7 @@ def add_numbers(a, b):
 
 ---
 
-## Key Takeaways
+#### Key Takeaways
 - Use single line comments for quick, simple code generation
 - Be specific in your comment to get the most relevant suggestion
 - For more complex logic, consider using multi-line comments or prompts

@@ -6,86 +6,33 @@ chapter: false
 pre: " <b> 4.4.3. </b> "
 ---
 
-Max Profit With K Transactions
-Amazon Q Developer understands your intent and provide suggestions comments for most complex algorithms. Example from LeetCode 
+#### Maximize Profit with K Transactions
 
-General Prompt:
-1
-2
-3
-You are given an array prices where prices[i] is the price of a given stock on the ith day.
-Find the maximum profit you can achieve. You may complete at most two transactions.
-Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+Amazon Q Developer can generate code for complex algorithmic problems like maximizing profit with k transactions (Max Profit With K Transactions).
 
-Example #1:
-Max Profit With K Transactions
+##### Example Prompt
+You are given an array `prices` where `prices[i]` is the price of a stock on the i-th day. Find the maximum profit you can achieve with at most two transactions. Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before buying again).
 
-Python
+#### Supported Languages
+Python, JavaScript, TypeScript, C#, Java, Go, PHP
 
-JavaScript
+#### How to Perform
+1. Create a file `max_profit_k_transactions.py` in VSCode
+2. Enter the prompt:
+```python
+# You are given an array prices, find the maximum profit with at most two transactions.
+# Note: You may not engage in multiple transactions simultaneously.
+```
+3. Press Enter to receive suggestions from Amazon Q Developer
 
-TypeScript
-
-C#
-
-Java
-
-Go
-
-php
-In your VSCode create a file max_profit_k_transactions.py and type the following code:
-
-Prompt:
-1
-2
-3
-#You are given an array prices where prices[i] is the price of a given stock on the i^th^ day.
-#Find the maximum profit you can achieve. You may complete at most two transactions.
-#Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
-
-Keep hitting the enter key to accept the suggestions. Amazon Q Developer will create the following code for you:
-
-Amazon Q Developer Suggestion:
-Max Profit
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
+#### Generated Result
+```python
 import List
 
 class Solution: 
     def maxProfit(self, prices: List[int]) -> int: 
-    if not prices:
-        return 0
+        if not prices:
+            return 0
 
         buy1 = buy2 = float('inf')
         sell1 = sell2 = 0
@@ -113,3 +60,4 @@ class Solution:
                 dp[t][d] = max(dp[t][d - 1], prices[d] + max_diff)
 
         return dp[k][-1]
+```

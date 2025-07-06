@@ -9,7 +9,7 @@ pre: "<b>3.3.2.4 </b>"
 Multi Line Comment
 Amazon Q Developer understands your intent and provides suggestions based on multi-line comments. This approach is ideal for more complex logic, where you can describe requirements, constraints, and expected behavior in detail.
 
-## Why Use Multi Line Comments?
+#### Why Use Multi Line Comments?
 - **Expressiveness:** Describe complex requirements and logic
 - **Clarity:** Provide context, edge cases, and constraints
 - **Control:** Guide the AI to generate code that matches your intent
@@ -18,7 +18,7 @@ Amazon Q Developer understands your intent and provides suggestions based on mul
 
 ---
 
-### Example #1: Strings and Numbers Formatting
+##### Example #1: Strings and Numbers Formatting
 **Prompt:**
 
 ```python
@@ -42,7 +42,7 @@ def format_list(lst):
 
 ---
 
-### Example #2: Filter Even Numbers
+##### Example #2: Filter Even Numbers
 **Prompt:**
 
 ```python
@@ -59,7 +59,7 @@ def filter_even(numbers):
 
 ---
 
-## Key Takeaways
+#### Key Takeaways
 - Use multi-line comments for complex requirements and logic
 - Clearly describe the problem, constraints, and expected output
 - The more context you provide, the better the code suggestions

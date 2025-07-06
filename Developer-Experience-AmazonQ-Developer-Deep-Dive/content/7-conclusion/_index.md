@@ -39,7 +39,6 @@ Amazon Q Developer is not just a support tool but a development companion, helpi
 - [Amazon Q Developer FAQs](https://aws.amazon.com/q/developer/faqs/)
 - [Amazon Q Developer User Guide](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is-amazon-q-developer.html)
 - [Amazon Q Developer Console Troubleshooting](https://aws.amazon.com/blogs/aws/amazon-q-developer-now-helps-you-troubleshoot-aws-console-errors/)
-- [Amazon Q Developer CloudFormation Troubleshooting](https://aws.amazon.com/about-aws/whats-new/2023/11/cloudformation-troubleshooting-q-developer-assistance/)
 - [Amazon Q Developer Video Guide](https://www.youtube.com/watch?v=i0zQpJPfSdU)
 - [Amazon Q Developer Community Guide](https://community.aws/content/2fVw1hN4VeTF3qtVSZHfQiQUS16/getting-started-with-amazon-q-developer-in-visual-studio-code)
 - [AWS Prescriptive Guidance: Best Practices Code Generation](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-code-generation/introduction.html)

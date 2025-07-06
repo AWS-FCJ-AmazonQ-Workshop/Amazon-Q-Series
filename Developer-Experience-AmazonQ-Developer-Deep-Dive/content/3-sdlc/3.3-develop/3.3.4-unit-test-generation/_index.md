@@ -6,11 +6,9 @@ chapter: false
 pre: " <b> 3.3.4. </b> "
 ---
 
-# Unit Test Generation with Amazon Q Developer
-
 Amazon Q Developer excels at creating comprehensive unit tests for your applications. By analyzing your existing code, it can generate thorough test suites that cover various scenarios, edge cases, and ensure code reliability.
 
-## Overview
+#### Overview
 
 Automated test generation with Amazon Q Developer provides:
 - **Comprehensive Coverage**: Tests for all public methods and properties
@@ -18,11 +16,11 @@ Automated test generation with Amazon Q Developer provides:
 - **Multiple Test Frameworks**: Support for various testing libraries
 - **Best Practices**: Following testing conventions and patterns
 
-## Example 1: Testing the Folder Class
+##### Example 1: Testing the Folder Class
 
 Let's create unit tests for the Folder class we developed earlier.
 
-### Prerequisites
+#### Prerequisites
 
 Before generating tests, ensure:
 1. The source file (`folder_class.py`) is either:
@@ -30,11 +28,10 @@ Before generating tests, ensure:
    - Located in the current directory, or
    - You provide the full path to the file
 
-### Implementation Steps
+#### Implementation Steps
 
 **Step 1:** Create a new test file `test_folder_class.py`
 
-**Step 2:** Enter the test generation prompt:
 **Step 2:** Enter the test generation prompt:
 
 ```python
@@ -45,7 +42,7 @@ create unit tests for the Folder class in the folder_class.py file
 
 **Step 3:** Accept Amazon Q Developer's suggestions
 
-### Generated Test Code
+#### Generated Test Code
 
 Amazon Q Developer will create comprehensive unit tests:
 
@@ -126,11 +123,11 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-## Example 2: Testing the User Class
+##### Example 2: Testing the User Class
 
 Let's generate tests for the User class with more complex validation scenarios.
 
-### Test Generation Prompt
+#### Test Generation Prompt
 
 ```python
 """
@@ -139,7 +136,7 @@ include tests for password validation, login attempts, and user methods
 """
 ```
 
-### Generated User Tests
+#### Generated User Tests
 
 ```python
 import unittest
@@ -200,9 +197,9 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-## Advanced Testing Patterns
+#### Advanced Testing Patterns
 
-### Test Coverage Analysis
+#### Test Coverage Analysis
 
 Amazon Q Developer can also generate tests for:
 
@@ -221,7 +218,7 @@ Amazon Q Developer can also generate tests for:
    - External dependencies
    - Data flow validation
 
-### Multi-Framework Support
+#### Multi-Framework Support
 
 {{< tabs >}}
 {{% tab name="unittest (Python)" %}}
@@ -253,28 +250,28 @@ create unit tests using pytest framework with fixtures
 {{% /tab %}}
 {{< /tabs >}}
 
-## Best Practices for Test Generation
+#### Best Practices for Test Generation
 
-### 1. Descriptive Test Names
+##### 1. Descriptive Test Names
 - Use clear, descriptive method names
 - Follow naming conventions: `test_method_condition_expectedResult`
 
-### 2. Comprehensive Coverage
+##### 2. Comprehensive Coverage
 - Test all public methods
 - Include edge cases and error conditions
 - Validate state changes
 
-### 3. Test Organization
+##### 3. Test Organization
 - Group related tests in test classes
 - Use setUp and tearDown methods effectively
 - Maintain test independence
 
-### 4. Effective Prompts
+##### 4. Effective Prompts
 - Specify the testing framework
 - Request specific types of tests (unit, integration, edge cases)
 - Include context about the class being tested
 
-## Running Your Tests
+#### Running Your Tests
 
 Once generated, run your tests using:
 
@@ -289,7 +286,7 @@ pytest test_folder_class.py
 python -m pytest --cov=folder_class test_folder_class.py
 ```
 
-## Next Steps
+#### Next Steps
 
 With comprehensive unit tests in place, you can:
 - Set up continuous integration pipelines

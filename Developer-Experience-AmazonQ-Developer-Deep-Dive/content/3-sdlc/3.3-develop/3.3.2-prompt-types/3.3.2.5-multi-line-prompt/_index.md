@@ -9,7 +9,7 @@ pre: "<b>3.3.2.5 </b>"
 Multi Line Prompt
 Amazon Q Developer understands your intent and provides suggestions based on directives in multi-line prompts. Using explicit directives (e.g., CREATE, FORMAT, RETURN) in your prompt helps guide the AI to produce the desired outcome, especially for complex requirements.
 
-## Why Use Multi Line Prompts?
+#### Why Use Multi Line Prompts?
 - **Explicitness:** Directives clarify your intent for the AI
 - **Complexity:** Handle multi-step logic and requirements
 - **Customization:** Tailor the generated code to your needs
@@ -18,7 +18,7 @@ Amazon Q Developer understands your intent and provides suggestions based on dir
 
 ---
 
-### Example #1: Strings and Numbers Formatting
+##### Example #1: Strings and Numbers Formatting
 **Prompt:**
 
 ```python
@@ -43,7 +43,7 @@ def format_list(lst):
 
 ---
 
-### Example #2: Find Maximum Value
+##### Example #2: Find Maximum Value
 **Prompt:**
 
 ```python
@@ -60,7 +60,7 @@ def find_max(numbers):
 
 ---
 
-## Key Takeaways
+#### Key Takeaways
 - Use multi-line prompts with explicit directives for complex or multi-step logic
 - Break down requirements into clear, actionable steps
 - The more detail you provide, the more tailored the code suggestions will be

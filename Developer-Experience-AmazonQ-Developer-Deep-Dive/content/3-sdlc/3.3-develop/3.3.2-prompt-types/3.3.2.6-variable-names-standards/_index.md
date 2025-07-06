@@ -9,7 +9,7 @@ pre: "<b>3.3.2.6 </b>"
 Variable Names Standards
 Amazon Q Developer understands your intent and provides better suggestions when you use clear, descriptive variable and function names. Good naming is essential for both AI and human readers.
 
-## Why Use Meaningful Variable Names?
+#### Why Use Meaningful Variable Names?
 - **Clarity:** Makes your code easier to understand for both AI and humans
 - **Intent:** Helps Amazon Q Developer infer the purpose of your code
 - **Maintainability:** Improves collaboration and future code updates
@@ -18,7 +18,7 @@ Amazon Q Developer understands your intent and provides better suggestions when 
 
 ---
 
-### Example #1: Poor Naming
+##### Example #1: Poor Naming
 If you use vague names, neither Amazon Q Developer nor other engineers can easily understand your intent.
 
 ```python
@@ -30,7 +30,7 @@ What is the intent of this function? Is it addition, multiplication, or somethin
 
 ---
 
-### Example #2: Meaningful Variable Names
+##### Example #2: Meaningful Variable Names
 Now, use full, descriptive names:
 
 ```python
@@ -52,7 +52,7 @@ Amazon Q Developer understands the intent and provides much more relevant sugges
 
 ---
 
-## Key Takeaways
+#### Key Takeaways
 - Use clear, descriptive names for all variables and functions
 - Avoid single-letter or generic names except for simple, short-lived variables
 - Good naming improves both AI suggestions and team collaboration

@@ -6,11 +6,11 @@ chapter: false
 pre: " <b> 4.11.2 </b> "
 ---
 
-## Dịch vụ Amazon DynamoDB với Amazon Q Developer
+#### Dịch vụ Amazon DynamoDB với Amazon Q Developer
 
 Amazon Q Developer giúp bạn sinh mã cho các thao tác DynamoDB phổ biến bằng nhiều ngôn ngữ lập trình. Dưới đây là ví dụ ngắn gọn với Python. Bạn có thể yêu cầu mã tương tự cho JavaScript, TypeScript, C#, Java, Scala, Go hoặc PHP.
 
-### Ví dụ 1: Tạo bảng
+##### Ví dụ 1: Tạo bảng
 **Prompt:**
 Tạo một bảng DynamoDB với tên và các thuộc tính cho trước.
 
@@ -36,7 +36,7 @@ def create_table(table_name, key_schema, attribute_definitions, session):
         return None
 ```
 
-### Ví dụ 2: Thêm một item
+##### Ví dụ 2: Thêm một item
 **Prompt:**
 Thêm một item vào bảng DynamoDB.
 
@@ -50,7 +50,7 @@ def put_item(table, item):
         return False
 ```
 
-### Ví dụ 3: Lấy một item
+##### Ví dụ 3: Lấy một item
 **Prompt:**
 Lấy một item từ bảng DynamoDB theo khóa chính.
 
@@ -64,7 +64,7 @@ def get_item(table, key):
         return None
 ```
 
-### Ví dụ 4: Xóa một item
+##### Ví dụ 4: Xóa một item
 **Prompt:**
 Xóa một item khỏi bảng DynamoDB theo khóa chính.
 

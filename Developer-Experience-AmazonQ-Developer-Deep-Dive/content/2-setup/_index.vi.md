@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-![alt text](image.png?width=90pc)
+![alt text](/images/2-setup/image.png?width=90pc)
 
 #### Kiểm tra Prerequisites
 

@@ -1,18 +1,18 @@
 ---
 title: "Amazon DynamoDB Service with Amazon Q Developer"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 2
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.11.2. </b> "
 ---
 
-## Amazon DynamoDB Service with Amazon Q Developer
+#### Amazon DynamoDB Service with Amazon Q Developer
 
 Amazon Q Developer can generate code for common DynamoDB operations in multiple programming languages. Below are concise examples for typical DynamoDB tasks using Python. You can request similar code for JavaScript, TypeScript, C#, Java, Scala, Go, or PHP.
 
-### Example 1: Create Table
+##### Example 1: Create Table
 **Prompt:**
-Tạo một bảng DynamoDB với tên và các thuộc tính cho trước.
+Create a DynamoDB table with a given name and attributes.
 
 ```python
 import boto3
@@ -36,9 +36,9 @@ def create_table(table_name, key_schema, attribute_definitions, session):
         return None
 ```
 
-### Example 2: Put Item
+##### Example 2: Add an Item
 **Prompt:**
-Thêm một item vào bảng DynamoDB.
+Add an item to the DynamoDB table.
 
 ```python
 def put_item(table, item):
@@ -50,9 +50,9 @@ def put_item(table, item):
         return False
 ```
 
-### Example 3: Get Item
+##### Example 3: Retrieve an Item
 **Prompt:**
-Lấy một item từ bảng DynamoDB theo khóa chính.
+Retrieve an item from the DynamoDB table by primary key.
 
 ```python
 def get_item(table, key):
@@ -64,9 +64,9 @@ def get_item(table, key):
         return None
 ```
 
-### Example 4: Delete Item
+##### Example 4: Delete an Item
 **Prompt:**
-Xóa một item khỏi bảng DynamoDB theo khóa chính.
+Delete an item from the DynamoDB table by primary key.
 
 ```python
 def delete_item(table, key):

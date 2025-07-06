@@ -6,11 +6,11 @@ chapter: false
 pre: " <b> 4.10.1 </b> "
 ---
 
-## Amazon Q: Chat
+#### Amazon Q: Chat
 
 Amazon Q Developer giúp bạn tạo mã cho các tác vụ CLI, IaC và SDK. Để sử dụng chat, hãy mở bảng Amazon Q Developer trong IDE, nhập câu hỏi và nhấn Enter. Câu trả lời sẽ hiển thị trong bảng.
 
-### Ví dụ: Kiểm tra sử dụng và hóa đơn Cloud
+##### Ví dụ: Kiểm tra sử dụng và hóa đơn Cloud
 
 **Prompt:**
 Làm thế nào để kiểm tra hóa đơn sử dụng AWS khi đã đăng nhập vào AWS Console?

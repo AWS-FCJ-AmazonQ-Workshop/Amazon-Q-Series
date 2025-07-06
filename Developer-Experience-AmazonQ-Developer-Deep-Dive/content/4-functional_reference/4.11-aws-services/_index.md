@@ -1,14 +1,14 @@
 ---
 title: "Amazon Q Developer: AWS Services"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 11
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 4.11 </b> "
 ---
 
-## AWS Services
+#### AWS Services
 
-Amazon Q Developer can suggest and generate code for a variety of AWS services. In this section, you will learn how to use Amazon Q Developer to work with:
+Amazon Q Developer can suggest and generate code for various AWS services. In this section, you will learn how to use Amazon Q Developer with:
 
 - S3
 - DynamoDB
