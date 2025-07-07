@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Amazon Q Developer Series</title>
+    <title>Q CLI Tips &amp; Tricks on Amazon Q Developer Series</title>
     <link>//localhost:1313/8_q_cli_tips_tricks/</link>
-    <description>Recent content on Amazon Q Developer Series</description>
+    <description>Recent content in Q CLI Tips &amp; Tricks on Amazon Q Developer Series</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="//localhost:1313/8_q_cli_tips_tricks/index.xml" rel="self" type="application/rss+xml" />

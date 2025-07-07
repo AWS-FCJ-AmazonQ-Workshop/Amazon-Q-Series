@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-#### Introduction to Advanced Features with Amazon Q Developer
+#### Introduction to Amazon Q Advanced Features
 
 Welcome to the **Amazon Q Developer Advanced Features Workshop**, where we'll explore cutting-edge capabilities that transform how developers build, deploy, and manage cloud applications. This hands-on session is designed to unlock the full potential of Amazon Q Developer's **agentic capabilities** and advanced automation features[[1]](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/features.html)[[2]](https://www.infoq.com/news/2024/06/amazon-q-developer-agent/).
 

@@ -14,7 +14,70 @@
 	"content": ""
 },
 {
+	"uri": "//localhost:1313/vi/2_invironment_setup/",
+	"title": "Environment Setup",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "//localhost:1313/vi/3_basic_web_application/",
+	"title": "Environment Setup",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/3_basic_web_application/1_cli_development/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/3_basic_web_application/2_ide_enhancement/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/3_basic_web_application/3_documentation_generation/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/3_basic_web_application/4_ui_enhancement/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/4_deployment_with_cdk/1_cdk_creation/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/4_deployment_with_cdk/2_resource_deployment/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/4_deployment_with_cdk/3_resource_exploration/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/4_deployment_with_cdk/4_architecture_diagram/",
 	"title": "",
 	"tags": [],
 	"description": "",
@@ -28,7 +91,70 @@
 	"content": ""
 },
 {
+	"uri": "//localhost:1313/vi/5_cloud_operations_with_q/1_environment_understanding/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/5_cloud_operations_with_q/2_vpc_traffic_analysis/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/5_cloud_operations_with_q/3_advanced_flowlog_analysis/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/5_cloud_operations_with_q/4_network_troubleshooting/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/5_cloud_operations_with_q/5_automation_creation/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "//localhost:1313/vi/5_cloud_operations_with_q/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/6_advanced_agent_capabilities/1_dev_agent/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/6_advanced_agent_capabilities/2_multi_file_operations/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/6_advanced_agent_capabilities/3_autonomous_planning/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/6_advanced_agent_capabilities/4_feedback_integration/",
 	"title": "",
 	"tags": [],
 	"description": "",
@@ -42,7 +168,49 @@
 	"content": ""
 },
 {
+	"uri": "//localhost:1313/vi/7_code_challenge/1_challenge_overview/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/7_code_challenge/2_implementation_tasks/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/7_code_challenge/3_solution_walkthrough/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "//localhost:1313/vi/7_code_challenge/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/8_q_cli_tips_tricks/1_productivity_tips/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/8_q_cli_tips_tricks/2_advanced_commands/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/8_q_cli_tips_tricks/3_best_practices/",
 	"title": "",
 	"tags": [],
 	"description": "",

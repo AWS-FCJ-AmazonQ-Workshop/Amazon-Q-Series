@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exploring and Managing Deployed Resources on Amazon Q Developer Series</title>
+    <link>//localhost:1313/4_deployment_with_cdk/3_resource_exploration/</link>
+    <description>Recent content in Exploring and Managing Deployed Resources on Amazon Q Developer Series</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/4_deployment_with_cdk/3_resource_exploration/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

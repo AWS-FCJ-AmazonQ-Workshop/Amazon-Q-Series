@@ -7,50 +7,218 @@
 	"content": "Advanced Features with Amazon Q Developer Quick Summary Welcome to the Amazon Q Developer: Advanced Features Workshop! Ready to supercharge your software development and cloud operations with AI? In this hands-on session, we\u0026rsquo;ll dive deep into the powerful capabilities of Amazon Q Developer, exploring advanced agentic features, multi-file workflows, and autonomous development capabilities that transform how you build, deploy, and operate applications.\nAfter mastering the basics from our Getting Started with Amazon Q Developer workshop, you\u0026rsquo;ll now explore advanced agent capabilities, autonomous planning, and sophisticated AI-assisted development workflows.\nDuration Approximately 4-5 hours, including environment setup, hands-on labs, and code challenge.\nTarget Audience Software Developers looking to leverage advanced AI capabilities Cloud Architects interested in AI-assisted infrastructure design DevOps Engineers seeking to automate operations with AI Technical Managers exploring AI productivity tools Anyone interested in advanced AI development workflows Prerequisite Knowledge Completion of Getting Started with Amazon Q Developer workshop or equivalent experience Basic knowledge of JavaScript/Python for code examples Familiarity with AWS services (S3, CloudFront, Lambda, API Gateway) Understanding of software development lifecycle Basic command line experience Cost This workshop primarily uses Amazon Q Developer Free Tier (50 interactions/month) and AWS Free Tier services. Some advanced features may require Amazon Q Developer Pro ($19/month per user). Estimated cost for AWS resources: $1-5 for the workshop duration.\nWhat is Amazon Q Developer? Amazon Q Developer is an AI-powered assistant designed specifically for software development and cloud operations. It integrates directly into your IDE and CLI to provide:\nAdvanced Code Generation - Create complex applications from natural language Agentic Development - Multi-step autonomous workflows Documentation \u0026amp; Testing - Auto-generate comprehensive docs and tests Cloud Operations - Simplify AWS resource management and troubleshooting Multi-file Operations - Handle complex project structures intelligently Workshop Labs 1 - Environment Setup \u0026amp; Advanced Configuration Set up Amazon Q Developer with advanced features, configure IDE and CLI environments, and explore agentic capabilities.\n2 - Creating Enhanced Web Applications\nBuild applications using Amazon Q CLI and IDE Generate comprehensive documentation and README files Enhance UI with detailed prompting techniques Implement advanced features with AI assistance 3 - Deploying with AWS CDK\nCreate AWS CDK infrastructure with AI assistance Deploy resources using CloudFront and S3 Explore deployed AWS resources Generate architecture diagrams automatically 4 - Cloud Operations with Amazon Q CLI\nUnderstand AWS environments with Q CLI Analyze VPC traffic and flow logs Troubleshoot network issues with AI assistance Create automation scripts with Q CLI 5 - Advanced Agent Capabilities\nMaster /dev agent for autonomous development Implement multi-file operations and workflows Explore autonomous planning and execution Integrate feedback loops for continuous improvement 6 - Code Challenge: Shopping Cart API Build a complete e-commerce API using Lambda, API Gateway, and DynamoDB following clean architecture and TDD principles. Win prizes! 🏆\n7 - Amazon Q CLI Tips \u0026amp; Tricks\nAdvanced productivity techniques Best practices for AI-assisted development Power user commands and workflows Benefits of Using Amazon Q Developer ✅ Accelerated Development - Complete complex tasks in minutes ✅ Autonomous Workflows - Multi-step AI-driven development ✅ Enhanced Code Quality - AI-generated tests and documentation ✅ Simplified Operations - Streamlined AWS management ✅ Continuous Learning - AI adapts to your coding patterns ✅ Expert Knowledge - AWS best practices built-in Clean Up Resources Comprehensive cleanup instructions are provided at the end of Labs 3 and 6 to ensure no unexpected charges.\nReady to Get Started? Begin your advanced AI development journey in Lab 1 - Environment Setup and discover how Amazon Q Developer can transform your development workflow with advanced agentic capabilities!\nFigure 1: Advanced Features with Amazon Q Developer\n"
 },
 {
+	"uri": "//localhost:1313/3_basic_web_application/1_cli_development/",
+	"title": "Building Web Applications with Amazon Q CLI",
+	"tags": [],
+	"description": "",
+	"content": "Prerequisites Completed Lab 1 - Setting Up Amazon Q Developer\n"
+},
+{
+	"uri": "//localhost:1313/4_deployment_with_cdk/1_cdk_creation/",
+	"title": "Creating AWS CDK Infrastructure with Amazon Q",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "//localhost:1313/1_introduction/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": "Introduction to Advanced Features with Amazon Q Developer Welcome to the Amazon Q Developer Advanced Features Workshop, where we\u0026rsquo;ll explore cutting-edge capabilities that transform how developers build, deploy, and manage cloud applications. This hands-on session is designed to unlock the full potential of Amazon Q Developer\u0026rsquo;s agentic capabilities and advanced automation features[1][2].\nWorkshop Overview In today\u0026rsquo;s rapidly evolving development landscape, Amazon Q Developer has emerged as the most capable generative AI-powered assistant for software development[3], offering unprecedented productivity gains with acceptance rates reaching up to 50%[4]. This workshop goes beyond basic code suggestions to explore advanced features that can revolutionize your entire development workflow[1][2].\nWhat You\u0026rsquo;ll Experience Advanced Agent Capabilities You\u0026rsquo;ll discover how Amazon Q Developer\u0026rsquo;s multi-turn conversational abilities enable dynamic, context-aware interactions throughout your development process[5][6]. The new agentic coding experience allows Amazon Q to perform complex tasks autonomously, from implementing features to generating documentation and creating comprehensive test suites[2][7].\nStreamlined Cloud Operations Learn to leverage Amazon Q CLI capabilities for simplified cloud operations, including VPC traffic analysis, network troubleshooting, and infrastructure automation[8][9]. The workshop demonstrates how Amazon Q can automatically gather relevant CloudWatch logs, examine configurations, and analyze recent changes across your AWS environment[8].\nInfrastructure as Code Mastery Explore advanced AWS CDK deployment patterns and learn how to create architecture diagrams, manage multi-file operations, and implement autonomous planning strategies[10][11]. You\u0026rsquo;ll see how Amazon Q can generate CDK code, deploy resources, and create comprehensive documentation[12][13].\nLearning Objectives By the end of this workshop, you will:\nMaster agentic development workflows using Amazon Q Developer\u0026rsquo;s advanced features[1][2] Implement multi-step autonomous processes for feature development and testing[2][7] Streamline cloud operations through intelligent CLI interactions and automation[8][9] Deploy sophisticated applications using AWS CDK with automated architecture generation[10][11] Enhance development productivity through multi-turn conversations and context-aware assistance[5][6] Workshop Structure This comprehensive workshop combines theoretical foundations with practical hands-on exercises[14][15]. You\u0026rsquo;ll engage in interactive sessions covering:\nCreating and Enhancing Web Applications with Amazon Q Developer CLI and IDE integration[7][3]\nDeploying with AWS CDK including resource creation and architecture visualization[10][11]\nSimplifying Cloud Operations through intelligent VPC analysis and network troubleshooting[8][16]\nAdvanced Code Challenge scenarios that test your newly acquired skills[2][7]\nWhy This Matters Amazon Q Developer represents a paradigm shift in how we approach software development[2][3]. With its ability to understand workspace structure, break down complex prompts into logical implementation steps, and maintain context across entire codebases[7][17], it\u0026rsquo;s becoming an indispensable tool for modern development teams.\nOrganizations using Amazon Q Developer report 20-40% productivity gains[4], with development teams reducing feature deployment time by 25%[4]. This workshop positions you to harness these capabilities immediately in your own projects.\nYour Journey Starts Here Whether you\u0026rsquo;re a seasoned developer or cloud operations professional, this workshop will transform your approach to building and managing applications[14][15]. You\u0026rsquo;ll leave with practical skills, real-world examples, and the confidence to implement advanced Amazon Q Developer features in your daily workflow.\nLet\u0026rsquo;s embark on this journey to unlock the full potential of AI-assisted development and cloud operations. Welcome to the future of software development with Amazon Q Developer!\n"
+	"content": "Introduction to Amazon Q Advanced Features Welcome to the Amazon Q Developer Advanced Features Workshop, where we\u0026rsquo;ll explore cutting-edge capabilities that transform how developers build, deploy, and manage cloud applications. This hands-on session is designed to unlock the full potential of Amazon Q Developer\u0026rsquo;s agentic capabilities and advanced automation features[1][2].\nWorkshop Overview In today\u0026rsquo;s rapidly evolving development landscape, Amazon Q Developer has emerged as the most capable generative AI-powered assistant for software development[3], offering unprecedented productivity gains with acceptance rates reaching up to 50%[4]. This workshop goes beyond basic code suggestions to explore advanced features that can revolutionize your entire development workflow[1][2].\nWhat You\u0026rsquo;ll Experience Advanced Agent Capabilities You\u0026rsquo;ll discover how Amazon Q Developer\u0026rsquo;s multi-turn conversational abilities enable dynamic, context-aware interactions throughout your development process[5][6]. The new agentic coding experience allows Amazon Q to perform complex tasks autonomously, from implementing features to generating documentation and creating comprehensive test suites[2][7].\nStreamlined Cloud Operations Learn to leverage Amazon Q CLI capabilities for simplified cloud operations, including VPC traffic analysis, network troubleshooting, and infrastructure automation[8][9]. The workshop demonstrates how Amazon Q can automatically gather relevant CloudWatch logs, examine configurations, and analyze recent changes across your AWS environment[8].\nInfrastructure as Code Mastery Explore advanced AWS CDK deployment patterns and learn how to create architecture diagrams, manage multi-file operations, and implement autonomous planning strategies[10][11]. You\u0026rsquo;ll see how Amazon Q can generate CDK code, deploy resources, and create comprehensive documentation[12][13].\nLearning Objectives By the end of this workshop, you will:\nMaster agentic development workflows using Amazon Q Developer\u0026rsquo;s advanced features[1][2] Implement multi-step autonomous processes for feature development and testing[2][7] Streamline cloud operations through intelligent CLI interactions and automation[8][9] Deploy sophisticated applications using AWS CDK with automated architecture generation[10][11] Enhance development productivity through multi-turn conversations and context-aware assistance[5][6] Workshop Structure This comprehensive workshop combines theoretical foundations with practical hands-on exercises[14][15]. You\u0026rsquo;ll engage in interactive sessions covering:\nCreating and Enhancing Web Applications with Amazon Q Developer CLI and IDE integration[7][3]\nDeploying with AWS CDK including resource creation and architecture visualization[10][11]\nSimplifying Cloud Operations through intelligent VPC analysis and network troubleshooting[8][16]\nAdvanced Code Challenge scenarios that test your newly acquired skills[2][7]\nWhy This Matters Amazon Q Developer represents a paradigm shift in how we approach software development[2][3]. With its ability to understand workspace structure, break down complex prompts into logical implementation steps, and maintain context across entire codebases[7][17], it\u0026rsquo;s becoming an indispensable tool for modern development teams.\nOrganizations using Amazon Q Developer report 20-40% productivity gains[4], with development teams reducing feature deployment time by 25%[4]. This workshop positions you to harness these capabilities immediately in your own projects.\nYour Journey Starts Here Whether you\u0026rsquo;re a seasoned developer or cloud operations professional, this workshop will transform your approach to building and managing applications[14][15]. You\u0026rsquo;ll leave with practical skills, real-world examples, and the confidence to implement advanced Amazon Q Developer features in your daily workflow.\nLet\u0026rsquo;s embark on this journey to unlock the full potential of AI-assisted development and cloud operations. Welcome to the future of software development with Amazon Q Developer!\n"
+},
+{
+	"uri": "//localhost:1313/6_advanced_agent_capabilities/1_dev_agent/",
+	"title": "Mastering the /dev Agent for Autonomous Development",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/8_q_cli_tips_tricks/1_productivity_tips/",
+	"title": "Productivity Tips and Power User Techniques",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/7_code_challenge/1_challenge_overview/",
+	"title": "Shopping Cart API Challenge Overview",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/5_cloud_operations_with_q/1_environment_understanding/",
+	"title": "Understanding Your AWS Environment with Amazon Q",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/8_q_cli_tips_tricks/2_advanced_commands/",
+	"title": "Advanced Commands and Hidden Features",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/5_cloud_operations_with_q/2_vpc_traffic_analysis/",
+	"title": "Analyzing VPC Traffic and Network Flow",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/4_deployment_with_cdk/2_resource_deployment/",
+	"title": "Deploying AWS Resources using CDK",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/3_basic_web_application/2_ide_enhancement/",
+	"title": "Enhancing Applications with Amazon Q IDE",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/2_invironment_setup/",
+	"title": "Environment Setup",
+	"tags": [],
+	"description": "",
+	"content": "In this section, you\u0026rsquo;ll set up Amazon Q Developer in your development environment. Amazon Q Developer is an AI-powered assistant that helps you build applications faster by providing code suggestions, answering questions, and helping with various development tasks.\nChoose Your Setup Option Amazon Q Developer offers two setup options to meet different needs and organizational requirements:\nOption 1: Amazon Q Pro Subscription with AWS IAM Identity Center Integration Setup Guide: For detailed instructions on setting up Amazon Q Pro with IAM Identity Center, follow the comprehensive guide: Setting Up Development Environment - Pro Subscription\nBest for: Organizations and teams that need advanced features, centralized management, and enterprise-grade security.\nFeatures:\nAdvanced AI capabilities with higher usage limits Centralized user management through AWS IAM Identity Center Enhanced security and compliance features Team collaboration capabilities Administrative controls and usage analytics Integration with existing AWS organizational structure Requirements:\nAWS IAM Identity Center setup in your AWS organization Amazon Q Pro subscription Administrative access to configure user permissions Option 2: Free Subscription via AWS Builder ID Setup Guide: For step-by-step instructions on setting up Amazon Q Developer with AWS Builder ID, follow the detailed guide: Setting Up Development Environment - Free Subscription\nBest for: Individual developers, learning, and getting started with Amazon Q Developer.\nFeatures:\nCore AI-powered coding assistance Code generation and suggestions Technical Q\u0026amp;A capabilities Basic usage limits (suitable for individual development) Quick setup with personal AWS Builder ID Requirements:\nAWS Builder ID (free to create) No organizational setup required Perfect for workshops, learning, and individual projects Workshop Recommendation For this workshop, we recommend using Option 2: Free Subscription via AWS Builder ID as it provides all the features needed for the exercises and can be set up quickly without organizational requirements.\nSetup Process Overview The environment setup consists of three main steps:\nAWS Account and Builder ID Setup - Create or configure your AWS Builder ID IDE Configuration - Install and configure Amazon Q Developer in your preferred IDE Amazon Q Developer Activation - Authenticate and activate Amazon Q Developer features Next Steps Choose the option that best fits your needs:\nIf you\u0026rsquo;re participating in this workshop or exploring Amazon Q Developer individually, proceed with the AWS Builder ID setup If you\u0026rsquo;re evaluating for your organization, consider the Pro subscription with IAM Identity Center integration Let\u0026rsquo;s get started with setting up Amazon Q Developer!\nWorkshop Participants: We\u0026rsquo;ll be using the free AWS Builder ID option throughout this workshop, which provides all the capabilities needed to complete the exercises successfully.\nWhat You\u0026rsquo;ll Accomplish By the end of this setup section, you will have:\n✅ Created or configured your AWS Builder ID ✅ Installed Amazon Q Developer in your IDE ✅ Authenticated and activated Amazon Q Developer features ✅ Verified the setup with a simple test ✅ Configured both CLI and IDE environments for optimal workflow Ready to begin? Let\u0026rsquo;s start with the AWS account and Builder ID setup!\n"
+},
+{
+	"uri": "//localhost:1313/7_code_challenge/2_implementation_tasks/",
+	"title": "Implementation Tasks and Requirements",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/6_advanced_agent_capabilities/2_multi_file_operations/",
+	"title": "Multi-file Operations and Complex Workflows",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/5_cloud_operations_with_q/3_advanced_flowlog_analysis/",
+	"title": "Advanced VPC Flow Log Analysis (Optional)",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/3_basic_web_application/3_documentation_generation/",
+	"title": "Auto-generating Documentation and README Files",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/6_advanced_agent_capabilities/3_autonomous_planning/",
+	"title": "Autonomous Planning and Implementation Strategies",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "//localhost:1313/3_basic_web_application/",
-	"title": "",
+	"title": "Basic Web Application",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/8_q_cli_tips_tricks/3_best_practices/",
+	"title": "Best Practices for AI-Assisted Development",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/4_deployment_with_cdk/3_resource_exploration/",
+	"title": "Exploring and Managing Deployed Resources",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/7_code_challenge/3_solution_walkthrough/",
+	"title": "Solution Walkthrough and Best Practices",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "//localhost:1313/4_deployment_with_cdk/",
-	"title": "",
+	"title": "Deployment with CDK",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/4_deployment_with_cdk/4_architecture_diagram/",
+	"title": "Generating Architecture Diagrams",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/5_cloud_operations_with_q/4_network_troubleshooting/",
+	"title": "Troubleshooting Network Issues with Amazon Q",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/3_basic_web_application/4_ui_enhancement/",
+	"title": "UI Enhancement with Advanced Prompting Techniques",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "//localhost:1313/5_cloud_operations_with_q/",
-	"title": "",
+	"title": "Cloud Operations with Q",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/5_cloud_operations_with_q/5_automation_creation/",
+	"title": "Creating Automation Scripts with Q CLI",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "//localhost:1313/6_advanced_agent_capabilities/",
-	"title": "",
+	"title": "Advanced Agent Capabilities",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/6_advanced_agent_capabilities/4_feedback_integration/",
+	"title": "Feedback Integration and Iterative Development",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "//localhost:1313/7_code_challenge/",
-	"title": "",
+	"title": "Code Challenge",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "//localhost:1313/8_q_cli_tips_tricks/",
-	"title": "",
+	"title": "Q CLI Tips &amp; Tricks",
 	"tags": [],
 	"description": "",
 	"content": ""

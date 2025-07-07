@@ -14,6 +14,30 @@
                 href="//localhost:1313/"
                 />
   </url><url>
+    <loc>//localhost:1313/3_basic_web_application/1_cli_development/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3_basic_web_application/1_cli_development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3_basic_web_application/1_cli_development/"
+                />
+  </url><url>
+    <loc>//localhost:1313/4_deployment_with_cdk/1_cdk_creation/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4_deployment_with_cdk/1_cdk_creation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4_deployment_with_cdk/1_cdk_creation/"
+                />
+  </url><url>
     <loc>//localhost:1313/1_introduction/</loc>
     <xhtml:link
                 rel="alternate"
@@ -24,6 +48,174 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/1_introduction/"
+                />
+  </url><url>
+    <loc>//localhost:1313/6_advanced_agent_capabilities/1_dev_agent/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6_advanced_agent_capabilities/1_dev_agent/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6_advanced_agent_capabilities/1_dev_agent/"
+                />
+  </url><url>
+    <loc>//localhost:1313/8_q_cli_tips_tricks/1_productivity_tips/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/8_q_cli_tips_tricks/1_productivity_tips/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/8_q_cli_tips_tricks/1_productivity_tips/"
+                />
+  </url><url>
+    <loc>//localhost:1313/7_code_challenge/1_challenge_overview/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/7_code_challenge/1_challenge_overview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/7_code_challenge/1_challenge_overview/"
+                />
+  </url><url>
+    <loc>//localhost:1313/5_cloud_operations_with_q/1_environment_understanding/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5_cloud_operations_with_q/1_environment_understanding/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5_cloud_operations_with_q/1_environment_understanding/"
+                />
+  </url><url>
+    <loc>//localhost:1313/8_q_cli_tips_tricks/2_advanced_commands/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/8_q_cli_tips_tricks/2_advanced_commands/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/8_q_cli_tips_tricks/2_advanced_commands/"
+                />
+  </url><url>
+    <loc>//localhost:1313/5_cloud_operations_with_q/2_vpc_traffic_analysis/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5_cloud_operations_with_q/2_vpc_traffic_analysis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5_cloud_operations_with_q/2_vpc_traffic_analysis/"
+                />
+  </url><url>
+    <loc>//localhost:1313/4_deployment_with_cdk/2_resource_deployment/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4_deployment_with_cdk/2_resource_deployment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4_deployment_with_cdk/2_resource_deployment/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3_basic_web_application/2_ide_enhancement/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3_basic_web_application/2_ide_enhancement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3_basic_web_application/2_ide_enhancement/"
+                />
+  </url><url>
+    <loc>//localhost:1313/2_invironment_setup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2_invironment_setup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2_invironment_setup/"
+                />
+  </url><url>
+    <loc>//localhost:1313/7_code_challenge/2_implementation_tasks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/7_code_challenge/2_implementation_tasks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/7_code_challenge/2_implementation_tasks/"
+                />
+  </url><url>
+    <loc>//localhost:1313/6_advanced_agent_capabilities/2_multi_file_operations/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6_advanced_agent_capabilities/2_multi_file_operations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6_advanced_agent_capabilities/2_multi_file_operations/"
+                />
+  </url><url>
+    <loc>//localhost:1313/5_cloud_operations_with_q/3_advanced_flowlog_analysis/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5_cloud_operations_with_q/3_advanced_flowlog_analysis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5_cloud_operations_with_q/3_advanced_flowlog_analysis/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3_basic_web_application/3_documentation_generation/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3_basic_web_application/3_documentation_generation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3_basic_web_application/3_documentation_generation/"
+                />
+  </url><url>
+    <loc>//localhost:1313/6_advanced_agent_capabilities/3_autonomous_planning/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6_advanced_agent_capabilities/3_autonomous_planning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6_advanced_agent_capabilities/3_autonomous_planning/"
                 />
   </url><url>
     <loc>//localhost:1313/3_basic_web_application/</loc>
@@ -38,6 +230,42 @@
                 href="//localhost:1313/3_basic_web_application/"
                 />
   </url><url>
+    <loc>//localhost:1313/8_q_cli_tips_tricks/3_best_practices/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/8_q_cli_tips_tricks/3_best_practices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/8_q_cli_tips_tricks/3_best_practices/"
+                />
+  </url><url>
+    <loc>//localhost:1313/4_deployment_with_cdk/3_resource_exploration/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4_deployment_with_cdk/3_resource_exploration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4_deployment_with_cdk/3_resource_exploration/"
+                />
+  </url><url>
+    <loc>//localhost:1313/7_code_challenge/3_solution_walkthrough/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/7_code_challenge/3_solution_walkthrough/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/7_code_challenge/3_solution_walkthrough/"
+                />
+  </url><url>
     <loc>//localhost:1313/4_deployment_with_cdk/</loc>
     <xhtml:link
                 rel="alternate"
@@ -48,6 +276,42 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/4_deployment_with_cdk/"
+                />
+  </url><url>
+    <loc>//localhost:1313/4_deployment_with_cdk/4_architecture_diagram/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4_deployment_with_cdk/4_architecture_diagram/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4_deployment_with_cdk/4_architecture_diagram/"
+                />
+  </url><url>
+    <loc>//localhost:1313/5_cloud_operations_with_q/4_network_troubleshooting/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5_cloud_operations_with_q/4_network_troubleshooting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5_cloud_operations_with_q/4_network_troubleshooting/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3_basic_web_application/4_ui_enhancement/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3_basic_web_application/4_ui_enhancement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3_basic_web_application/4_ui_enhancement/"
                 />
   </url><url>
     <loc>//localhost:1313/5_cloud_operations_with_q/</loc>
@@ -62,6 +326,18 @@
                 href="//localhost:1313/5_cloud_operations_with_q/"
                 />
   </url><url>
+    <loc>//localhost:1313/5_cloud_operations_with_q/5_automation_creation/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5_cloud_operations_with_q/5_automation_creation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5_cloud_operations_with_q/5_automation_creation/"
+                />
+  </url><url>
     <loc>//localhost:1313/6_advanced_agent_capabilities/</loc>
     <xhtml:link
                 rel="alternate"
@@ -72,6 +348,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/6_advanced_agent_capabilities/"
+                />
+  </url><url>
+    <loc>//localhost:1313/6_advanced_agent_capabilities/4_feedback_integration/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6_advanced_agent_capabilities/4_feedback_integration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6_advanced_agent_capabilities/4_feedback_integration/"
                 />
   </url><url>
     <loc>//localhost:1313/7_code_challenge/</loc>
