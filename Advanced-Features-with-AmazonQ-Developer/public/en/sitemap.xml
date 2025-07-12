@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
+    <lastmod>2025-01-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -12,18 +13,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3_basic_web_application/1_cli_development/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3_basic_web_application/1_cli_development/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3_basic_web_application/1_cli_development/"
                 />
   </url><url>
     <loc>//localhost:1313/4_deployment_with_cdk/1_cdk_creation/</loc>
@@ -98,6 +87,18 @@
                 href="//localhost:1313/5_cloud_operations_with_q/1_environment_understanding/"
                 />
   </url><url>
+    <loc>//localhost:1313/3_basic_web_application/1_using_cli/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3_basic_web_application/1_using_cli/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3_basic_web_application/1_using_cli/"
+                />
+  </url><url>
     <loc>//localhost:1313/8_q_cli_tips_tricks/2_advanced_commands/</loc>
     <xhtml:link
                 rel="alternate"
@@ -132,18 +133,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/4_deployment_with_cdk/2_resource_deployment/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3_basic_web_application/2_ide_enhancement/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3_basic_web_application/2_ide_enhancement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3_basic_web_application/2_ide_enhancement/"
                 />
   </url><url>
     <loc>//localhost:1313/2_invironment_setup/</loc>
@@ -182,6 +171,18 @@
                 href="//localhost:1313/6_advanced_agent_capabilities/2_multi_file_operations/"
                 />
   </url><url>
+    <loc>//localhost:1313/3_basic_web_application/2_using_ide/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3_basic_web_application/2_using_ide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3_basic_web_application/2_using_ide/"
+                />
+  </url><url>
     <loc>//localhost:1313/5_cloud_operations_with_q/3_advanced_flowlog_analysis/</loc>
     <xhtml:link
                 rel="alternate"
@@ -218,18 +219,6 @@
                 href="//localhost:1313/6_advanced_agent_capabilities/3_autonomous_planning/"
                 />
   </url><url>
-    <loc>//localhost:1313/3_basic_web_application/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3_basic_web_application/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3_basic_web_application/"
-                />
-  </url><url>
     <loc>//localhost:1313/8_q_cli_tips_tricks/3_best_practices/</loc>
     <xhtml:link
                 rel="alternate"
@@ -240,6 +229,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/8_q_cli_tips_tricks/3_best_practices/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3_basic_web_application/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3_basic_web_application/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3_basic_web_application/"
                 />
   </url><url>
     <loc>//localhost:1313/4_deployment_with_cdk/3_resource_exploration/</loc>
@@ -267,6 +268,7 @@
                 />
   </url><url>
     <loc>//localhost:1313/4_deployment_with_cdk/</loc>
+    <lastmod>2025-01-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"

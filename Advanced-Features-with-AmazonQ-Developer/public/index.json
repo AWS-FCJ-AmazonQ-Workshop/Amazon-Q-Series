@@ -7,18 +7,11 @@
 	"content": "Advanced Features with Amazon Q Developer Quick Summary Welcome to the Amazon Q Developer: Advanced Features Workshop! Ready to supercharge your software development and cloud operations with AI? In this hands-on session, we\u0026rsquo;ll dive deep into the powerful capabilities of Amazon Q Developer, exploring advanced agentic features, multi-file workflows, and autonomous development capabilities that transform how you build, deploy, and operate applications.\nAfter mastering the basics from our Getting Started with Amazon Q Developer workshop, you\u0026rsquo;ll now explore advanced agent capabilities, autonomous planning, and sophisticated AI-assisted development workflows.\nDuration Approximately 4-5 hours, including environment setup, hands-on labs, and code challenge.\nTarget Audience Software Developers looking to leverage advanced AI capabilities Cloud Architects interested in AI-assisted infrastructure design DevOps Engineers seeking to automate operations with AI Technical Managers exploring AI productivity tools Anyone interested in advanced AI development workflows Prerequisite Knowledge Completion of Getting Started with Amazon Q Developer workshop or equivalent experience Basic knowledge of JavaScript/Python for code examples Familiarity with AWS services (S3, CloudFront, Lambda, API Gateway) Understanding of software development lifecycle Basic command line experience Cost This workshop primarily uses Amazon Q Developer Free Tier (50 interactions/month) and AWS Free Tier services. Some advanced features may require Amazon Q Developer Pro ($19/month per user). Estimated cost for AWS resources: $1-5 for the workshop duration.\nWhat is Amazon Q Developer? Amazon Q Developer is an AI-powered assistant designed specifically for software development and cloud operations. It integrates directly into your IDE and CLI to provide:\nAdvanced Code Generation - Create complex applications from natural language Agentic Development - Multi-step autonomous workflows Documentation \u0026amp; Testing - Auto-generate comprehensive docs and tests Cloud Operations - Simplify AWS resource management and troubleshooting Multi-file Operations - Handle complex project structures intelligently Workshop Labs 1 - Environment Setup \u0026amp; Advanced Configuration Set up Amazon Q Developer with advanced features, configure IDE and CLI environments, and explore agentic capabilities.\n2 - Creating Enhanced Web Applications\nBuild applications using Amazon Q CLI and IDE Generate comprehensive documentation and README files Enhance UI with detailed prompting techniques Implement advanced features with AI assistance 3 - Deploying with AWS CDK\nCreate AWS CDK infrastructure with AI assistance Deploy resources using CloudFront and S3 Explore deployed AWS resources Generate architecture diagrams automatically 4 - Cloud Operations with Amazon Q CLI\nUnderstand AWS environments with Q CLI Analyze VPC traffic and flow logs Troubleshoot network issues with AI assistance Create automation scripts with Q CLI 5 - Advanced Agent Capabilities\nMaster /dev agent for autonomous development Implement multi-file operations and workflows Explore autonomous planning and execution Integrate feedback loops for continuous improvement 6 - Code Challenge: Shopping Cart API Build a complete e-commerce API using Lambda, API Gateway, and DynamoDB following clean architecture and TDD principles. Win prizes! 🏆\n7 - Amazon Q CLI Tips \u0026amp; Tricks\nAdvanced productivity techniques Best practices for AI-assisted development Power user commands and workflows Benefits of Using Amazon Q Developer ✅ Accelerated Development - Complete complex tasks in minutes ✅ Autonomous Workflows - Multi-step AI-driven development ✅ Enhanced Code Quality - AI-generated tests and documentation ✅ Simplified Operations - Streamlined AWS management ✅ Continuous Learning - AI adapts to your coding patterns ✅ Expert Knowledge - AWS best practices built-in Clean Up Resources Comprehensive cleanup instructions are provided at the end of Labs 3 and 6 to ensure no unexpected charges.\nReady to Get Started? Begin your advanced AI development journey in Lab 1 - Environment Setup and discover how Amazon Q Developer can transform your development workflow with advanced agentic capabilities!\nFigure 1: Advanced Features with Amazon Q Developer\n"
 },
 {
-	"uri": "//localhost:1313/3_basic_web_application/1_cli_development/",
-	"title": "Building Web Applications with Amazon Q CLI",
-	"tags": [],
-	"description": "",
-	"content": "Prerequisites Completed Lab 1 - Setting Up Amazon Q Developer\n"
-},
-{
 	"uri": "//localhost:1313/4_deployment_with_cdk/1_cdk_creation/",
-	"title": "Creating AWS CDK Infrastructure with Amazon Q",
+	"title": "Create AWS Cloud Development Kit (CDK) via CLI",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Prerequisites If you haven\u0026rsquo;t finished UI Enhancement with Advanced Prompting Techniques\nRun the following prompt to create Sudoku game which will deploy in this lab.\nI want to create simple html Sudoku game UI with the following features:\r1. A modern, clean design with a color scheme that reduces eye strain\r2. A responsive layout that works well on both desktop and mobile devices\r3. Visual feedback for selected cells, valid/invalid entries, and completed rows/columns/boxes\r4. A game info panel showing:\r- Current difficulty level\r- Timer\r- Number of mistakes\r- Completion percentage\r5. Animations for cell selection and number placement\r6. Support for both mouse and keyboard input 1. Create Infrastructure as Code (IaC) -\u0026gt; AWS Cloud Development Kit (CDK)\nUse AWS Cloud Development Kit (CDK) to implement infrastructure as code in Python.\rBy using AWS solutions as follows:\r- Host web application in Amazon S3 private bucket\r- Deliver web through Amazon CloudFront. 3. Verify output\nAmazon Q Developer will create CDK and provide instructions to deploy to AWS\n"
 },
 {
 	"uri": "//localhost:1313/1_introduction/",
@@ -56,6 +49,13 @@
 	"content": ""
 },
 {
+	"uri": "//localhost:1313/3_basic_web_application/1_using_cli/",
+	"title": "Using Amazon Q Developer CLI",
+	"tags": [],
+	"description": "",
+	"content": "Prerequisites Ensure you have completed Environment Setup.\n1. Input prompt to create Sudoku web application in Terminal\ncreate simple html sudoku web application and save into file 2. Press t or y to allow Q execute the command to create file\n3. Amazon Q Developer CLI will be able to:\nCreate an HTML file which you can see in Project Explorer. Describe the application details and usage. 4. Open the HTML file and click on Go Live\n5. You will be able to see the web page and play Sudoku\n6. Delete all files\n!rm -rf * 7. Exit Q chat\n# Exit Q chat\r/quit\r# Re-enter Q Chat\rq "
+},
+{
 	"uri": "//localhost:1313/8_q_cli_tips_tricks/2_advanced_commands/",
 	"title": "Advanced Commands and Hidden Features",
 	"tags": [],
@@ -74,14 +74,7 @@
 	"title": "Deploying AWS Resources using CDK",
 	"tags": [],
 	"description": "",
-	"content": ""
-},
-{
-	"uri": "//localhost:1313/3_basic_web_application/2_ide_enhancement/",
-	"title": "Enhancing Applications with Amazon Q IDE",
-	"tags": [],
-	"description": "",
-	"content": ""
+	"content": "1. Deploy CDK to AWS Environment\nDeploy this CDK Stack 2. Get the Amazon CloudFront URL\nAmazon Q Developer will deploy CDK to AWS and show Amazon CloudFront in the output terminal. URL format: XXXXXXXX.cloudfront.net\nCopy the Amazon CloudFront URL\n"
 },
 {
 	"uri": "//localhost:1313/2_invironment_setup/",
@@ -105,6 +98,13 @@
 	"content": ""
 },
 {
+	"uri": "//localhost:1313/3_basic_web_application/2_using_ide/",
+	"title": "Using Amazon Q Developer IDE",
+	"tags": [],
+	"description": "",
+	"content": "1. Input prompt to create Sudoku web application in VSCode IDE\ncreate simple html sudoku web application and save into file 2. Amazon Q will start planning and generating the web application 3. Amazon Q Developer will be able to:\nCreate an HTML file which you can see in Project Explorer. Describe the application details and usage. 4. After Amazon Q finishes generating the file, you can open the HTML file and click on Show Preview. You will be able to see the web page and play Sudoku\n"
+},
+{
 	"uri": "//localhost:1313/5_cloud_operations_with_q/3_advanced_flowlog_analysis/",
 	"title": "Advanced VPC Flow Log Analysis (Optional)",
 	"tags": [],
@@ -116,18 +116,11 @@
 	"title": "Auto-generating Documentation and README Files",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "1. In CLI or IDE, we will use Q Developer to generate README.md by prompt\nCould you create a README file for this application? 2. Review the result\n(Optional) Testing and Debugging with Amazon Q 1. Open your index.html file in a web browser to test your Sudoku application\n2. If you encounter any issues, use Amazon Q in VS Code or in the terminal to help debug:\n\u0026#34;Why isn\u0026#39;t this code working as expected?\u0026#34;\rdescribe your issue... 3. Use Amazon Q\u0026rsquo;s suggestions to fix any bugs or improve functionality\n(Optional) Step 5: Adding Final Touches 1. Use Amazon Q to help you add final touches to your application:\nAsk Amazon Q:\n\u0026#34;How can I improve the user experience of my Sudoku game?\u0026#34;\r\u0026#34;Can you help me add a timer feature to my Sudoku game?\u0026#34;\r\u0026#34;How can I save the game state so users can continue later?\u0026#34; 2. Implement the suggestions that you find valuable\n(Optional) Example Prompts for Amazon Q Here are some example prompts you can use with Amazon Q to help with specific aspects of your Sudoku application:\n\u0026ldquo;How do I generate a valid Sudoku puzzle in JavaScript?\u0026rdquo; \u0026ldquo;Write a function to check if a Sudoku solution is valid\u0026rdquo; \u0026ldquo;How can I highlight conflicting numbers in my Sudoku grid?\u0026rdquo; \u0026ldquo;Create a function to save the current game state to localStorage\u0026rdquo; \u0026ldquo;How do I implement different difficulty levels for my Sudoku game?\u0026rdquo; Next Steps Congratulations! You\u0026rsquo;ve created a Basic Web application with the help of Amazon Q Developer. In the next lab, you\u0026rsquo;ll learn how to use more advanced prompting techniques to enhance your application.\n"
 },
 {
 	"uri": "//localhost:1313/6_advanced_agent_capabilities/3_autonomous_planning/",
 	"title": "Autonomous Planning and Implementation Strategies",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "//localhost:1313/3_basic_web_application/",
-	"title": "Basic Web Application",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -138,6 +131,13 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "//localhost:1313/3_basic_web_application/",
+	"title": "Creating a Basic and Enhance Web Application",
+	"tags": [],
+	"description": "",
+	"content": "Creating and Enhancing a Web Application with Amazon Q In this lab, you\u0026rsquo;ll use Amazon Q Developer to create a basic web application and then enhance it using advanced prompting techniques. You\u0026rsquo;ll learn how to leverage Amazon Q to generate code, explain concepts, and help you build a functional web application. Then you\u0026rsquo;ll discover how to use advanced prompting techniques with Amazon Q Developer to significantly enhance your Sudoku web application. By crafting more detailed and specific prompts, you can get better results and build a more sophisticated application.\nPrerequisites Ensure you have completed Environment Setup and have Amazon Q Developer properly configured in both CLI and IDE environments.\nLab Overview This lab consists of four main sections:\n3.1 Building Web Applications with Amazon Q CLI - Create applications using command-line interface 3.2 Enhancing Applications with Amazon Q IDE - Improve functionality using IDE features 3.3 Auto-generating Documentation and README Files - Create comprehensive documentation 3.4 UI Enhancement with Advanced Prompting Techniques - Refine user interface and experience\nWhat You\u0026rsquo;ll Learn By the end of this lab, you will:\n✅ Master CLI Development - Create complete web applications using natural language prompts ✅ Enhance with IDE Features - Leverage IDE integration for advanced functionality ✅ Generate Documentation - Auto-create README files and technical documentation ✅ Apply Advanced Prompting - Use sophisticated prompts for better AI responses ✅ Understand Code Structure - Learn how AI-generated code is organized ✅ Implement Best Practices - Follow development standards with AI assistance Key Concepts Natural Language Programming: Using conversational prompts to generate functional code AI-Assisted Development: Leveraging AI to accelerate the development process Advanced Prompting: Crafting detailed, specific prompts for better AI responses Documentation Generation: Automatically creating technical documentation Code Enhancement: Improving existing code with AI assistance\nPro Tip: The key to success with Amazon Q Developer is learning how to communicate your requirements clearly and specifically. The more detailed your prompts, the better the generated code will be.\nReady to start building? Let\u0026rsquo;s begin with creating your first web application using Amazon Q CLI!\n"
 },
 {
 	"uri": "//localhost:1313/4_deployment_with_cdk/3_resource_exploration/",
@@ -155,10 +155,10 @@
 },
 {
 	"uri": "//localhost:1313/4_deployment_with_cdk/",
-	"title": "Deployment with CDK",
+	"title": "Deploying with AWS CDK",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "In this lab, you\u0026rsquo;ll learn how to deploy your application to AWS using the AWS Cloud Development Kit (CDK) with Amazon Q Developer\u0026rsquo;s assistance. You\u0026rsquo;ll create a deployment that uses Amazon S3 for hosting your static files and Amazon CloudFront for content delivery, transforming your local web application into a globally distributed, production-ready solution.\nPrerequisites Ensure you have completed Environment Setup and have Amazon Q Developer properly configured in both CLI and IDE environments.\nLab Overview This lab demonstrates the power of combining Amazon Q Developer with AWS CDK to:\nGenerate Infrastructure Code - Create AWS CDK applications using AI assistance Deploy Cloud Resources - Launch S3 buckets, CloudFront distributions, and related services Manage Deployments - Update and maintain your cloud infrastructure Visualize Architecture - Generate diagrams of your deployed resources Follow Best Practices - Implement secure, scalable deployment patterns What You\u0026rsquo;ll Build Your deployment architecture will include:\nAmazon S3 Bucket - Secure static website hosting with proper configurations Amazon CloudFront Distribution - Global CDN for fast content delivery AWS CDK Stack - Infrastructure as code for repeatable deployments IAM Roles and Policies - Secure access controls Custom Domain (Optional) - Professional URL for your application What You\u0026rsquo;ll Learn By completing this lab, you will:\n✅ Master CDK with AI - Generate infrastructure code using Amazon Q Developer ✅ Deploy to Production - Launch applications on AWS with enterprise-grade setup ✅ Understand Cloud Architecture - Learn how S3 and CloudFront work together ✅ Manage Infrastructure - Update, monitor, and troubleshoot deployments ✅ Create Documentation - Generate architecture diagrams and deployment guides ✅ Optimize Performance - Configure CDN settings for optimal user experience Lab Structure 4.1 Creating AWS CDK Infrastructure with Amazon Q: Generate complete CDK infrastructure code using natural language prompts, including S3 bucket configuration, CloudFront distribution setup, and security policies.\n4.2 Deploying AWS Resources using CDK: Execute the deployment process, understand the AWS resource creation sequence, and verify successful deployment with Amazon Q\u0026rsquo;s guidance.\n4.3 Exploring and Managing Deployed Resources: Navigate the AWS Console, understand resource relationships, and learn to manage your deployed infrastructure using Amazon Q Developer.\n4.4 Generating Architecture Diagrams: Create professional architecture diagrams that document your deployment and can be used for presentations or documentation.\nKey Benefits of This Approach Infrastructure as Code: Version-controlled, repeatable deployments that can be easily modified and redeployed\nGlobal Performance: CloudFront CDN ensures fast loading times worldwide with edge locations\nCost Efficiency: Pay-only-for-what-you-use model with AWS Free Tier eligibility for new accounts\nSecurity: Built-in AWS security features including encryption, access controls, and DDoS protection\nScalability: Automatic scaling to handle traffic spikes without manual intervention\nAI-Assisted Development: Amazon Q Developer accelerates the entire deployment process\nImportant: This lab creates AWS resources that may incur charges. While most services used qualify for AWS Free Tier, please monitor your AWS billing dashboard and clean up resources after completing the lab.\nPro Tip: Amazon Q Developer can help you understand AWS pricing, optimize resource configurations, and troubleshoot deployment issues. Ask questions like \u0026ldquo;How much will this cost?\u0026rdquo; or \u0026ldquo;How can I optimize this for better performance?\u0026rdquo;\nGetting Started Ready to deploy your web application to AWS? Let\u0026rsquo;s begin by using Amazon Q Developer to generate the CDK infrastructure code that will power your cloud deployment!\nThe next section will guide you through creating your first AWS CDK application with AI assistance.\n"
 },
 {
 	"uri": "//localhost:1313/4_deployment_with_cdk/4_architecture_diagram/",
@@ -179,7 +179,7 @@
 	"title": "UI Enhancement with Advanced Prompting Techniques",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Prerequisites Ensure you have completed Creating a Basic and Enhance Web Application.\nStep 1: Understanding Advanced Prompting Techniques Before we start enhancing our application, let\u0026rsquo;s understand some principles of effective prompting with Amazon Q:\nBe specific and detailed: Provide context, requirements, and constraints Break down complex tasks: Ask for one feature at a time Iterative refinement: Start with a basic implementation, then ask for improvements Provide examples: When possible, show examples of what you want Ask for explanations: Request explanations of how the code works Step 2: Enhancing the UI with Detailed Prompts 1. Use a detailed prompt to enhance the UI (IDE or CLI):\nI want to enhance my Sudoku game UI with the following features:\r1. A modern, clean design with a color scheme that reduces eye strain\r2. A responsive layout that works well on both desktop and mobile devices.\r3. Verify grid layout display.\r4. Visual feedback for selected cells, valid/invalid entries, and completed rows/columns/boxes\r5. A game info panel showing:\r- Current difficulty level\r- Timer\r- Number of mistakes\r- Completion percentage\r6. Animations for cell selection and number placement\r7. Support for both mouse and keyboard input 2. Review the result\n(Optional) Step 3: Refining and Optimizing with Iterative Prompts After implementing the enhanced features, you can use Amazon Q to help refine and optimize your code:\n1. For performance optimization:\nI\u0026#39;ve implemented the enhanced Sudoku game, but I\u0026#39;m concerned about performance, especially:\r1. The solver algorithm seems slow on difficult puzzles\r2. There\u0026#39;s a noticeable delay when validating the board after each input\r3. The UI becomes less responsive when using the visualization feature\rPlease suggest optimizations to improve performance while maintaining functionality. 2. For code quality and organization:\nI want to improve the organization and maintainability of my Sudoku game code:\rCurrent issues:\r- The code has grown large and is becoming difficult to manage\r- There\u0026#39;s some duplication in the validation and generation logic\r- Event handlers are getting complex with multiple responsibilities\rPlease suggest how I can:\r1. Refactor the code using appropriate design patterns\r2. Separate concerns (UI, game logic, state management)\r3. Improve code readability and maintainability\r4. Add proper error handling (Optional) Step 4: Testing Your Enhanced Application 1. Test all the new features you\u0026rsquo;ve implemented\n2. If you encounter any issues, use Amazon Q to help debug:\n\u0026#34;I\u0026#39;m having an issue with [specific feature]. Here\u0026#39;s the error I\u0026#39;m seeing: [error details].\rHere\u0026#39;s the relevant code: [paste code]. How can I fix this?\u0026#34; Next Steps Congratulations! You\u0026rsquo;ve enhanced your Sudoku web application using advanced prompting techniques with Amazon Q Developer. Your application now has more sophisticated features and a better user experience.\nIn the next lab, you\u0026rsquo;ll learn how to deploy your application to AWS using CDK.\n"
 },
 {
 	"uri": "//localhost:1313/5_cloud_operations_with_q/",
@@ -225,7 +225,7 @@
 },
 {
 	"uri": "//localhost:1313/9_conclusion/",
-	"title": "",
+	"title": "Conclusion",
 	"tags": [],
 	"description": "",
 	"content": ""

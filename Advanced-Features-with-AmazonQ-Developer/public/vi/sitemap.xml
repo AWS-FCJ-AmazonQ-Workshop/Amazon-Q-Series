@@ -50,28 +50,28 @@
                 href="//localhost:1313/vi/3_basic_web_application/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/3_basic_web_application/1_cli_development/</loc>
+    <loc>//localhost:1313/vi/3_basic_web_application/1_using_cli/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3_basic_web_application/1_cli_development/"
+                href="//localhost:1313/3_basic_web_application/1_using_cli/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3_basic_web_application/1_cli_development/"
+                href="//localhost:1313/vi/3_basic_web_application/1_using_cli/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/3_basic_web_application/2_ide_enhancement/</loc>
+    <loc>//localhost:1313/vi/3_basic_web_application/2_using_ide/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3_basic_web_application/2_ide_enhancement/"
+                href="//localhost:1313/3_basic_web_application/2_using_ide/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3_basic_web_application/2_ide_enhancement/"
+                href="//localhost:1313/vi/3_basic_web_application/2_using_ide/"
                 />
   </url><url>
     <loc>//localhost:1313/vi/3_basic_web_application/3_documentation_generation/</loc>

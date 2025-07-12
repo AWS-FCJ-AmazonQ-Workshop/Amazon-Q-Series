@@ -8,11 +8,11 @@ pre: " <b> 2. </b> "
 
 In this section, you'll set up Amazon Q Developer in your development environment. Amazon Q Developer is an AI-powered assistant that helps you build applications faster by providing code suggestions, answering questions, and helping with various development tasks.
 
-## Choose Your Setup Option
+#### Choose Your Setup Option
 
 Amazon Q Developer offers two setup options to meet different needs and organizational requirements:
 
-### Option 1: Amazon Q Pro Subscription with AWS IAM Identity Center Integration
+#### Option 1: Amazon Q Pro Subscription with AWS IAM Identity Center Integration
 
 {{% notice info %}}
 **Setup Guide**: For detailed instructions on setting up Amazon Q Pro with IAM Identity Center, follow the comprehensive guide: [Setting Up Development Environment - Pro Subscription](https://aws-fcj-amazonq-workshop.github.io/Amazon-Q-Series/Getting-Started-with-AmazonQ-Developer/3-setting-up-dev-environment/3.3-setting-up-credentials/)
@@ -35,7 +35,7 @@ Amazon Q Developer offers two setup options to meet different needs and organiza
 - Amazon Q Pro subscription
 - Administrative access to configure user permissions
 
-### Option 2: Free Subscription via AWS Builder ID
+#### Option 2: Free Subscription via AWS Builder ID
 
 {{% notice info %}}
 **Setup Guide**: For step-by-step instructions on setting up Amazon Q Developer with AWS Builder ID, follow the detailed guide: [Setting Up Development Environment - Free Subscription](https://aws-fcj-amazonq-workshop.github.io/Amazon-Q-Series/Getting-Started-with-AmazonQ-Developer/3-setting-up-dev-environment/3.3-setting-up-credentials/)
@@ -57,13 +57,13 @@ Amazon Q Developer offers two setup options to meet different needs and organiza
 - No organizational setup required
 - Perfect for workshops, learning, and individual projects
 
-## Workshop Recommendation
+#### Workshop Recommendation
 
 {{% notice info %}}
 For this workshop, we recommend using **Option 2: Free Subscription via AWS Builder ID** as it provides all the features needed for the exercises and can be set up quickly without organizational requirements.
 {{% /notice %}}
 
-## Setup Process Overview
+#### Setup Process Overview
 
 The environment setup consists of three main steps:
 
@@ -71,7 +71,7 @@ The environment setup consists of three main steps:
 2. **IDE Configuration** - Install and configure Amazon Q Developer in your preferred IDE
 3. **Amazon Q Developer Activation** - Authenticate and activate Amazon Q Developer features
 
-## Next Steps
+#### Next Steps
 
 Choose the option that best fits your needs:
 
@@ -84,7 +84,7 @@ Let's get started with setting up Amazon Q Developer!
 **Workshop Participants**: We'll be using the free AWS Builder ID option throughout this workshop, which provides all the capabilities needed to complete the exercises successfully.
 {{% /notice %}}
 
-## What You'll Accomplish
+#### What You'll Accomplish
 
 By the end of this setup section, you will have:
 
